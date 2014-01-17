@@ -1,9 +1,12 @@
 body {
 	background: #FFFF76;
+	text-align: center;
+	margin: auto;
 }
 
 .welcomeBlock {
 	color: #09E83F;
+	vertical-align: center;
 }
 
 #eng {
