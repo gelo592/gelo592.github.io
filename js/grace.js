@@ -9,7 +9,7 @@ $(document).ready(function () {
 			langList.push(this.id);
 		});
 
-		numLangs = langList.size;
+		numLangs = langList.length;
 	}
 
 	function switchLanguage () {
@@ -27,7 +27,7 @@ $(document).ready(function () {
 			console.log(ele);
 
 			$('#' + langList[i]).show();
-			
+
 			switchLanguage();
 		}, 5000);
 	}
