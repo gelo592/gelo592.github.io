@@ -14,13 +14,13 @@ $(document).ready(function () {
 
 	function switchLanguage () {
 		window.setTimeout(function() {
-			$('#' + langList[i]).display('none');
+			$('#' + langList[i]).hide();
 			i = (i+1) % numLangs;
-			$('#' + langList[i]).display('block');
+			$('#' + langList[i]).show();
 			switchLanguage();
 		}, 5000);
 	}
-	
+
 	setup();
 	switchLanguage();
 });
