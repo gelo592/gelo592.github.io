@@ -1,0 +1,35 @@
+html {
+	background: #FFFF76;
+}
+
+.welcomeBlock {
+	color: #09E83F;
+}
+
+#eng {
+	display: inline;
+}
+
+#spa {
+	display: none;
+}
+
+#jap {
+	display: none;
+}
+
+#ger {
+	display: none;
+}
+
+#fre {
+	display: none;
+}
+
+#cat {
+	display: none;
+}
+
+#kor {
+	display: none;
+}
