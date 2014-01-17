@@ -14,9 +14,20 @@ $(document).ready(function () {
 
 	function switchLanguage () {
 		window.setTimeout(function() {
+			console.log(i);
+
+			ele = '#' + langList[i];
+			console.log(ele);
 			$('#' + langList[i]).hide();
+
 			i = (i+1) % numLangs;
+			console.log(i);
+
+			ele = '#' + langList[i];
+			console.log(ele);
+
 			$('#' + langList[i]).show();
+			
 			switchLanguage();
 		}, 5000);
 	}
