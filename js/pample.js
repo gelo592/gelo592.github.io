@@ -63,19 +63,19 @@ addEventListener("keyup", function (e) {
 }, false);
 
 var update = function (modifier) {
-	if (37 in keysDown && hero.left >= 1) { //holding left arrow
+	if (37 in keysDown && hero.left >= 10) { //holding left arrow
 		hero.left -= hero.speed * modifier; 
 		hero.right = hero.left + heroImage.width;
 	}
-	if (38 in keysDown) { //holding down arrow
+	if (38 in keysDown && hero.top >= 10) { //holding up arrow
 		hero.top -= hero.speed * modifier; 
 		hero.bottom = hero.top + heroImage.height;
 	}
-	if (39 in keysDown) { //holding right arrow
+	if (39 in keysDown && hero.right <= (canvas.width - 10)) { //holding right arrow
 		hero.left += hero.speed * modifier; 
 		hero.right = hero.left + heroImage.width;
 	}
-	if (40 in keysDown) { //holding up arrow
+	if (40 in keysDown && hero.bottom <= (canvas.height - 10)) { //holding down arrow
 		hero.top += hero.speed * modifier; 
 		hero.bottom = hero.top + heroImage.height;
 	}
