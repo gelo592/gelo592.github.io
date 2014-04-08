@@ -94,7 +94,7 @@ var update = function (modifier) {
 
 var talk = function () {
 	if (textBubbleReady) {
-		ctx.drawImage(textBubble, oracle.right, oracle.top - textBubble.height);
+		ctx.drawImage(textBubble, oracle.right, oracle.top);
 	}
 };
 
