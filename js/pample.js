@@ -108,7 +108,7 @@ var render = function () {
 	}
 
 	if (oracleReady) {
-		ctx.drawImage(oracleImage, oracle.left, oracle.top);
+		ctx.drawImage(oracleImage, oracle.left, oracle.top - textBubble.height + 10);
 	}
 
 	if (bubble) {
