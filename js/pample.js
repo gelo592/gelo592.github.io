@@ -154,7 +154,6 @@ var travelThroughTimeAndSpace = function () {
 	if (hitPortal) {
 		hitPortal = false;
 		addEventListener("keydown", function(e) { update(e.keyCode, false); });
-		render();
 	}
 	else {
 		if (bg2Ready) {
@@ -233,4 +232,7 @@ var hitPortal = false;
 var page1 = true;
 var page2 = false;
 init();
-render();
+main = function () {
+	render();
+};
+mainInterval = setInterval(main, 1);
