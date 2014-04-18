@@ -95,18 +95,22 @@ function update (code, page) {
 		console.log(hero.left);
 		hero.left -= 31; 
 		hero.right = hero.left + heroImage.width;
+		render();
 	}
 	if (code == 38 && hero.top >= 10) { //holding up arrow
 		hero.top -= 23; 
 		hero.bottom = hero.top + heroImage.height;
+		render();
 	}
 	if (code == 39 && hero.right <= (canvas.width - 10)) { //holding right arrow
 		hero.left += 31; 
 		hero.right = hero.left + heroImage.width;
+		render();
 	}
 	if (code == 40 && hero.bottom <= (canvas.height - 10)) { //holding down arrow
 		hero.top += 23; 
 		hero.bottom = hero.top + heroImage.height;
+		render();
 	}
 
 	//can we talk to the oracle??
@@ -150,6 +154,7 @@ var travelThroughTimeAndSpace = function () {
 	if (hitPortal) {
 		hitPortal = false;
 		addEventListener("keydown", function(e) { update(e.keyCode, false); });
+		render();
 	}
 	else {
 		if (bg2Ready) {
@@ -171,11 +176,11 @@ var travelThroughTimeAndSpace = function () {
 };
 
 var render = function () {
-	console.log(hitPortal);
 	if (hitPortal) {
 		console.log("travelingthroughsppppaaace");
 		hitPortal = false;
 		addEventListener("keydown", function(e) { update(e.keyCode, true); });
+		travelThroughTimeAndSpace();
 	}
 	else{
 		if (bgReady) {
@@ -228,3 +233,4 @@ var hitPortal = false;
 var page1 = true;
 var page2 = false;
 init();
+render();
