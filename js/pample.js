@@ -88,31 +88,24 @@ textBubble.onload = function () {
 textBubble.src = "images/textbubble.png";
 
 //handle keyboard controls
-var keysDown = {};
+addEventListener("keydown", function(e) { update(e.keyCode, true); });
 
-addEventListener("keydown", function (e) {
-	keysDown[e.keyCode] = true;
-}, false);
-
-addEventListener("keyup", function (e) {
-	delete keysDown[e.keyCode]
-}, false);
-
-var update = function (modifier, page) {
-	if (37 in keysDown && hero.left >= 10) { //holding left arrow
-		hero.left -= Math.floor(hero.speed * modifier); 
+function update (code, page) {
+	if (code == 37 && hero.left >= 10) { //holding left arrow
+		console.log(hero.left);
+		hero.left -= 31; 
 		hero.right = hero.left + heroImage.width;
 	}
-	if (38 in keysDown && hero.top >= 10) { //holding up arrow
-		hero.top -= Math.floor(hero.speed * modifier); 
+	if (code == 38 && hero.top >= 10) { //holding up arrow
+		hero.top -= 23; 
 		hero.bottom = hero.top + heroImage.height;
 	}
-	if (39 in keysDown && hero.right <= (canvas.width - 10)) { //holding right arrow
-		hero.left += Math.floor(hero.speed * modifier); 
+	if (code == 39 && hero.right <= (canvas.width - 10)) { //holding right arrow
+		hero.left += 31; 
 		hero.right = hero.left + heroImage.width;
 	}
-	if (40 in keysDown && hero.bottom <= (canvas.height - 10)) { //holding down arrow
-		hero.top += Math.floor(hero.speed * modifier); 
+	if (code == 40 && hero.bottom <= (canvas.height - 10)) { //holding down arrow
+		hero.top += 23; 
 		hero.bottom = hero.top + heroImage.height;
 	}
 
@@ -155,18 +148,8 @@ var talk = function () {
 
 var travelThroughTimeAndSpace = function () {
 	if (hitPortal) {
-		clearInterval(mainInterval);
-		main = function () {
-			var now = Date.now();
-			var timeDelta = now - then;
-
-			update(timeDelta / 1000, true);
-
-			render();
-
-			then = now;
-		}
-		mainInterval = setInterval(main, 1);
+		hitPortal = false;
+		addEventListener("keydown", function(e) { update(e.keyCode, false); });
 	}
 	else {
 		if (bg2Ready) {
@@ -191,21 +174,8 @@ var render = function () {
 	console.log(hitPortal);
 	if (hitPortal) {
 		console.log("travelingthroughsppppaaace");
-		page2 = true;
-		page1 = false;
-		clearInterval(mainInterval);
 		hitPortal = false;
-		main = function () {
-			var now = Date.now();
-			var timeDelta = now - then;
-
-			update(timeDelta / 1000, false);
-
-			travelThroughTimeAndSpace();
-
-			then = now;
-		}
-		mainInterval = setInterval(main, 1);
+		addEventListener("keydown", function(e) { update(e.keyCode, true); });
 	}
 	else{
 		if (bgReady) {
@@ -252,21 +222,9 @@ var init = function () {
 	portal2.bottom = portal2.top + 171;
 };
 
-var main = function () {
-	var now = Date.now();
-	var timeDelta = now - then;
-
-	update(timeDelta / 1000, true);
-
-	render();
-
-	then = now;
-};
-
 var then = Date.now();
 var bubble = false;
 var hitPortal = false;
 var page1 = true;
 var page2 = false;
 init();
-var mainInterval = setInterval(main, 1);
