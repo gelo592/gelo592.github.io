@@ -1,0 +1,36 @@
+{
+    "heros": {
+        "Grace": {
+            "listening": 0,
+            "reading": 0,
+            "speaking": 0,
+            "writing": 0,
+            "vocab": [
+                "pomme",
+                "garçon",
+                "manger"
+            ],
+            "gameState": {
+                "x": 10,
+                "y": 10,
+                "map": "jumpland"
+            }
+        },
+        "Jake": {
+            "listening": 0,
+            "reading": 0,
+            "speaking": 0,
+            "writing": 0,
+            "vocab": [
+                "pomme",
+                "garçon",
+                "manger"
+            ],
+            "gameState": {
+                "x": 20,
+                "y": 20,
+                "map": "landing"
+            }
+        }
+    }
+}

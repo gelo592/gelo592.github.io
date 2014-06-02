@@ -1,3 +1,6 @@
+var map;
+var noam;
+
 var canvas = document.createElement("canvas");
 var ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;
@@ -5,45 +8,94 @@ canvas.height = window.innerHeight;
 
 document.body.appendChild(canvas);
 
+function initializeMap() {
+	var toLoad = map.mapItems.length + 2;
+	var loaded = 0;
+
+	onImageLoad = function() {
+		loaded ++;
+		if(loaded == toLoad) { 
+			ctx.drawImage(map.backgroundImage, 0, 0);
+			map.mapItems.forEach(function(item) {
+				ctx.drawImage(item.image, 31*item.x, 23*item.y);
+			});
+			ctx.drawImage(noam.image, 31*noam.x, 23*noam.y);
+		}
+	};
+
+	var img = new Image();
+	img.src = map.backgroundImageSrc;
+	img.onload = onImageLoad;
+	map.backgroundImage = img;
+
+	map.mapItems.forEach(function(item) {
+		img = new Image();
+		img.src = item.imageSrc;
+		img.onload = onImageLoad;
+		item.image = img;
+	});
+
+	img = new Image();
+	img.src = noam.imageSrc;
+	img.onload = onImageLoad;
+	noam.image = img;
+}
+
+function drawMap() {
+	ctx.drawImage(map.backgroundImage, 0, 0);
+	map.mapItems.forEach(function(item) {
+		ctx.drawImage(item.image, 31*item.x, 23*item.y);
+	});
+	ctx.drawImage(noam.image, 31*noam.x, 23*noam.y);
+}
+
 function moveHero(e) {
-	if (e.code == 37 && !onEdge['left']) { //holding left arrow
+	if (e.keyCode == 37 && !onEdge['left']) { //holding left arrow
 		if(!map.collisionMap[noam.x-1][noam.y]) {
-			noam.x -= 31; 
-			noam.right = noam.x + noam.image.width;
+			noam.x -= 1; 
+			drawMap();
 		}	
 		else {
 			itemHit = map.itemMap[noam.x-1][noam.y];
-			itemHit.onCollide();
+			if(itemHit != 1) {
+				itemHit.onCollision();
+			}
 		}
 	}
-	if (e.code == 38 && !onEdge['top']) { //holding up arrow
+	if (e.keyCode == 38 && !onEdge['top']) { //holding up arrow
 		if(!map.collisionMap[noam.x][noam.y-1]) {
-			noam.y -= 23; 
-			noam.bottom = noam.y + noam.image.height;
+			noam.y -= 1;
+			drawMap(); 
 		}	
 		else {
 			itemHit = map.itemMap[noam.x][noam.y-1];
-			itemHit.onCollide();
+			if(itemHit != 1) {
+				itemHit.onCollision();
+			}
 		}
 	}
-	if (e.code == 39 && !onEdge['right']) { //holding right arrow
+	if (e.keyCode == 39 && !onEdge['right']) { //holding right arrow
 		if(!map.collisionMap[noam.x+1][noam.y]) {
-		noam.x += 31; 
-			noam.right = noam.x + noam.image.width;
+			noam.x += 1;
+			drawMap(); 
 		}	
 		else {
 			itemHit = map.itemMap[noam.x+1][noam.y];
-			itemHit.onCollide();
+			if(itemHit != 1) {
+				itemHit.onCollision();
+			}
 		}	
 	}
-	if (e.code == 40 && !onEdge['bottom']) { //holding down arrow
+	if (e.keyCode == 40 && !onEdge['bottom']) { //holding down arrow
 		if(!map.collisionMap[noam.x][noam.y+1]) {
-			noam.y += 23; 
-			noam.bottom = noam.y + noam.image.height;
+			noam.y += 1;
+			drawMap(); 
 		}	
 		else {
 			itemHit = map.itemMap[noam.x][noam.y+1];
-			itemHit.onCollide();
+			if(itemHit != 1) {
+				itemHit.onCollision();
+			}
 		}
 	}
 }
@@ -51,8 +103,8 @@ function moveHero(e) {
 window.addEventListener('keydown', moveHero);
 
 //Globals
-mapWidth = 63; //tiles
-mapHeight = 44;
+mapWidth = 48; //tiles
+mapHeight = 32;
 
 function buildCollisionMap(mapItems) {
 	var map = [];
@@ -72,7 +124,7 @@ function buildCollisionMap(mapItems) {
 
 	//add each map item to the collision map
 	mapItems.forEach(function(item) {
-		map[item.x][items.y] = true;
+		map[item.x][item.y] = true;
 	});
 
 	return map;
@@ -96,13 +148,16 @@ function buildItemMap(mapItems) {
 
 	//add each map item to the collision map
 	mapItems.forEach(function(item) {
-		map[item.x][items.y] = item; //collision with an item
+		map[item.x][item.y] = item; //collision with an item
 	});
+
+	return map;
 }
 
-function Map (mapItems, backgroundImage, heroX, heroY) {
+function Map (mapItems, src, heroX, heroY) {
 	this.mapItems = mapItems;
-	this.bg = backgroundImage;
+	this.backgroundImageSrc = src;
+	this.backgroundImage;
 	this.width = mapWidth;
 	this.height = mapHeight;
 	this.heroX = heroX;
@@ -129,62 +184,71 @@ function Hero () {
 	this.writingLvl = 0;
 	this.x = 10;
 	this.y = 10;
-	this.image = 
+	this.imageSrc = "images/hero.png";
+	this.image;
 }
 
 //Base class for NPC, portals, and obstacles
-function MapItem (x, y) { 
+function MapItem (x, y, src) { 
 	this.x = x;
 	this.y = y;
+	this.imageSrc = src;
+	this.image;
 }
 
 MapItem.prototype.onCollision = function () { alert("generic collision happening"); };
 
 //Non-human characters that our hero can interact with
-function Non_Human(x, y) { 
-	MapItem.call(x, y);
+function Non_Human(x, y, src, speech) { 
+	MapItem.call(this, x, y, src);
+	this.speech = speech;
 }
 
-Non_Human.prototype = new MapItem();
-Non_Human.prototype.constructor = Non_Human;
+Non_Human.prototype = Object.create(MapItem.prototype);
 
-Non_Human.prototype.onCollision = function () { alert("hitting non-humans!"); };
+Non_Human.prototype.onCollision = function () { 
+	alert("glerbaskdjfh glob bwat");
+	//window.appendChild(<div)
+};
 
 //Doorways to other worlds, dimensions, and times
-function Portal (x, y, destination) { 
-	MapItem.call(x, y);
-	this.unlocked = false;
+function Portal (x, y, src, destination) { 
+	MapItem.call(this, x, y, src);
+	this.unlocked = true;
 	this.destination = destination; //lookup key string for map object in map table
 }
 
-Portal.prototype = new MapItem();
-Portal.prototype.constructor = Portal;
+Portal.prototype = Object.create(MapItem.prototype);
 
-Portal.prototype.onCollision = function () { alert("Traveling through space and time!!"); };
+Portal.prototype.onCollision = function () { 
+	if(this.unlocked) {
+		map = mapTable[this.destination];
+		initializeMap();
+	}
+};
 
-function Obstruction (x, y) {
-	MapItem.call(x, y);
+function Obstruction (x, y, src) {
+	MapItem.call(this, x, y);
 }
 
-Obstruction.prototype = new MapItem();
-Obstruction.prototype.constructor = Obstruction;
+Obstruction.prototype = Object.create(MapItem.prototype);
 
 Obstruction.prototype.onCollision = function () { alert("ouch... that doesn't do anything."); };
 
 //Setting the scenes...
 
-landingOracle = new Non_Human(382, 441);
-landingPortal = new Portal(606, 599, "jumpland");
+landingOracle = new Non_Human(10, 15, "images/oracle2.png", "gerbldi gert fwomp bwat");
+landingPortal = new Portal(18, 17, "images/portal.png", "jumpland");
 
 landingItems = [landingOracle, landingPortal];
 
-jumpLandOracle = new Non_Human(382, 441);
-jumpLandPortal = new Portal(606, 599, "landing");
+jumpLandOracle = new Non_Human(15, 10, "images/oracle.png", "snerp snarp grumpt sfut");
+jumpLandPortal = new Portal(28, 29, "images/portal.png", "landing");
 
 jumpLandItems = [jumpLandOracle, jumpLandPortal];
 
-landing = new Map(landingItems, "landing.png", 14, 14);
-jumpLand = new Map(jumpLandItems, "jumpland.png", 60, 60);
+landing = new Map(landingItems, "images/landing.png", 14, 14);
+jumpLand = new Map(jumpLandItems, "images/jumpland.png", 60, 60);
 
 mapTable = {
 	"jumpland": jumpLand,
@@ -197,3 +261,6 @@ onEdge = {  'left' : false,
 			'bottom' : false };
 
 noam = new Hero();
+map = landing;
+
+initializeMap();
