@@ -237,6 +237,8 @@ Obstruction.prototype.onCollision = function () { alert("ouch... that doesn't do
 
 //Setting the scenes...
 
+
+
 landingOracle = new Non_Human(10, 15, "images/oracle2.png", "gerbldi gert fwomp bwat");
 landingPortal = new Portal(18, 17, "images/portal.png", "jumpland");
 
