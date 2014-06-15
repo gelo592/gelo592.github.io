@@ -6,6 +6,8 @@ var ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
+canvas.id = "can";
+
 document.body.appendChild(canvas);
 
 function initializeMap() {
@@ -15,6 +17,7 @@ function initializeMap() {
 	onImageLoad = function() {
 		loaded ++;
 		if(loaded == toLoad) { 
+			ctx.globalAlpha = 1;
 			ctx.drawImage(map.backgroundImage, 0, 0);
 			map.mapItems.forEach(function(item) {
 				ctx.drawImage(item.image, 31*item.x, 23*item.y);
@@ -265,4 +268,99 @@ onEdge = {  'left' : false,
 noam = new Hero();
 map = landing;
 
-initializeMap();
+//++++++++++++++++++++++++++++++++++++++++++SAVE++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+function signInError(key) {
+	alert("you suck " + key);
+}
+function getObjKeys(obj) {
+	var keys = [];
+	for(var k in obj) {
+		keys.push(k);
+	}
+
+	return keys;
+}
+
+function getKey() {
+	return document.getElementById("boxInput").value.toLowerCase();
+}
+
+function signIn() {
+	var key = getKey();
+
+	heros = JSON.parse(window.localStorage.getItem("heros"));
+
+	if(key in getObjKeys(heros["heros"])) {
+		loadGame(heros["heros"][key]);
+	}
+	else {
+		signInError(key);
+	}
+}
+
+function loadGame(hero) {
+	noam.readingLvl = hero["reading"];
+	noam.writingLvl = hero["writing"];
+	noam.speakingLvl = hero["speaking"];
+	noam.listeningLvl = hero["listening"];
+	noam.vocab = hero["vocab"];
+	noam.x = hero["gameState"]["x"];
+	noam.y = hero["gameState"]["y"];
+
+	map = mapTable[hero["gameState"]["map"]];
+
+	drawMap();
+}
+
+function saveGame() {
+	window.localStorage.saveItem();	
+}
+
+function initializeLocalStorage() {
+	maps = window.localStorage.getItem("maps");
+	if(maps == null) {
+		$.getJSON(
+			"data/maps.json",
+			function(data) {
+				window.localStorage.setItem("maps", JSON.stringify(data));
+			});
+	}
+
+	heros = window.localStorage.getItem("heros");
+	if(heros == null) {
+		$.getJSON(
+			"data/heros.json",
+			function(data) {
+				window.localStorage.setItem("heros", JSON.stringify(data));
+			});
+	}
+}
+
+function startErUp() {
+	var toLoad = 1;
+	var loaded = 0;
+
+	onImageLoad = function() {
+		loaded ++;
+		if(loaded == toLoad) { 
+			ctx.globalAlpha = 0.5;
+			ctx.drawImage(map.backgroundImage, 0, 0);
+		}
+	};
+
+	var img = new Image();
+	img.src = map.backgroundImageSrc;
+	img.onload = onImageLoad;
+	map.backgroundImage = img;
+}
+
+function attachEventListeners() {
+	var el = document.getElementById("thumbButt");
+	el.addEventListener("click", signIn, false);
+}
+
+$(document).ready(function() {
+	attachEventListeners();
+	startErUp();
+	initializeLocalStorage();
+});

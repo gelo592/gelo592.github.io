@@ -7,6 +7,43 @@ html, body {
 	height:100%;
 } /* just to be sure these are full screen*/
 
-canvas {
+#can {
 	display: block; 
 } /* To remove the scrollbars */
+
+.textBox {
+	background: #FFF;
+    border: 2px solid #424242;
+    padding: 3px 20px 20px 20px;
+    width: 268px;
+    z-index: 2;
+    position: absolute;
+    top: 245px;
+    left: 50%;
+    visibility: visible;
+    margin-left: -134px;
+}
+
+.inputBoxButt {
+	display: inline;
+}
+
+#boxImage {
+	padding: 0 0 6px 96px;
+}
+
+#boxInput {
+	width: 180px;
+	padding-right: 15px;
+	display: inline;
+}
+
+#thumbs {
+	width: 14px;
+	height: 100%;
+}
+
+#thumbButt {
+	background: #FFF;
+	display: inline;
+}
