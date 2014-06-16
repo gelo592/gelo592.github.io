@@ -277,7 +277,6 @@ function getObjKeys(obj) {
 	for(var k in obj) {
 		keys.push(k);
 	}
-
 	return keys;
 }
 
@@ -290,7 +289,7 @@ function signIn() {
 
 	heros = JSON.parse(window.localStorage.getItem("heros"));
 
-	if(key in getObjKeys(heros["heros"])) {
+	if(getObjKeys(heros["heros"]).indexOf(key) >= 0) {
 		loadGame(heros["heros"][key]);
 	}
 	else {
@@ -309,6 +308,9 @@ function loadGame(hero) {
 
 	map = mapTable[hero["gameState"]["map"]];
 
+	document.getElementById("signIn").style.display = "none";
+
+	initializeMap();
 	drawMap();
 }
 
@@ -357,6 +359,13 @@ function startErUp() {
 function attachEventListeners() {
 	var el = document.getElementById("thumbButt");
 	el.addEventListener("click", signIn, false);
+
+	$("#boxInput").keyup(function(e){
+		console.log("enter");
+    	if(e.keyCode == 13){
+        	$("#thumbButt").click();
+    	}
+	});
 }
 
 $(document).ready(function() {
