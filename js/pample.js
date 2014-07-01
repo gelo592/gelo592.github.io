@@ -270,8 +270,11 @@ map = landing;
 
 //++++++++++++++++++++++++++++++++++++++++++SAVE++++++++++++++++++++++++++++++++++++++++++++++++++++++//
 function signInError(key) {
-	alert("you suck " + key);
+	document.getElementById("signInError").style.display = "block";
+	document.getElementById("plusButt").style.display = "inline";	
+	document.getElementById("newChar").style.paddingleft = 81.5;
 }
+
 function getObjKeys(obj) {
 	var keys = [];
 	for(var k in obj) {

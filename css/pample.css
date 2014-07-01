@@ -29,7 +29,9 @@ html, body {
 }
 
 #boxImage {
-	padding: 0 0 6px 96px;
+	margin: auto;
+	display: inline;
+	padding-bottom: 10px;
 }
 
 #boxInput {
@@ -46,4 +48,26 @@ html, body {
 #thumbButt {
 	background: #FFF;
 	display: inline;
+}
+
+#plusButt { 
+	display: none;
+	color: #318B31;
+	padding-top: 8px;
+	padding-bottom: 4px;
+	font-weight: bold;
+}
+
+#signInError {
+	display: none;
+	color: #F00;
+	margin: auto;
+	text-align: center;
+	font-weight: bold;
+}
+
+#newChar {
+	display: block;
+	padding-left: 95.5px;
+	margin: auto;
 }
