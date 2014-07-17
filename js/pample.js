@@ -1,5 +1,8 @@
 var map;
-var noam;
+var hero;
+var heroKey = "hero";
+var templateKey = "noam";
+
 
 var canvas = document.createElement("canvas");
 var ctx = canvas.getContext("2d");
@@ -22,7 +25,7 @@ function initializeMap() {
 			map.mapItems.forEach(function(item) {
 				ctx.drawImage(item.image, 31*item.x, 23*item.y);
 			});
-			ctx.drawImage(noam.image, 31*noam.x, 23*noam.y);
+			ctx.drawImage(hero.image, 31*hero.x, 23*hero.y);
 		}
 	};
 
@@ -39,9 +42,9 @@ function initializeMap() {
 	});
 
 	img = new Image();
-	img.src = noam.imageSrc;
+	img.src = hero.imageSrc;
 	img.onload = onImageLoad;
-	noam.image = img;
+	hero.image = img;
 }
 
 function drawMap() {
@@ -49,53 +52,53 @@ function drawMap() {
 	map.mapItems.forEach(function(item) {
 		ctx.drawImage(item.image, 31*item.x, 23*item.y);
 	});
-	ctx.drawImage(noam.image, 31*noam.x, 23*noam.y);
+	ctx.drawImage(hero.image, 31*hero.x, 23*hero.y);
 }
 
 function moveHero(e) {
 	if (e.keyCode == 37 && !onEdge['left']) { //holding left arrow
-		if(!map.collisionMap[noam.x-1][noam.y]) {
-			noam.x -= 1; 
+		if(!map.collisionMap[hero.x-1][hero.y]) {
+			hero.x -= 1; 
 			drawMap();
 		}	
 		else {
-			itemHit = map.itemMap[noam.x-1][noam.y];
+			itemHit = map.itemMap[hero.x-1][hero.y];
 			if(itemHit != 1) {
 				itemHit.onCollision();
 			}
 		}
 	}
 	if (e.keyCode == 38 && !onEdge['top']) { //holding up arrow
-		if(!map.collisionMap[noam.x][noam.y-1]) {
-			noam.y -= 1;
+		if(!map.collisionMap[hero.x][hero.y-1]) {
+			hero.y -= 1;
 			drawMap(); 
 		}	
 		else {
-			itemHit = map.itemMap[noam.x][noam.y-1];
+			itemHit = map.itemMap[hero.x][hero.y-1];
 			if(itemHit != 1) {
 				itemHit.onCollision();
 			}
 		}
 	}
 	if (e.keyCode == 39 && !onEdge['right']) { //holding right arrow
-		if(!map.collisionMap[noam.x+1][noam.y]) {
-			noam.x += 1;
+		if(!map.collisionMap[hero.x+1][hero.y]) {
+			hero.x += 1;
 			drawMap(); 
 		}	
 		else {
-			itemHit = map.itemMap[noam.x+1][noam.y];
+			itemHit = map.itemMap[hero.x+1][hero.y];
 			if(itemHit != 1) {
 				itemHit.onCollision();
 			}
 		}	
 	}
 	if (e.keyCode == 40 && !onEdge['bottom']) { //holding down arrow
-		if(!map.collisionMap[noam.x][noam.y+1]) {
-			noam.y += 1;
+		if(!map.collisionMap[hero.x][hero.y+1]) {
+			hero.y += 1;
 			drawMap(); 
 		}	
 		else {
-			itemHit = map.itemMap[noam.x][noam.y+1];
+			itemHit = map.itemMap[hero.x][hero.y+1];
 			if(itemHit != 1) {
 				itemHit.onCollision();
 			}
@@ -180,6 +183,7 @@ Map.prototype.draw = function () {
 Map.prototype.update = function () { };
 
 function Hero () { 
+	this.heroName
 	this.vocab = [];
 	this.listeningLvl = 0;
 	this.readingLvl = 0;
@@ -265,7 +269,7 @@ onEdge = {  'left' : false,
 			'top' : false,
 			'bottom' : false };
 
-noam = new Hero();
+hero = new Hero();
 map = landing;
 
 //++++++++++++++++++++++++++++++++++++++++++SAVE++++++++++++++++++++++++++++++++++++++++++++++++++++++//
@@ -287,30 +291,42 @@ function getKey() {
 	return document.getElementById("boxInput").value.toLowerCase();
 }
 
+function createNewPlayer() {
+	var nameKey = getKey();
+
+	var heroData = JSON.parse(localStorage[templateKey]);
+	heroData["name"] = nameKey;
+	parsePlayer(heroData)
+	saveGame();
+	loadGame();
+}
+
 function signIn() {
-	var key = getKey();
-
-	heros = JSON.parse(window.localStorage.getItem("heros"));
-
-	if(getObjKeys(heros["heros"]).indexOf(key) >= 0) {
-		loadGame(heros["heros"][key]);
+	var nameKey = getKey();
+	var heroData = JSON.parse(localStorage[heroKey]);
+	if(heroData["name"] == nameKey) {
+		parsePlayer(heroData)
+		loadGame();
 	}
 	else {
-		signInError(key);
+		signInError(nameKey);
 	}
 }
 
-function loadGame(hero) {
-	noam.readingLvl = hero["reading"];
-	noam.writingLvl = hero["writing"];
-	noam.speakingLvl = hero["speaking"];
-	noam.listeningLvl = hero["listening"];
-	noam.vocab = hero["vocab"];
-	noam.x = hero["gameState"]["x"];
-	noam.y = hero["gameState"]["y"];
+function parsePlayer(heroData) {
+	hero.heroName = heroData["name"];
+	hero.readingLvl = heroData["reading"];
+	hero.writingLvl = heroData["writing"];
+	hero.speakingLvl = heroData["speaking"];
+	hero.listeningLvl = heroData["listening"];
+	hero.vocab = heroData["vocab"];
+	hero.x = heroData["gameState"]["x"];
+	hero.y = heroData["gameState"]["y"];
 
 	map = mapTable[hero["gameState"]["map"]];
+}
 
+function loadGame() {
 	document.getElementById("signIn").style.display = "none";
 
 	initializeMap();
@@ -318,25 +334,36 @@ function loadGame(hero) {
 }
 
 function saveGame() {
-	window.localStorage.saveItem();	
+	var heroData;
+	heroData["name"] = hero.heroName;
+	heroData["reading"] = hero.readingLvl;
+	heroData["writing"] = hero.writingLvl;
+	heroData["speaking"] = hero.speakingLvl;
+	heroData["listening"] = hero.listeningLvl;
+	heroData["vocab"] = hero.vocab;
+	heroData["gameState"]["x"] = hero.x;
+	heroData["gameState"]["y"]] = hero.y;
+	heroData["gameState"]["map"] = map;
+
+	localStorage[heroKey] = JSON.stringify(heroData);
 }
 
 function initializeLocalStorage() {
-	maps = window.localStorage.getItem("maps");
+	maps = localStorage["maps"];
 	if(maps == null) {
 		$.getJSON(
 			"data/maps.json",
 			function(data) {
-				window.localStorage.setItem("maps", JSON.stringify(data));
+				localStorage["maps"] = JSON.stringify(data);
 			});
 	}
 
-	heros = window.localStorage.getItem("heros");
-	if(heros == null) {
+	hero = localStorage[templateKey];
+	if(hero == null) {
 		$.getJSON(
-			"data/heros.json",
+			"data/hero.json",
 			function(data) {
-				window.localStorage.setItem("heros", JSON.stringify(data));
+				localStorage[templateKey] = JSON.stringify(data);
 			});
 	}
 }
@@ -369,6 +396,9 @@ function attachEventListeners() {
         	$("#thumbButt").click();
     	}
 	});
+
+	el = document.getElementById("plusButt");
+	el.addEventListener("click", createNewPlayer, false);
 }
 
 $(document).ready(function() {
@@ -376,3 +406,5 @@ $(document).ready(function() {
 	startErUp();
 	initializeLocalStorage();
 });
+
+window.setInterval(saveGame, 30000);
