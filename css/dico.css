@@ -1,0 +1,55 @@
+#background {
+	background: transparent no-repeat 50% 50%;
+	background-size: cover;
+	background-image: url("http://upload.wikimedia.org/wikipedia/commons/1/15/Red_Apple.jpg");
+    position: absolute; 
+    left: 0; 
+    top: 0; 
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+}
+
+#branding {
+    bottom: 0px;
+    right: 0px;
+}
+
+.textPos { 
+	float: left;
+    z-index: 1;
+    position: absolute;
+	color: #FFF;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	left: 160px;
+}
+
+input {
+	background: transparent;
+	border: none;
+	outline: none;
+	font-size: 100px;
+	line-height: 1.1em;
+	color:  #FFF;
+}
+
+input::-webkit-input-placeholder {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+input:-moz-placeholder { 
+	color: rgba(255, 255, 255, 0.5);
+}
+
+#defn {
+	max-width: 400px;
+}
+
+#dico_chunk {
+    top: 50px;
+}
+
+#word {
+	text-transform: uppercase;
+}
