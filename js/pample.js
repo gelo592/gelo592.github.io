@@ -2,6 +2,7 @@ var map;
 var hero;
 var heroKey = "hero";
 var templateKey = "noam";
+var mapsKey = "maps";
 
 
 var canvas = document.createElement("canvas");
@@ -183,14 +184,17 @@ Map.prototype.draw = function () {
 Map.prototype.update = function () { };
 
 function Hero () { 
-	this.heroName
+	this.heroName;
 	this.vocab = [];
 	this.listeningLvl = 0;
 	this.readingLvl = 0;
 	this.speakingLvl = 0;
 	this.writingLvl = 0;
-	this.x = 10;
-	this.y = 10;
+	this.gameState = {
+		x : 10,
+		y : 10,
+		map : landing
+	};
 	this.imageSrc = "images/hero.png";
 	this.image;
 }
@@ -215,7 +219,6 @@ Non_Human.prototype = Object.create(MapItem.prototype);
 
 Non_Human.prototype.onCollision = function () { 
 	alert("glerbaskdjfh glob bwat");
-	//window.appendChild(<div)
 };
 
 //Doorways to other worlds, dimensions, and times
@@ -244,8 +247,6 @@ Obstruction.prototype.onCollision = function () { alert("ouch... that doesn't do
 
 //Setting the scenes...
 
-
-
 landingOracle = new Non_Human(10, 15, "images/oracle2.png", "gerbldi gert fwomp bwat");
 landingPortal = new Portal(18, 17, "images/portal.png", "jumpland");
 
@@ -259,6 +260,8 @@ jumpLandItems = [jumpLandOracle, jumpLandPortal];
 landing = new Map(landingItems, "images/landing.png", 14, 14);
 jumpLand = new Map(jumpLandItems, "images/jumpland.png", 60, 60);
 
+map = landing;
+
 mapTable = {
 	"jumpland": jumpLand,
 	"landing": landing
@@ -269,11 +272,9 @@ onEdge = {  'left' : false,
 			'top' : false,
 			'bottom' : false };
 
-hero = new Hero();
-map = landing;
-
 //++++++++++++++++++++++++++++++++++++++++++SAVE++++++++++++++++++++++++++++++++++++++++++++++++++++++//
 function signInError(key) {
+	document.getElementById("signInError").innerHTML = key + "?";
 	document.getElementById("signInError").style.display = "block";
 	document.getElementById("plusButt").style.display = "inline";	
 	document.getElementById("newChar").style.paddingleft = 81.5;
@@ -296,17 +297,26 @@ function createNewPlayer() {
 
 	var heroData = JSON.parse(localStorage[templateKey]);
 	heroData["name"] = nameKey;
-	parsePlayer(heroData)
+	parsePlayer(heroData);
+	console.log(hero);
 	saveGame();
 	loadGame();
 }
 
 function signIn() {
 	var nameKey = getKey();
-	var heroData = JSON.parse(localStorage[heroKey]);
-	if(heroData["name"] == nameKey) {
-		parsePlayer(heroData)
-		loadGame();
+	console.log(nameKey);
+	var heroData = localStorage[heroKey];
+	if(heroData) {
+		console.log("in storage");
+		heroData = JSON.parse(heroData);
+		console.log(heroData["heroName"]);
+		if (heroData["heroName"] == nameKey) {
+			console.log("boooooo" );
+			parsePlayer(heroData);
+			loadGame();
+			console.log(hero);
+		}
 	}
 	else {
 		signInError(nameKey);
@@ -314,47 +324,42 @@ function signIn() {
 }
 
 function parsePlayer(heroData) {
+	hero = new Hero();
+
 	hero.heroName = heroData["name"];
 	hero.readingLvl = heroData["reading"];
 	hero.writingLvl = heroData["writing"];
 	hero.speakingLvl = heroData["speaking"];
 	hero.listeningLvl = heroData["listening"];
 	hero.vocab = heroData["vocab"];
+	console.log(heroData);
 	hero.x = heroData["gameState"]["x"];
 	hero.y = heroData["gameState"]["y"];
 
-	map = mapTable[hero["gameState"]["map"]];
+	map = mapTable[heroData["gameState"]["map"]];
+	console.log("something broken?");
 }
 
 function loadGame() {
+	console.log("did i get here?");
 	document.getElementById("signIn").style.display = "none";
 
 	initializeMap();
 	drawMap();
+	window.setInterval(saveGame, 30000);
 }
 
 function saveGame() {
-	var heroData;
-	heroData["name"] = hero.heroName;
-	heroData["reading"] = hero.readingLvl;
-	heroData["writing"] = hero.writingLvl;
-	heroData["speaking"] = hero.speakingLvl;
-	heroData["listening"] = hero.listeningLvl;
-	heroData["vocab"] = hero.vocab;
-	heroData["gameState"]["x"] = hero.x;
-	heroData["gameState"]["y"]] = hero.y;
-	heroData["gameState"]["map"] = map;
-
-	localStorage[heroKey] = JSON.stringify(heroData);
+	localStorage[heroKey] = JSON.stringify(hero);
 }
 
 function initializeLocalStorage() {
-	maps = localStorage["maps"];
+	maps = localStorage[mapsKey];
 	if(maps == null) {
 		$.getJSON(
 			"data/maps.json",
 			function(data) {
-				localStorage["maps"] = JSON.stringify(data);
+				localStorage[mapsKey] = JSON.stringify(data);
 			});
 	}
 
@@ -391,7 +396,6 @@ function attachEventListeners() {
 	el.addEventListener("click", signIn, false);
 
 	$("#boxInput").keyup(function(e){
-		console.log("enter");
     	if(e.keyCode == 13){
         	$("#thumbButt").click();
     	}
@@ -407,4 +411,3 @@ $(document).ready(function() {
 	initializeLocalStorage();
 });
 
-window.setInterval(saveGame, 30000);

@@ -1,16 +1,14 @@
 {
-    "noam": {
-    	"name": "",
-        "listening": 0,
-        "reading": 0,
-        "speaking": 0,
-        "writing": 0,
-        "vocab": [],
-        "gameState": {
-            "x": 10,
-            "y": 10,
-            "map": "landing"
-        }
+	"name": "",
+    "listening": 0,
+    "reading": 0,
+    "speaking": 0,
+    "writing": 0,
+    "vocab": [],
+    "gameState": {
+        "x": 10,
+        "y": 10,
+        "map": "landing"
     }
 
 }
