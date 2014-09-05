@@ -53,3 +53,35 @@ input:-moz-placeholder {
 #word {
 	text-transform: uppercase;
 }
+
+.colorBoxWrapper {
+    display: inline;
+    z-index: 2;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#whiteBox {
+    color: white;
+}
+
+#blackBox {
+    color: black;
+}
+
+#colorBox {
+    color: rgb(12, 90, 7);
+}
+
+.colorBox {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 2px;
+    background-color: transparent;
+    float: left;
+    width: 22px;
+    height: 22px;
+    margin-right: 4px;
+}
