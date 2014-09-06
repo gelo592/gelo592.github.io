@@ -16,9 +16,9 @@ function changeTextColor(e) {
       else if (box === "colorBox") { 
             var rgb = $(this).css('color');
 
-            r = Math.ceil(Math.random()*255);
-            g = Math.ceil(Math.random()*255);
-            b = Math.ceil(Math.random()*255);
+            r = Math.ceil(Math.random()*256);
+            g = Math.ceil(Math.random()*256);
+            b = Math.ceil(Math.random()*256);
             $(this).css('color', 'rgb(' + r + ', ' + g + ', ' + b + ')');
 
 
