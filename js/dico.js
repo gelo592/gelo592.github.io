@@ -69,6 +69,8 @@ function OnLoad(e) {
 }
 
 function setHandler() {
+      $("#word").focus();
+
       window.addEventListener('keydown', OnLoad);
       $('#colorBox').click(changeTextColor);
       $('#whiteBox').click(changeTextColor);

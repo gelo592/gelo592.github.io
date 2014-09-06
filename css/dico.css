@@ -48,10 +48,16 @@ input:-moz-placeholder {
 
 #dico_chunk {
     top: 50px;
+
+    max-width: 400px;
+
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 15px;
 }
 
 #word {
 	text-transform: uppercase;
+    max-width: 400px;
 }
 
 .colorBoxWrapper {
@@ -60,6 +66,9 @@ input:-moz-placeholder {
     position: absolute;
     top: 10px;
     left: 10px;
+
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 15px;
 }
 
 #whiteBox {
