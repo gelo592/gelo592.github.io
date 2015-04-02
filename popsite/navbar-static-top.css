@@ -52,8 +52,12 @@
   table-layout: fixed;
 }
 
-.section {
+.section-index {
   padding: 60px;
+}
+
+.section {
+  padding-bottom: 40px;
 }
 
 .colorme {
@@ -78,5 +82,29 @@ ul.bare-list {
 
 .pictureless-page {
   border-top: 1px solid #ddd;
-  padding-top: 60px;
+}
+
+.center-t {
+  text-align: center;
+}
+.footer {
+  margin-top: 60px;
+  line-height: 40px;
+}
+
+.footer > .container {
+  border-top: 1px solid #ddd;
+  padding: 20px;
+}
+
+.footer-center {
+  text-align: center;
+}
+
+.foot-img {
+  height: 40px
+}
+
+.bio-pic {
+  border-radius: 12px;
 }
