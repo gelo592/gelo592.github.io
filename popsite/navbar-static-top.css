@@ -51,3 +51,32 @@
   display: table;
   table-layout: fixed;
 }
+
+.section {
+  padding: 60px;
+}
+
+.colorme {
+  background: #efefef;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-top: 0;
+  color: #424242;
+}
+
+ul.bare-list {
+  list-style: none;
+}
+
+.btn-default {
+  color: #fff;
+  background-color: #004B97;
+  border-color: #023262;
+}
+
+.pictureless-page {
+  border-top: 1px solid #ddd;
+  padding-top: 60px;
+}
