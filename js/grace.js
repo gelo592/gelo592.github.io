@@ -1,4 +1,4 @@
-$.ready(function () {
+$(function () {
 	meepUp(0, ["#boop", "#doop", "#foop", "#koop", "#moop"], 0);
 
 	function meepUp(meepIdDex, meepIds, meepDex) {
