@@ -1,45 +1,51 @@
-body {
-	background: #5D5D5E;
-	text-align: center;
-	margin: auto;
+.meep-block {
+  border-left: 6px solid #222;
+  margin-top: 48px;
+  margin-left: 48px;
+  padding-left: 24px;
+  font-size: 48px;
 }
 
-.welcomeBlock {
-	color: #EAEAEB;
-	font-weight: bolder;
-	font-size: 48px;
-	vertical-align: middle;
-	margin-top: 160px;
+.meep {
+  position: absolute;
+  opacity: 0;
 }
 
-#eng {
-	display: block;
+.meep-container {
+  height:96px;
+  position: relative;
 }
 
-#spa {
-	display: none;
+.meep-up {
+  opacity: 1;
+  -webkit-animation-name: meep-up;
+  -webkit-animation-duration: 1s;
 }
 
-#jap {
-	display: none;
+.meep-down {
+  opacity: 0;
+  -webkit-animation-name: meep-down;
+  -webkit-animation-duration: 1s;
 }
 
-#ger {
-	display: none;
+@-webkit-keyframes meep-up {
+  0% {
+    opacity: 0;
+    top: 20px;
+  }
+  100%{
+    opacity: 1;
+    top: 0px;
+  }
 }
 
-#fre {
-	display: none;
-}
-
-#cat {
-	display: none;
-}
-
-#kor {
-	display: none;
-}
-
-#swe {
-	display: none;
+@-webkit-keyframes meep-down {
+  0% {
+    opacity: 1;
+    top: 0px;
+  }
+  100%{
+    opacity: 0;
+    top: 20px;
+  }
 }
