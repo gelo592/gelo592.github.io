@@ -1,3 +1,10 @@
+#svg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
 .spin {
   -webkit-animation-name: spin;
   -webkit-animation-duration: random(4000) + 2000 + ms;
@@ -6,10 +13,18 @@
   -webkit-transform-origin: 50% 50%;
 }
 
+.tile {
+  fill: red;
+}
 
 .streak {
   position: absolute;
   opacity: .7;
+
+  > rect {
+    opacity: 0;
+
+  }
 }
 
 .snap {
@@ -21,7 +36,7 @@
 @for $i from 1 through 22 {
   .streak:nth-child(#{$i}) {
     -webkit-animation-name: streak#{$i};
-    -webkit-animation-duration: random(5) + 6 + s;
+    -webkit-animation-duration: random(5) + 10 + s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
     -webkit-animation-delay: random(3000) + 1000 + ms;

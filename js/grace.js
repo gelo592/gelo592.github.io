@@ -51,4 +51,18 @@ $(function () {
 	    }
 	  }, 167);
 	}
+
+	function narvClickResponse(e) {
+		console.log(e);
+		e = e.currentTarget;
+		console.log(e.dataset);
+		togs = e.dataset["toogle"];
+		caret = e.dataset["caret"];
+		$(".info-sect").hide();
+		$(togs).show();
+		$(togs + "::after").attr("left", caret);
+		console.log(togs);
+	}
+
+	$(".narvlet").click(narvClickResponse);
 });

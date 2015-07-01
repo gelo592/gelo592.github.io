@@ -3,48 +3,63 @@
   margin-top: 48px;
   margin-left: 48px;
   padding-left: 24px;
-  font-size: 48px; }
+  font-size: 48px;
+}
 
 .meep {
   position: absolute;
-  opacity: 0; }
+  opacity: 0;
+}
 
 .meep-container {
-  height: 96px;
-  position: relative; }
+  height:96px;
+  position: relative;
+}
 
 .meep-up {
   opacity: 1;
   -webkit-animation-name: meep-up;
-  -webkit-animation-duration: 1s; }
+  -webkit-animation-duration: 1s;
+}
 
 .meep-down {
   opacity: 0;
   -webkit-animation-name: meep-down;
-  -webkit-animation-duration: 1s; }
+  -webkit-animation-duration: 1s;
+}
 
 @-webkit-keyframes meep-up {
   0% {
     opacity: 0;
-    top: 20px; }
-  100% {
+    top: 20px;
+  }
+  100%{
     opacity: 1;
-    top: 0px; } }
+    top: 0px;
+  }
+}
+
 @-webkit-keyframes meep-down {
   0% {
     opacity: 1;
-    top: 0px; }
-  100% {
+    top: 0px;
+  }
+  100%{
     opacity: 0;
-    top: 20px; } }
+    top: 20px;
+  }
+}
+
 .footer {
   z-index: 100;
   position: absolute;
   bottom: 0;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+}
 
 .nav > li {
-  float: left; }
+  float: left;
+}
 
 .nav > li > a {
   color: #000;
@@ -52,11 +67,14 @@
   font-weight: 500;
   border-bottom: 4px solid transparent;
   margin-left: 20px;
-  padding: 4px 0px 4px 0px; }
-  .nav > li > a:hover, .nav > li > a:focus {
+  padding: 4px 0px 4px 0px;
+
+  &:hover, &:focus {
     color: #000;
     background-color: transparent;
-    border-bottom: 4px solid #000; }
+    border-bottom: 4px solid #000;
+  }
+}
 
 .info-sect {
   display: none;
@@ -65,38 +83,37 @@
   right: 48px;
   width: 328px;
   height: 420px;
-  background-color: rgba(0, 0, 0, 0.12);
+  background-color: rgba(0,0,0,.12);
   padding: 20px;
-  border-radius: 12px; }
-
+  border-radius: 12px;
+}
 #me::after {
   left: 42px;
   position: absolute;
   display: inline-block;
   border-left: 10px solid transparent;
-  border-top: 10px solid rgba(0, 0, 0, 0.12);
+  border-top: 10px solid rgba(0,0,0,.12);
   border-right: 10px solid transparent;
   bottom: -10px;
-  content: ''; }
-
+  content: '';
+}
 #proj::after {
   left: 138px;
   position: absolute;
   display: inline-block;
   border-left: 10px solid transparent;
-  border-top: 10px solid rgba(0, 0, 0, 0.12);
+  border-top: 10px solid rgba(0,0,0,.12);
   border-right: 10px solid transparent;
   bottom: -10px;
-  content: ''; }
-
+  content: '';
+}
 #contact::after {
   left: 216px;
   position: absolute;
   display: inline-block;
   border-left: 10px solid transparent;
-  border-top: 10px solid rgba(0, 0, 0, 0.12);
+  border-top: 10px solid rgba(0,0,0,.12);
   border-right: 10px solid transparent;
   bottom: -10px;
-  content: ''; }
-
-/*# sourceMappingURL=grace.css.map */
+  content: '';
+}
