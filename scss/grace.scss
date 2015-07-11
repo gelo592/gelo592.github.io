@@ -87,6 +87,7 @@
   padding: 20px;
   border-radius: 12px;
 }
+
 #me::after {
   left: 42px;
   position: absolute;
@@ -97,6 +98,7 @@
   bottom: -10px;
   content: '';
 }
+
 #proj::after {
   left: 138px;
   position: absolute;
@@ -107,6 +109,7 @@
   bottom: -10px;
   content: '';
 }
+
 #contact::after {
   left: 216px;
   position: absolute;

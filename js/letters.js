@@ -30,9 +30,10 @@ bUpperInner.attr({fill: "#FFFFFF"});
 bLowerInner.attr({fill: "#FFFFFF"});
 
 var b = snap.g(lilsquare, bUpper, bLower, bUpperInner, bLowerInner);
-b.addClass("streak");
+//b.addClass("streak");
 
-var c = 'c';
+var c = snap.path("M22 0L22 8C8 8, 8 22, 22 22L22 30C0 22, 0 0, 22 0");
+c = snap.g(lilsquare, c);
 
 var d = 'd';
 
