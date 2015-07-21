@@ -174,7 +174,7 @@
     background-color: #712C0D;
     box-shadow: inset -8px 0 #4D1C06, inset 4px 0 #B06646; }
   #farm-girl .jumprope {
-    background: url("../jumpinsprite.gif") 0px 0px;
+    background: url("../jumpinsprite.gif") 1520px 0px;
     width: 304px;
     /* width and height of the sprite image you want to display */
     height: 430px;
@@ -194,20 +194,20 @@
     transform: scaleX(-1) rotate(-110deg); } }
 @-webkit-keyframes roppel {
   12.5% {
-    background-position-x: 304px; }
-  25% {
-    background-position-x: 608px; }
-  37.5% {
-    background-position-x: 912px; }
-  50% {
-    background-position-x: 1216px; }
-  62.5% {
-    background-position-x: 1520px; }
-  75% {
     background-position-x: 1824px; }
-  87.5% {
+  25% {
     background-position-x: 2128px; }
+  37.5% {
+    background-position-x: 2432px; }
+  50% {
+    background-position-x: 0px; }
+  62.5% {
+    background-position-x: 304px; }
+  75% {
+    background-position-x: 608px; }
+  87.5% {
+    background-position-x: 912px; }
   100% {
-    background-position-x: 2432px; } }
+    background-position-x: 1216px; } }
 
 /*# sourceMappingURL=farm-girl.css.map */
