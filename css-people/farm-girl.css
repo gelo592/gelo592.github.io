@@ -174,7 +174,7 @@
     background-color: #712C0D;
     box-shadow: inset -8px 0 #4D1C06, inset 4px 0 #B06646; }
   #farm-girl .jumprope {
-    background: url("../jumpinsprite.gif") 1520px 0px;
+    background: url("jumpinsprite.gif") 1520px 0px;
     width: 304px;
     /* width and height of the sprite image you want to display */
     height: 430px;
