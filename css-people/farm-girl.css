@@ -1,0 +1,175 @@
+#farm-girl * {
+  position: absolute; }
+
+#farm-girl {
+  position: relative;
+  margin-left: 420px; }
+  #farm-girl .head {
+    /*.ear {
+      width: 25px;
+      height: 32px;
+      background-color: rgb(255, 232, 213);
+      top: 214px;
+      left: 187px;
+      border-top-right-radius: 14px;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 50px;
+      box-shadow: inset -4px -2px 0px 0px rgb(254, 212, 178);
+    }*/ }
+    #farm-girl .head .hair * {
+      background-color: #F9E34A; }
+    #farm-girl .head .hair {
+      top: 15px;
+      left: 10px; }
+      #farm-girl .head .hair .hair-blob {
+        width: 280px;
+        height: 136px;
+        border-top-right-radius: 200px;
+        border-top-left-radius: 200px;
+        box-shadow: inset 6px 4px #FCF8B9, inset -10px 4px #E7CD1E; }
+      #farm-girl .head .hair .bang {
+        top: 120px;
+        left: 10px; }
+        #farm-girl .head .hair .bang * {
+          width: 0;
+          height: 0;
+          background-color: transparent;
+          border-style: solid;
+          border-width: 0 20px 20px 20px;
+          border-color: transparent transparent #FFE8D5 transparent; }
+        #farm-girl .head .hair .bang .bang1 {
+          left: 10px; }
+        #farm-girl .head .hair .bang .bang2 {
+          left: 50px; }
+        #farm-girl .head .hair .bang .bang3 {
+          left: 90px; }
+        #farm-girl .head .hair .bang .bang4 {
+          left: 130px; }
+        #farm-girl .head .hair .bang .bang5 {
+          left: 170px; }
+        #farm-girl .head .hair .bang .bang6 {
+          left: 210px; }
+        #farm-girl .head .hair .bang .bang7 {
+          left: 250px; }
+        #farm-girl .head .hair .bang .bang8 {
+          left: 150px; }
+        #farm-girl .head .hair .bang .bang9 {
+          left: 170px; }
+        #farm-girl .head .hair .bang .bang10 {
+          left: 190px; }
+        #farm-girl .head .hair .bang .bang11 {
+          left: 210px; }
+        #farm-girl .head .hair .bang .bang12 {
+          left: 230px; }
+      #farm-girl .head .hair .pig {
+        top: 100px; }
+        #farm-girl .head .hair .pig .pig1 {
+          width: 199px;
+          height: 113px;
+          border-bottom-left-radius: 70px;
+          border-bottom-right-radius: 113px; }
+        #farm-girl .head .hair .pig .pig2 {
+          width: 200px;
+          height: 40px;
+          background-color: #fff; }
+        #farm-girl .head .hair .pig .pig3 {
+          border-bottom-left-radius: 100px;
+          border-bottom-right-radius: 100px;
+          width: 100px;
+          height: 50px;
+          left: 101px;
+          top: 32px;
+          background-color: #fff; }
+        #farm-girl .head .hair .pig .pig4 {
+          border-top-left-radius: 100px;
+          border-top-right-radius: 100px;
+          width: 100px;
+          height: 50px;
+          left: 1px;
+          top: -10px; }
+      #farm-girl .head .hair .pig-right {
+        left: 270px;
+        transform: rotate(-19deg); }
+        #farm-girl .head .hair .pig-right .pig4 {
+          box-shadow: inset -10px 0 #E7CD1E; }
+        #farm-girl .head .hair .pig-right .pig3 {
+          box-shadow: -10px 0 #E7CD1E; }
+      #farm-girl .head .hair .pig-left {
+        left: 10px;
+        transform: scaleX(-1) rotate(-19deg); }
+        #farm-girl .head .hair .pig-left .pig4 {
+          box-shadow: inset -10px 0 #FCF8B9; }
+        #farm-girl .head .hair .pig-left .pig3 {
+          box-shadow: -10px 0 #FCF8B9; }
+    #farm-girl .head .pig-flop {
+      -webkit-animation-name: pig-flop;
+      -webkit-animation-duration: 4s;
+      -webkit-animation-iteration-count: infinite; }
+    #farm-girl .head .face {
+      background-color: #ffe8d5;
+      width: 280px;
+      height: 200px;
+      border-bottom-right-radius: 200px;
+      border-bottom-left-radius: 200px;
+      left: 10px;
+      top: 124;
+      box-shadow: inset -10px 0 #fed4b2, inset 6px 0 #FFF6EE; }
+    #farm-girl .head .nosey {
+      width: 25px;
+      height: 32px;
+      background-color: #ffe8d5;
+      top: 214;
+      left: 152;
+      border-bottom-left-radius: 14px;
+      border-bottom-right-radius: 20px;
+      border-top-right-radius: 50px;
+      box-shadow: inset -4px -2px 0px 0px #fed4b2; }
+    #farm-girl .head .eyeball {
+      top: 180px; }
+      #farm-girl .head .eyeball.eyeball-left {
+        left: 95px; }
+      #farm-girl .head .eyeball.eyeball-right {
+        left: 195px; }
+      #farm-girl .head .eyeball .eb1, #farm-girl .head .eyeball .eb2, #farm-girl .head .eyeball .eb3, #farm-girl .head .eyeball .eb4, #farm-girl .head .eyeball .eb5, #farm-girl .head .eyeball .eb6 {
+        width: 6px;
+        height: 6px; }
+      #farm-girl .head .eyeball .eb1 {
+        background-color: #FFF; }
+      #farm-girl .head .eyeball .eb2, #farm-girl .head .eyeball .eb3, #farm-girl .head .eyeball .eb4, #farm-girl .head .eyeball .eb5 {
+        background-color: #D7ACEC; }
+      #farm-girl .head .eyeball .eb2 {
+        left: 6; }
+      #farm-girl .head .eyeball .eb3 {
+        top: 6; }
+      #farm-girl .head .eyeball .eb4 {
+        left: 12;
+        top: 6; }
+      #farm-girl .head .eyeball .eb5 {
+        left: 6;
+        top: 12; }
+      #farm-girl .head .eyeball .eb6 {
+        background-color: #000;
+        left: 6;
+        top: 6; }
+  #farm-girl .shirt {
+    width: 120px;
+    height: 50px;
+    left: 90px;
+    top: 309px;
+    background-color: #F4567F;
+    box-shadow: inset -8px 0 #DB3366, inset 4px 0 #FABCCF; }
+  #farm-girl .shorts {
+    width: 110px;
+    height: 30px;
+    left: 95px;
+    top: 359px;
+    background-color: #712C0D;
+    box-shadow: inset -8px 0 #4D1C06, inset 4px 0 #B06646; }
+
+@-webkit-keyframes pig-flop {
+  60% {
+    transform: rotate(38deg); }
+  100% {
+    transform: rotate(-72deg); } }
+
+/*# sourceMappingURL=farm-girl.css.map */
