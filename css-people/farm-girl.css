@@ -182,7 +182,7 @@
     box-shadow: inset -8px 0 #4D1C06, inset 4px 0 #B06646; }
 
 .jumprope {
-  background: url("../jumpinsprite.gif");
+  background: url("jumpinsprite.gif");
   width: 304px;
   height: 430px;
   position: absolute;
