@@ -2,8 +2,15 @@
   position: absolute; }
 
 #farm-girl {
+  -webkit-animation-name: jump;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate; }
+
+#farm-girl {
   position: relative;
-  margin-left: 420px; }
+  margin-left: 420px;
+  top: 110; }
   #farm-girl .head {
     /*.ear {
       width: 25px;
@@ -89,14 +96,14 @@
           top: -10px; }
       #farm-girl .head .hair .pig-right {
         left: 270px;
-        transform: rotate(16deg); }
+        transform: rotate(-60deg); }
         #farm-girl .head .hair .pig-right .pig4 {
           box-shadow: inset -10px 0 #E7CD1E; }
         #farm-girl .head .hair .pig-right .pig3 {
           box-shadow: -10px 0 #E7CD1E; }
       #farm-girl .head .hair .pig-left {
         left: 10px;
-        transform: scaleX(-1) rotate(16deg); }
+        transform: scaleX(-1) rotate(-60deg); }
         #farm-girl .head .hair .pig-left .pig4 {
           box-shadow: inset -10px 0 #FCF8B9; }
         #farm-girl .head .hair .pig-left .pig3 {
@@ -173,39 +180,49 @@
     top: 359px;
     background-color: #712C0D;
     box-shadow: inset -8px 0 #4D1C06, inset 4px 0 #B06646; }
-  #farm-girl .jumprope {
-    background: url("jumpinsprite.gif") 1520px 0px;
-    width: 304px;
-    /* width and height of the sprite image you want to display */
-    height: 430px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    -webkit-animation-name: roppel;
-    -webkit-animation-duration: 2s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: step-start; }
+
+.jumprope {
+  background: url("../jumpinsprite.gif");
+  width: 304px;
+  height: 430px;
+  position: absolute;
+  top: 54px;
+  left: 425px;
+  -webkit-animation-name: roppel;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: step-start; }
 
 @-webkit-keyframes pig-flop {
   100% {
-    transform: rotate(-110deg); } }
+    transform: rotate(30deg); } }
 @-webkit-keyframes pig-flip {
   100% {
-    transform: scaleX(-1) rotate(-110deg); } }
+    transform: scaleX(-1) rotate(30deg); } }
 @-webkit-keyframes roppel {
-  12.5% {
-    background-position-x: 1824px; }
-  25% {
-    background-position-x: 2128px; }
-  37.5% {
-    background-position-x: 2432px; }
-  50% {
+  0% {
     background-position-x: 0px; }
+  12.5% {
+    background-position-x: 304px;
+    z-index: -1; }
+  25% {
+    background-position-x: 608px;
+    z-index: -1; }
+  37.5% {
+    background-position-x: 912px;
+    z-index: -1; }
+  50% {
+    background-position-x: 1216px; }
   62.5% {
-    background-position-x: 304px; }
+    background-position-x: 1520px; }
   75% {
-    background-position-x: 608px; }
+    background-position-x: 1824px; }
   87.5% {
-    background-position-x: 912px; }
+    background-position-x: 2128px; }
   100% {
-    background-position-x: 1216px; } }
+    background-position-x: 2432px; } }
+@-webkit-keyframes jump {
+  100% {
+    top: 60; } }
+
+/*# sourceMappingURL=farm-girl.css.map */
