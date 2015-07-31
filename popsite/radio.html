@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="lib/bootstrap-3.2.0/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/main.min.css"/>
     <link rel="stylesheet" href="navbar-static-top.css"/>
-    <link rel="stylesheet" href="blarp.css"/>
   </head>
   <body class="that-bod">
     <div class="logo-section"><a href="index.html"><img src="img/logo_text_alt.png"/></a></div>
@@ -54,45 +53,75 @@
         </div>
       </div>
     </nav>
-    <div class="container-fluid pictureless-page">
-      <div class="section-index">
-        <div class="col-sm-offset-2 col-sm-3">
+    <div class="container-fluid pictureless-page radio">
+      <div class="row section center-head">
+        <h1>On the radio</h1>
+        <p>Listen to Dr. Link on KWOS Open Air and KOPN Your Health Matters.</p>
+      </div>
+      <div class="row section">
+        <div class="col-sm-offset-2 col-sm-8">
           <div id="audio-player">
-            <h3 id="show-title">Hear the latest!</h3><span id="show-date">2/12/15</span>
-            <p>A bit about the show. Some brief description that gives the user som insight of what this is</p>
-            <audio id="audio" src="https://mgmt.firststreaming.com/av/9a4f858e81156ed05718bcd6cc4d431a.mp3" controls=""></audio>
+            <h3 id="show-title">Hear the latest!<span id="show-date">2/12/15</span></h3>
           </div>
         </div>
-        <div class="col-sm-offset-1 col-sm-4 playlist-wrapper">
-          <table id="playlist" class="table playlist">
+        <div class="col-sm-offset-2 col-sm-8 playlist-wrapper">
+          <table id="playlist" class="table table-hover playlist">
             <tbody>
-              <tr data-title="Hear the latest!" data-src="https://mgmt.firststreaming.com/av/9a4f858e81156ed05718bcd6cc4d431a.mp3" data-extra="extra-latest" data-date="2/12/15" class="active">
+              <tr class="thead">
+                <th>Open Air On KWOS</th>
+                <th></th>
+                <th></th>
+              </tr>
+              <tr data-title="Hear the latest!" data-src="https://mgmt.firststreaming.com/av/9a4f858e81156ed05718bcd6cc4d431a.mp3" data-extra="extra-latest" data-date="2/12/15" class="clickable active">
                 <td>Hear the latest!</td>
                 <td>14:06</td>
                 <td>2/12/15</td>
               </tr>
-              <tr data-title="Entero virus, flu, e-cigarettes, and 'gut buddies'" data-src="https://mgmt.firststreaming.com/av/df33375da18554b1aefc9fcb9208151c.mp3" data-extra="extra-entero-ecig" data-date="1/12/15">
+              <tr data-title="Entero virus, flu, e-cigarettes, and 'gut buddies'" data-src="https://mgmt.firststreaming.com/av/df33375da18554b1aefc9fcb9208151c.mp3" data-extra="extra-entero-ecig" data-date="1/12/15" class="clickable">
                 <td>Entero virus, flu, e-cigarettes, and 'gut buddies'</td>
                 <td>16:12</td>
                 <td>1/12/15</td>
               </tr>
-              <tr data-title="Salt, ticks, carbs, veggies and...gas?" data-src="https://mgmt.firststreaming.com/av/facf766b0e9eb0ddc7add83aa0c0783b.mp3" data-extra="extra-salt-tick" data-date="12/12/14">
+              <tr data-title="Salt, ticks, carbs, veggies and...gas?" data-src="https://mgmt.firststreaming.com/av/facf766b0e9eb0ddc7add83aa0c0783b.mp3" data-extra="extra-salt-tick" data-date="12/12/14" class="clickable">
                 <td>Salt, ticks, carbs, veggies and...gas?</td>
                 <td>14:21</td>
                 <td>12/12/14</td>
               </tr>
-              <tr data-title="Food as medicine" data-src="https://mgmt.firststreaming.com/av/ddf57858051e98609589c9b1bafb7362.mp3" data-extra="extra-food-med" data-date="11/12/14">
+              <tr data-title="Food as medicine" data-src="https://mgmt.firststreaming.com/av/ddf57858051e98609589c9b1bafb7362.mp3" data-extra="extra-food-med" data-date="11/12/14" class="clickable">
                 <td>Food as medicine</td>
                 <td>14:17</td>
                 <td>11/12/14</td>
               </tr>
-              <tr data-title="Let's talk Vitamin D, prostate cancer, protein and more" data-src="http://mgmt.firststreaming.com/av/0674bf6687dde52e983a7da47f219dd7.mp3" data-extra="extra-vitD" data-date="10/12/14">
+              <tr data-title="Let's talk Vitamin D, prostate cancer, protein and more" data-src="http://mgmt.firststreaming.com/av/0674bf6687dde52e983a7da47f219dd7.mp3" data-extra="extra-vitD" data-date="10/12/14" class="clickable">
                 <td>Let's talk Vitamin D, prostate cancer, protein and more</td>
                 <td>14:18</td>
                 <td>10/12/14</td>
               </tr>
+              <tr class="thead">
+                <th>Your Health Matters on KOPN</th>
+                <th></th>
+                <th></th>
+              </tr>
+              <tr data-title="Check Your 'Gut Health'" data-src="http://kopn.org/dc/yh/08-21-13%20Your%20Health%20Matters.mp3" data-extra="extra-" data-date="8/21/13" class="clickable">
+                <td>Check Your 'Gut Health'</td>
+                <td>55:47</td>
+                <td>8/21/13</td>
+              </tr>
+              <tr data-title="A Holistic Approach for Women" data-src="http://kopn.org/dc/yh/01-06-10%20Your%20Health%20Matters.mp3" data-extra="extra-women" data-date="1/6/10" class="clickable">
+                <td>A Holistic Approach for Women</td>
+                <td>55:08</td>
+                <td>1/6/10</td>
+              </tr>
+              <tr data-title="Integrating Health Care" data-src="http://kopn.org/dc/yh/08-12-09%20Your%20Health%20Matters.mp3" data-extra="extra-intcare" data-date="8/12/09" class="clickable">
+                <td>Integrating Health Care</td>
+                <td>54:44</td>
+                <td>8/12/09</td>
+              </tr>
             </tbody>
           </table>
+        </div>
+        <div class="col-sm-offset-2 col-sm-8">
+          <audio id="audio" src="https://mgmt.firststreaming.com/av/9a4f858e81156ed05718bcd6cc4d431a.mp3" controls=""></audio>
         </div>
         <div class="col-sm-offset-2 col-sm-8">
           <h3>Additional Info</h3>

@@ -7,7 +7,7 @@ $(function() {
   function attachListeners() {
     $(window).on("scroll resize", scrollyWatch);
 
-    $("#playlist").on("click", "tr", function(e) {
+    $("#playlist").on("click", "tr.clickable", function(e) {
       e = e.currentTarget;
 
       var title = $(e).data("title");
@@ -15,8 +15,8 @@ $(function() {
       var extra = $(e).data("extra");
       var date = $(e).data("date");
 
-      $("#show-title").text(title);
-      $("#show-date").text(date);
+      $("#show-title").text(title).append('<span id="show-date">' + date + '</span>');
+      //$("#show-date").text(date);
 
       $("#audio").attr("src", src);
 
