@@ -45,6 +45,10 @@
   height: 500px;
 }
 
+.carousel img {
+  width: 100%;
+}
+
 .navbar-nav {
   float:none;
   margin: 0 auto;

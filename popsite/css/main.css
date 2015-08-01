@@ -78,15 +78,15 @@
   height: 600px;
   position: relative; }
 .about .bg-img#waiting1 {
-  background: url("../img/clinic-waiting-1-med.jpg") no-repeat center center/100% fixed; }
+  background: url("../img/clinic-waiting-1-large.jpg") no-repeat center center/100% fixed; }
 .about .bg-img#waiting2 {
-  background: url("../img/clinic-waiting-2-med.jpg") no-repeat center center/100% fixed; }
+  background: url("../img/clinic-waiting-2-large.jpg") no-repeat center center/100% fixed; }
 .about .bg-img#front {
-  background: url("../img/clinic-front-med.jpg") no-repeat center center/100% fixed; }
+  background: url("../img/clinic-front-large.jpg") no-repeat center center/100% fixed; }
 .about .bg-img#rooms {
-  background: url("../img/clinic-rooms-med.jpg") no-repeat center center/100% fixed; }
+  background: url("../img/clinic-rooms-large.jpg") no-repeat center center/100% fixed; }
 .about .bg-img#shoppe {
-  background: url("../img/clinic-shoppe-med.jpg") no-repeat center center/100% fixed; }
+  background: url("../img/clinic-shoppe-large.jpg") no-repeat center center/100% fixed; }
 
 .int-funk .side-pic-crop {
   width: 410px;
