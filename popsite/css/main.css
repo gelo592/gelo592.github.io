@@ -1,6 +1,6 @@
 .center-head {
   text-align: center;
-  background-color: #7dad37; }
+  background-color: #93ba58; }
   .center-head p {
     color: #fff;
     font-size: 17px; }
@@ -14,6 +14,85 @@
 
 .antic {
   font-family: 'Antic Slab', serif; }
+
+.navbar-default {
+  background-color: #fff;
+  border: none;
+  margin-bottom: 0;
+  font-size: 16px; }
+
+.navbar-brand img {
+  width: 247px;
+  margin-top: -15px; }
+
+.logo-section img {
+  height: 162px;
+  margin-top: 20px;
+  padding-left: 50%;
+  margin-left: -218px; }
+
+.navbar-nav {
+  float: none;
+  margin: 0 auto;
+  display: table;
+  table-layout: fixed; }
+
+.dropdown:hover .dropdown-menu {
+  display: block; }
+
+.section {
+  padding-bottom: 20px;
+  padding-top: 20px; }
+
+.colorme {
+  background: #efefef; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-top: 0;
+  color: #424242; }
+
+ul.bare-list {
+  list-style: none; }
+
+.btn-default {
+  color: #fff;
+  background-color: #598CBE;
+  border-color: #3874b0; }
+
+.pictureless-page {
+  border-top: 1px solid #ddd; }
+
+.center-t {
+  text-align: center; }
+
+.footer {
+  line-height: 40px; }
+
+.footer > .container {
+  border-top: 1px solid #ddd;
+  padding: 20px; }
+
+.footer-center {
+  text-align: center; }
+
+.foot-img {
+  height: 40px; }
+
+.index .carousel-wrappy {
+  height: 36vw; }
+  .index .carousel-wrappy img {
+    width: 100%; }
+  .index .carousel-wrappy .item {
+    height: 100%; }
+  .index .carousel-wrappy .slide1 {
+    background: url("../img/slide1-large.jpg") no-repeat center -48px/100%; }
+  .index .carousel-wrappy .slide2 {
+    background: url("../img/slide2-large.jpg") no-repeat center center/100%; }
+  .index .carousel-wrappy .slide3 {
+    background: url("../img/slide8-large.jpg") no-repeat center center/100%; }
+.index .section {
+  padding: 60px; }
 
 .nutrition .toeatpic {
   width: 100%; }
@@ -52,7 +131,7 @@
   .nutrition #scroll-head h3, .nutrition #scroll-head-end h3 {
     text-align: center;
     font-size: 34px;
-    color: #7dad37;
+    color: #93ba58;
     margin: 0; }
 
 .articles .article-frame {
@@ -78,15 +157,28 @@
   height: 600px;
   position: relative; }
 .about .bg-img#waiting1 {
-  background: url("../img/clinic-waiting-1-large.jpg") no-repeat center center/100% fixed; }
+  background: url("../img/clinic-waiting-1-large.jpg") no-repeat center center/100%; }
 .about .bg-img#waiting2 {
-  background: url("../img/clinic-waiting-2-large.jpg") no-repeat center center/100% fixed; }
+  background: url("../img/clinic-waiting-2-large.jpg") no-repeat center center/100%; }
 .about .bg-img#front {
-  background: url("../img/clinic-front-large.jpg") no-repeat center center/100% fixed; }
+  background: url("../img/clinic-front-large.jpg") no-repeat center center/100%; }
 .about .bg-img#rooms {
-  background: url("../img/clinic-rooms-large.jpg") no-repeat center center/100% fixed; }
+  background: url("../img/clinic-rooms-large.jpg") no-repeat center center/100%; }
 .about .bg-img#shoppe {
-  background: url("../img/clinic-shoppe-large.jpg") no-repeat center center/100% fixed; }
+  background: url("../img/clinic-shoppe-large.jpg") no-repeat center center/100%; }
+.about .section-head {
+  text-align: center;
+  font-size: 34px;
+  color: #93ba58;
+  margin: 0; }
+.about .blurb {
+  text-align: justify;
+  font-size: 17px; }
+.about .section-lil h3 {
+  font-size: 28px;
+  margin-bottom: 12px; }
+.about .section-lil p {
+  margin: 0; }
 
 .int-funk .side-pic-crop {
   width: 410px;
@@ -101,7 +193,7 @@
 .int-funk .section-head {
   text-align: center;
   font-size: 34px;
-  color: #7dad37;
+  color: #93ba58;
   margin: 0; }
 
 .radio .extra {
@@ -126,5 +218,13 @@
 .radio #audio {
   width: 100%;
   margin: 20px 0; }
+
+.bio .bio-pic {
+  border-radius: 12px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px; }
+.bio .blurb {
+  text-align: justify; }
 
 /*# sourceMappingURL=main.css.map */
