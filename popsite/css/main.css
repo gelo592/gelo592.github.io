@@ -12,6 +12,9 @@
   .center-head h3 {
     font-size: 19.5px; }
 
+.fa-genderless {
+  color: #93ba58; }
+
 .antic {
   font-family: 'Antic Slab', serif; }
 
@@ -26,10 +29,10 @@
   margin-top: -15px; }
 
 .logo-section img {
-  height: 162px;
+  height: 142px;
   margin-top: 20px;
   padding-left: 50%;
-  margin-left: -218px; }
+  margin-left: -191px; }
 
 .navbar-nav {
   float: none;
@@ -40,7 +43,14 @@
 .dropdown:hover .dropdown-menu {
   display: block; }
 
+.spacer {
+  padding-top: 20px; }
+
 .section {
+  padding-bottom: 40px;
+  padding-top: 40px; }
+
+.section-title {
   padding-bottom: 20px;
   padding-top: 20px; }
 
@@ -79,6 +89,9 @@ ul.bare-list {
 .foot-img {
   height: 40px; }
 
+.index .section {
+  padding-top: 60px;
+  padding-bottom: 60px; }
 .index .carousel-wrappy {
   height: 36vw; }
   .index .carousel-wrappy img {
@@ -91,8 +104,92 @@ ul.bare-list {
     background: url("../img/slide2-large.jpg") no-repeat center center/100%; }
   .index .carousel-wrappy .slide3 {
     background: url("../img/slide8-large.jpg") no-repeat center center/100%; }
-.index .section {
-  padding: 60px; }
+  .index .carousel-wrappy .carousel-control {
+    width: 8%; }
+  .index .carousel-wrappy .carousel-contrl {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    width: 8%;
+    background: transparent; }
+    alpha
+    .index .carousel-wrappy .carousel-contrl:hover {
+      background: transparent;
+      color: #000; }
+    .index .carousel-wrappy .carousel-contrl:active, .index .carousel-wrappy .carousel-contrl:visited, .index .carousel-wrappy .carousel-contrl:focus {
+      background: transparent;
+      color: #fff; }
+    .index .carousel-wrappy .carousel-contrl.right {
+      right: 0; }
+      .index .carousel-wrappy .carousel-contrl.right .glyphicon {
+        right: 50%; }
+    .index .carousel-wrappy .carousel-contrl.left {
+      left: 0; }
+    .index .carousel-wrappy .carousel-contrl .glyphicon {
+      position: absolute;
+      top: 50%; }
+.index .info-title {
+  text-align: center;
+  color: #fff;
+  font-size: 4vw; }
+.index .info-blob {
+  position: relative;
+  width: 32vw;
+  height: 32vw;
+  border-radius: 100%;
+  background: rgba(56, 116, 176, 0.55);
+  color: #fff;
+  font-size: 4em;
+  margin-top: 7%;
+  display: inline-block;
+  border: 6px solid rgba(255, 255, 255, 0.55); }
+  .index .info-blob.green {
+    background: rgba(147, 163, 120, 0.51); }
+  .index .info-blob .blob {
+    top: 16%;
+    position: absolute; }
+    .index .info-blob .blob .blob-title {
+      margin: 0;
+      width: 32vw;
+      position: relative;
+      font-size: 5vw;
+      text-align: center;
+      color: #fff; }
+    .index .info-blob .blob .blob-info {
+      margin: 0;
+      width: 32vw;
+      position: relative;
+      color: #fff;
+      font-size: 3.6vw;
+      text-align: center; }
+    .index .info-blob .blob .blob-info-sm {
+      margin: 0;
+      width: 32vw;
+      position: relative;
+      color: #fff;
+      font-size: 2vw;
+      text-align: center; }
+    .index .info-blob .blob .blob-glyph {
+      color: #fff; }
+      .index .info-blob .blob .blob-glyph:hover {
+        color: #ccc; }
+      .index .info-blob .blob .blob-glyph:focus:active, .index .info-blob .blob .blob-glyph:focus, .index .info-blob .blob .blob-glyph:active {
+        color: #aaa; }
+.index .carousel-info-1 {
+  height: 100%;
+  padding-left: 40px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.12));
+  color: white;
+  text-align: center;
+  margin-right: 8%; }
+  .index .carousel-info-1 h3 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: white; }
 
 .nutrition .toeatpic {
   width: 100%; }
@@ -102,15 +199,14 @@ ul.bare-list {
   font-size: 22px;
   text-align: center; }
 .nutrition .bg-img {
-  background-size: 100%;
   height: 320px;
   position: relative; }
 .nutrition .bg-img#berries {
-  background: url("../img/berries-med.jpg") no-repeat center center/100% fixed; }
+  background: url("../img/berries-med.jpg") no-repeat center center/cover; }
 .nutrition .bg-img#slamin {
-  background: url("../img/slamin-med.jpg") no-repeat center center/100% fixed; }
+  background: url("../img/slamin-med.jpg") no-repeat center center/cover; }
 .nutrition .bg-img#cruciferous {
-  background: url("../img/cruciferous-med.jpg") no-repeat center center/100% fixed; }
+  background: url("../img/cruciferous-med.jpg") no-repeat center center/cover; }
 .nutrition .img-title {
   font-size: 34px;
   color: #fff;
@@ -150,7 +246,7 @@ ul.bare-list {
   padding-left: 15px;
   font-size: 20px; }
 .articles .centerize {
-  padding-top: 60px; }
+  adding-top: 60px; }
 
 .about .bg-img {
   background-size: 100%;
@@ -166,17 +262,20 @@ ul.bare-list {
   background: url("../img/clinic-rooms-large.jpg") no-repeat center center/100%; }
 .about .bg-img#shoppe {
   background: url("../img/clinic-shoppe-large.jpg") no-repeat center center/100%; }
+.about .section {
+  padding-top: 40px;
+  padding-bottom: 40px; }
 .about .section-head {
   text-align: center;
   font-size: 34px;
   color: #93ba58;
-  margin: 0; }
+  margin: 0;
+  padding-bottom: 10px; }
 .about .blurb {
   text-align: justify;
   font-size: 17px; }
 .about .section-lil h3 {
-  font-size: 28px;
-  margin-bottom: 12px; }
+  font-size: 28px; }
 .about .section-lil p {
   margin: 0; }
 
@@ -191,16 +290,37 @@ ul.bare-list {
   margin-top: -106px;
   width: 424px; }
 .int-funk .section-head {
-  text-align: center;
   font-size: 34px;
   color: #93ba58;
-  margin: 0; }
+  margin: 0;
+  padding-bottom: 10px; }
 
+.radio .nav-tabs {
+  border-bottom: none;
+  margin-left: 10px; }
+.radio .nav-tabs > li > a {
+  font-size: 18px;
+  background-color: #598CBE;
+  color: #fff;
+  border-top: 1px solid #598CBE;
+  border-left: 1px solid #598CBE;
+  border-right: 1px solid #598CBE; }
+  .radio .nav-tabs > li > a:hover {
+    background-color: rgba(89, 140, 190, 0.8); }
+.radio .nav-tabs > li.active > a {
+  font-size: 18px;
+  color: #598CBE;
+  background-color: #fff;
+  border-top: 1px solid #598CBE;
+  border-left: 1px solid #598CBE;
+  border-right: 1px solid #598CBE; }
+.radio .table {
+  cursor: pointer; }
 .radio .extra {
   display: none; }
 .radio .playlist-wrapper {
   overflow: scroll;
-  height: 250px;
+  height: 350px;
   border: 1px solid #ddd;
   padding: 0; }
 .radio .playlist {
@@ -208,8 +328,15 @@ ul.bare-list {
   .radio .playlist .thead:hover th, .radio .playlist .thead:active th, .radio .playlist .thead th {
     background-color: #598CBE;
     color: #fff; }
-.radio .playlist tr.active {
-  background: #ccc; }
+.radio .playlist tr.active td {
+  background-color: #598CBE;
+  color: #fff; }
+.radio .playlist tr.active:hover td {
+  background-color: rgba(89, 140, 190, 0.5);
+  color: #fff; }
+.radio .playlist tr:hover td {
+  background-color: rgba(89, 140, 190, 0.5);
+  color: #fff; }
 .radio #show-title {
   margin-left: -15px; }
 .radio #show-date {
@@ -219,6 +346,8 @@ ul.bare-list {
   width: 100%;
   margin: 20px 0; }
 
+.bio .center-head h1 {
+  word-spacing: normal; }
 .bio .bio-pic {
   border-radius: 12px;
   float: left;
@@ -226,5 +355,8 @@ ul.bare-list {
   margin-bottom: 20px; }
 .bio .blurb {
   text-align: justify; }
+
+.center-head h1 {
+  word-spacing: 10px; }
 
 /*# sourceMappingURL=main.css.map */

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width" initial-scale="1"/>
     <link rel="icon" href="img/logo_trans.png"/>
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Antic+Slab" type="text/css"/>
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="lib/bootstrap-3.2.0/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/main.min.css"/>
   </head>
@@ -29,9 +29,15 @@
             <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle">The Clinic</a>
               <ul role="menu" class="dropdown-menu">
                 <li><a href="int-funk-med.html">Functional / Integrative Medicine</a></li>
-                <li><a href="services.html">Services & Treatments</a></li>
                 <li><a href="nutrition.html">Food as Medicine</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="services.html">Services & Treatments</a></li>
                 <li><a href="acupuncture.html">Acupuncture</a></li>
+                <li><a href="laser.html">Low-Level Laser Therapy</a></li>
+                <li><a href="cupping.html">Cupping</a></li>
+                <li><a href="testing.html">Functional Medicine Testing</a></li>
+                <li><a href="hormone.html">Hormone Therapy</a></li>
+                <li><a href="cholesteral.html">Cholesteral & Heart Disease</a></li>
               </ul>
             </li>
             <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle">For Patients</a>
@@ -52,203 +58,130 @@
       </div>
     </nav>
     <div class="container-fluid pictureless-page radio">
-      <div class="row section center-head">
+      <div class="row section-title center-head">
         <h1>On the radio</h1>
         <p>Listen to Dr. Link on KWOS Open Air and KOPN Your Health Matters.</p>
       </div>
       <div class="row section">
         <div class="col-sm-offset-2 col-sm-8">
-          <div id="audio-player">
-            <h3 id="show-title">Hear the latest!<span id="show-date">2/12/15</span></h3>
+          <ul id="tabbies" class="nav nav-tabs">
+            <li role="presentation" class="active"><a href="#kwos" aria-controls="kwos" aria-expanded="true" role="tab" data-toggle="tab">Open Air on KWOS</a></li>
+            <li role="presentation"><a href="#kopn" aria-controls="kopn" role="tab" aria-expanded="false" data-toggle="tab">Your Health Matters on KOPN</a></li>
+          </ul>
+          <div class="playlist-wrapper">
+            <div id="tab-content" class="tab-content">
+              <div id="kwos" role="tabpanel" class="tab-pane active">
+                <table role="role" class="playlist table table-hover playlist">
+                  <tbody>
+                    <tr data-title="Paralyzed Man Walks Again" data-src="https://mgmt.firststreaming.com/av/9a4f858e81156ed05718bcd6cc4d431a.mp3" class="clickable active">
+                      <td>Paralyzed Man Walks Again!</td>
+                      <td>14:06</td>
+                      <td></td>
+                    </tr>
+                    <tr data-title="Entero virus, flu, e-cigarettes, and 'gut buddies'" data-src="https://mgmt.firststreaming.com/av/df33375da18554b1aefc9fcb9208151c.mp3" class="clickable">
+                      <td>Entero virus, flu, e-cigarettes, and 'gut buddies'</td>
+                      <td>16:12</td>
+                      <td></td>
+                    </tr>
+                    <tr data-title="Salt, ticks, carbs, veggies and...gas?" data-src="https://mgmt.firststreaming.com/av/facf766b0e9eb0ddc7add83aa0c0783b.mp3" class="clickable">
+                      <td>Salt, ticks, carbs, veggies and...gas?</td>
+                      <td>14:21</td>
+                      <td></td>
+                    </tr>
+                    <tr data-title="Food as medicine" data-src="https://mgmt.firststreaming.com/av/ddf57858051e98609589c9b1bafb7362.mp3" class="clickable">
+                      <td>Food as medicine</td>
+                      <td>14:17</td>
+                      <td></td>
+                    </tr>
+                    <tr data-title="Let's talk Vitamin D, prostate cancer, protein and more" data-src="http://mgmt.firststreaming.com/av/0674bf6687dde52e983a7da47f219dd7.mp3" class="clickable">
+                      <td>Let's talk Vitamin D, prostate cancer, protein and more</td>
+                      <td>14:18</td>
+                      <td></td>
+                    </tr>
+                    <tr data-title="Oiling up the Ticker" data-src="http://mgmt.firststreaming.com/av/19e4c5e192a7cf230b002514b03754d4.mp3" class="clickable">
+                      <td>Oiling up the Ticker</td>
+                      <td>14:52</td>
+                      <td></td>
+                    </tr>
+                    <tr data-title="Vitamins, Vaccines, and Avacadoes" data-src="http://mgmt.firststreaming.com/av/ad702c60ef70fcbcd0eefbd71c18620a.mp3" class="clickable">
+                      <td>Vitamins, Vaccines, and Avacadoes</td>
+                      <td>13:45</td>
+                      <td></td>
+                    </tr>
+                    <tr data-title="Nuts to You!" data-src="http://mgmt.firststreaming.com/av/4b8a33d359483cc20570e0d46198594a.mp3" class="clickable">
+                      <td>Nuts to You!</td>
+                      <td>15:34</td>
+                      <td></td>
+                    </tr>
+                    <tr data-title="New Findings on Cholesteral, Cooking Oils, Heart Health" data-src="http://mgmt.firststreaming.com/av/e7872151bc1dcb4d7dee57ff895b78cd.mp3" class="clickable">
+                      <td>New Findings on Cholesteral, Cooking Oils, Heart Health</td>
+                      <td>14:24</td>
+                      <td></td>
+                    </tr>
+                    <tr data-title="Back to School - the healthy way!" data-src="http://mgmt.firststreaming.com/av/e7b5da6a9cd523436001f7a59bf63414.mp3" class="clickable">
+                      <td>Back to School - the healthy way!</td>
+                      <td>15:07</td>
+                      <td></td>
+                    </tr>
+                    <tr data-title="Understanding Omega 3s and Prostate Health" data-src="http://mgmt.firststreaming.com/av/daae79915a17b6b35fae8bb29ac6d161.mp3" class="clickable">
+                      <td>Understanding Omega 3s and Prostate Health</td>
+                      <td>14:41</td>
+                      <td></td>
+                    </tr>
+                    <tr data-title="Summertime Blues? Not Necessarily!" data-src="http://mgmt.firststreaming.com/av/13b5d191a4250c8deb9e284d4363ebe9.mp3" class="clickable">
+                      <td>Summertime Blues? Not Necessarily!</td>
+                      <td>15:40</td>
+                      <td></td>
+                    </tr>
+                    <tr data-title="" data-src="http://mgmt.firststreaming.com/av/7a87ecfc8e181c01f013bcc85575ac85.mp3" class="clickable">
+                      <td>Your Protection Against Flu Season</td>
+                      <td>13:05</td>
+                      <td></td>
+                    </tr>
+                    <tr data-title="Managing your Health During the Holidays" data-src="http://mgmt.firststreaming.com/av/8db5fbaa0fc8a323584123f8347fbde1.mp3" class="clickable">
+                      <td>Managing your Health During the Holidays</td>
+                      <td>12:57</td>
+                      <td></td>
+                    </tr>
+                    <tr data-title="Pain Prevention and Pain Relievers" data-src="http://mgmt.firststreaming.com/av/b73025812136a935338816ed7ea797e2.mp3" class="clickable">
+                      <td>Pain Prevention and Pain Relievers</td>
+                      <td>15:31</td>
+                      <td></td>
+                    </tr>
+                    <tr data-title="Hypertension, Wheat Sensitivity, and Diabetes Prevention" data-src="http://mgmt.firststreaming.com/av/f01cdb141df91e07f3761b258f76d15e.mp3" class="clickable">
+                      <td>Hypertension, Wheat Sensitivity, and Diabetes Prevention</td>
+                      <td>15:33</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div id="kopn" role="tabpanel" class="tab-pane">
+                <table class="playlist table table-hover playlist">
+                  <tbody>
+                    <tr data-title="Check Your 'Gut Health'" data-src="http://kopn.org/dc/yh/08-21-13%20Your%20Health%20Matters.mp3" data-date="8/21/13" class="clickable">
+                      <td>Check Your 'Gut Health'</td>
+                      <td>55:47</td>
+                      <td>8/21/13</td>
+                    </tr>
+                    <tr data-title="A Holistic Approach for Women" data-src="http://kopn.org/dc/yh/01-06-10%20Your%20Health%20Matters.mp3" data-date="1/6/10" class="clickable">
+                      <td>A Holistic Approach for Women</td>
+                      <td>55:08</td>
+                      <td>1/6/10</td>
+                    </tr>
+                    <tr data-title="Integrating Health Care" data-src="http://kopn.org/dc/yh/08-12-09%20Your%20Health%20Matters.mp3" data-date="8/12/09" class="clickable">
+                      <td>Integrating Health Care</td>
+                      <td>54:44</td>
+                      <td>8/12/09</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="col-sm-offset-2 col-sm-8 playlist-wrapper">
-          <table id="playlist" class="table table-hover playlist">
-            <tbody>
-              <tr class="thead">
-                <th>Open Air On KWOS</th>
-                <th></th>
-                <th></th>
-              </tr>
-              <tr data-title="Hear the latest!" data-src="https://mgmt.firststreaming.com/av/9a4f858e81156ed05718bcd6cc4d431a.mp3" data-extra="extra-latest" data-date="2/12/15" class="clickable active">
-                <td>Hear the latest!</td>
-                <td>14:06</td>
-                <td>2/12/15</td>
-              </tr>
-              <tr data-title="Entero virus, flu, e-cigarettes, and 'gut buddies'" data-src="https://mgmt.firststreaming.com/av/df33375da18554b1aefc9fcb9208151c.mp3" data-extra="extra-entero-ecig" data-date="1/12/15" class="clickable">
-                <td>Entero virus, flu, e-cigarettes, and 'gut buddies'</td>
-                <td>16:12</td>
-                <td>1/12/15</td>
-              </tr>
-              <tr data-title="Salt, ticks, carbs, veggies and...gas?" data-src="https://mgmt.firststreaming.com/av/facf766b0e9eb0ddc7add83aa0c0783b.mp3" data-extra="extra-salt-tick" data-date="12/12/14" class="clickable">
-                <td>Salt, ticks, carbs, veggies and...gas?</td>
-                <td>14:21</td>
-                <td>12/12/14</td>
-              </tr>
-              <tr data-title="Food as medicine" data-src="https://mgmt.firststreaming.com/av/ddf57858051e98609589c9b1bafb7362.mp3" data-extra="extra-food-med" data-date="11/12/14" class="clickable">
-                <td>Food as medicine</td>
-                <td>14:17</td>
-                <td>11/12/14</td>
-              </tr>
-              <tr data-title="Let's talk Vitamin D, prostate cancer, protein and more" data-src="http://mgmt.firststreaming.com/av/0674bf6687dde52e983a7da47f219dd7.mp3" data-extra="extra-vitD" data-date="10/12/14" class="clickable">
-                <td>Let's talk Vitamin D, prostate cancer, protein and more</td>
-                <td>14:18</td>
-                <td>10/12/14</td>
-              </tr>
-              <tr class="thead">
-                <th>Your Health Matters on KOPN</th>
-                <th></th>
-                <th></th>
-              </tr>
-              <tr data-title="Check Your 'Gut Health'" data-src="http://kopn.org/dc/yh/08-21-13%20Your%20Health%20Matters.mp3" data-extra="extra-" data-date="8/21/13" class="clickable">
-                <td>Check Your 'Gut Health'</td>
-                <td>55:47</td>
-                <td>8/21/13</td>
-              </tr>
-              <tr data-title="A Holistic Approach for Women" data-src="http://kopn.org/dc/yh/01-06-10%20Your%20Health%20Matters.mp3" data-extra="extra-women" data-date="1/6/10" class="clickable">
-                <td>A Holistic Approach for Women</td>
-                <td>55:08</td>
-                <td>1/6/10</td>
-              </tr>
-              <tr data-title="Integrating Health Care" data-src="http://kopn.org/dc/yh/08-12-09%20Your%20Health%20Matters.mp3" data-extra="extra-intcare" data-date="8/12/09" class="clickable">
-                <td>Integrating Health Care</td>
-                <td>54:44</td>
-                <td>8/12/09</td>
-              </tr>
-            </tbody>
-          </table>
         </div>
         <div class="col-sm-offset-2 col-sm-8">
           <audio id="audio" src="https://mgmt.firststreaming.com/av/9a4f858e81156ed05718bcd6cc4d431a.mp3" controls=""></audio>
-        </div>
-        <div class="col-sm-offset-2 col-sm-8">
-          <h3>Additional Info</h3>
-          <p>
-            Each month Dr. Link does extensive research for his open air talk.
-            Even though it can't all fit in the show he'd like to share it with
-            you. Here you can read more about the topics not covered.
-          </p>
-          <div id="extra-latest" class="extra active">
-            Pellentesque habitant morbi tristique senectus et netus et malesuada
-            fames ac turpis egestas. Sed at lorem id ligula ornare laoreet.
-            Quisque vitae tortor lacus. Proin dictum dui vel sapien iaculis
-            gravida. Nam ultrices rutrum leo sed varius. Praesent venenatis,
-            lorem eget interdum gravida, lorem massa laoreet metus, sed mollis
-            ligula quam at tortor. Donec tellus nibh, volutpat quis cursus nec,
-            venenatis vel diam. Ut quis quam dapibus, pretium neque at, accumsan
-            eros. Aliquam tincidunt fringilla mattis.<br/><br/>Mauris nec lorem at justo congue feugiat id eu erat. Nullam eu
-            fringilla nunc, ac convallis diam. Morbi lorem augue, maximus
-            vehicula vulputate id, laoreet eget libero. Nullam feugiat arcu
-            a urna lacinia accumsan. Aenean pellentesque ultrices tortor, id
-            faucibus risus varius sed. Etiam et lacus ante. Donec tellus arcu,
-            volutpat et ullamcorper sed, vehicula et elit. Praesent non arcu
-            maximus, bibendum orci et, sagittis metus.<br/><br/>Aenean ornare quis leo viverra scelerisque. Fusce semper nec
-            justo vel tristique. Pellentesque blandit varius ante, eu cursus
-            neque egestas non. Nam ut tempor augue, eu facilisis lectus.
-            Nam blandit magna vehicula turpis venenatis, nec tristique
-            sapien tempus. Praesent pharetra nulla non neque dignissim
-            commodo. In sodales ultricies nibh ut porttitor. Maecenas
-            congue ex eu felis laoreet scelerisque. Sed mollis odio non
-            placerat venenatis. Aenean dapibus odio at odio sodales, sed
-            egestas turpis consectetur. Nulla ipsum mi, rhoncus ut malesuada
-            ac, imperdiet ut dui. Mauris ac tellus eros. Nulla mattis nibh
-            efficitur sapien tincidunt, at egestas tellus vulputate.
-          </div>
-          <div id="extra-entero-ecig" class="extra">
-            Curabitur ac nulla sed ipsum rutrum mattis. Mauris risus libero,
-            iaculis id arcu in, consequat mollis justo. Donec ac enim eros.
-            Praesent at nisl cursus odio sagittis ornare. Morbi quis mattis
-            nisl, et eleifend ipsum. Nam mattis lacus id augue bibendum, eget
-            aliquam ante lacinia. Donec dictum erat at est dapibus, nec
-            ullamcorper lectus luctus. Nam urna dolor, sodales ut molestie
-            et, pharetra accumsan nunc. Aenean ipsum lacus, sagittis id
-            dignissim vel, finibus eu velit. Aenean quis tellus et justo
-            placerat tristique nec eget nunc. Maecenas lacinia et lacus
-            id pretium. Integer in nulla elit. Pellentesque sagittis nec
-            urna ut bibendum.<br/><br/>Mauris hendrerit sollicitudin lorem eget bibendum. Ut eu orci
-            non odio elementum suscipit. Pellentesque id ante eget diam
-            volutpat molestie. Duis posuere vitae elit ac placerat. Mauris
-            varius in lacus sed suscipit. Curabitur aliquam odio blandit
-            semper faucibus. Sed scelerisque gravida dui, ac rutrum nulla.
-            Phasellus congue in lacus vel rhoncus. Duis nec sapien erat.
-            Morbi cursus nunc quis erat tristique cursus. Aenean fringilla
-            semper auctor. Sed imperdiet augue ligula, bibendum consequat
-            nisl commodo eget. Nulla aliquam eleifend tellus, fringilla
-            luctus lorem fringilla mollis.
-          </div>
-          <div id="extra-salt-tick" class="extra">
-            Aenean sagittis augue lorem, nec euismod lacus mollis vel.
-            Praesent tempor ultricies enim, nec sodales dui fermentum vitae.
-            Fusce eleifend ac ex pharetra egestas. Etiam in odio in sapien
-            vulputate accumsan quis eu ante. Curabitur ullamcorper commodo
-            nulla vel tempor. Phasellus interdum, lacus ac porttitor sodales,
-            sapien nisi aliquet libero, vel facilisis lorem nisl at est. Sed
-            scelerisque lorem tincidunt efficitur placerat. Curabitur a mi
-            id ante euismod ultricies nec auctor augue. Ut et tortor ac nulla
-            blandit rutrum. Morbi suscipit, neque a tristique vestibulum,
-            odio sem aliquet eros, eu interdum felis mi vel mauris. Quisque
-            sed nulla quis ipsum bibendum iaculis. Donec laoreet ligula
-            in pharetra euismod.<br/><br/>Suspendisse potenti. Ut gravida faucibus lobortis. Vivamus
-            posuere, felis at feugiat ornare, nisl arcu suscipit dui,
-            vel suscipit tortor nunc ac augue. Nullam varius facilisis
-            lectus, sed efficitur ligula congue et. Suspendisse non augue
-            pellentesque, pulvinar urna at, iaculis felis. Vestibulum
-            cursus dui sed risus pulvinar, mollis mattis dui porttitor.
-            Quisque gravida lectus in lacus varius, ut egestas odio
-            consectetur. Phasellus vel dignissim lorem, sed interdum orci.
-            Aliquam ac elit aliquam justo laoreet sagittis ac in est.
-            Mauris nisl velit, porta ut fringilla nec, posuere ac nisl.
-            Nulla eu mauris in magna lacinia viverra eget bibendum ligula.
-            Pellentesque aliquet, mauris nec vestibulum imperdiet, quam
-            odio ultricies ante, eget convallis erat elit a ex.
-          </div>
-          <div id="extra-food-med" class="extra">
-            Praesent ut ex molestie, dignissim risus quis, iaculis sem.
-            Mauris quis ullamcorper turpis. Suspendisse imperdiet dolor
-            vel nibh semper, sed accumsan orci iaculis. Lorem ipsum dolor
-            sit amet, consectetur adipiscing elit. Fusce ultricies laoreet
-            massa, id facilisis sapien ultrices nec. Vestibulum vestibulum
-            pulvinar nibh vitae bibendum. Duis dignissim eget mauris non
-            porta. Nunc lacinia velit sit amet purus efficitur interdum.
-            Pellentesque feugiat luctus neque, et consectetur velit
-            sollicitudin vel. Vivamus ut lobortis libero. Integer aliquam
-            ipsum eu tortor laoreet, nec scelerisque erat pellentesque.
-            Vestibulum semper malesuada lacus, sed imperdiet erat vulputate
-            ac. Maecenas molestie sapien tristique, condimentum risus
-            in, cursus sem. Nunc consequat vulputate nibh sit amet molestie.<br/><br/>Ut lectus turpis, placerat id varius in, sagittis eu quam.
-            Aenean suscipit volutpat neque sit amet commodo. Nam nec est
-            cursus, ultrices nisl vel, tristique ante. Etiam at leo metus.
-            Mauris in mauris id nibh elementum auctor. Aliquam et vulputate
-            lacus. Nam consequat suscipit eros, ac accumsan metus volutpat
-            vitae. Suspendisse potenti.<br/><br/>Donec et orci vel metus egestas sollicitudin. Praesent augue
-            leo, dapibus non ornare vel, porttitor ut diam. Sed elit urna,
-            sodales nec ipsum id, luctus aliquam eros. Praesent sit amet
-            tortor at ex eleifend ultrices sed eget augue. Donec velit
-            tortor, tristique ut sem id, posuere hendrerit purus. Aliquam
-            libero leo, placerat et suscipit vel, facilisis nec mauris.
-            In cursus vehicula quam non mollis. Vivamus lobortis purus ex,
-            quis tempor lacus mollis eget. Suspendisse vitae fermentum nunc.
-            Vivamus eget condimentum sapien, ut faucibus lacus. Suspendisse
-            ornare mi eget viverra pulvinar. Morbi sed velit pellentesque,
-            feugiat dolor ac, pharetra leo.
-          </div>
-          <div id="extra-vitD" class="extra">
-            Sed hendrerit urna eget nulla volutpat varius. Mauris dignissim
-            pretium elit nec varius. Vestibulum et erat sed purus molestie
-            pulvinar. Vestibulum convallis eleifend felis, id mattis sem auctor
-            et. Duis molestie pellentesque tempus. Ut pulvinar ac nisi commodo
-            accumsan. Etiam eget urna scelerisque, finibus turpis venenatis,
-            venenatis dolor. Sed non interdum magna. Nullam ut justo nunc.
-            Nunc libero ex, feugiat eget nulla eget, tincidunt auctor tortor.
-            Pellentesque justo nulla, tincidunt a felis eget, porttitor luctus
-            magna. Sed cursus nisl id metus elementum hendrerit. In tincidunt
-            bibendum ligula et maximus. Maecenas nec rutrum lacus.<br/><br/>Pellentesque consectetur nec erat vel porta. Suspendisse potenti.
-            Nunc imperdiet orci non massa pellentesque hendrerit. Etiam vitae
-            odio non eros fermentum iaculis eget ac lectus. Sed lacinia hendrerit
-            nisl, nec aliquam diam fermentum in. Duis consectetur arcu non
-            vehicula blandit. Pellentesque id interdum augue. Phasellus id
-            iaculis nibh, vel vestibulum leo.
-          </div>
         </div>
       </div>
     </div>
@@ -256,8 +189,8 @@
       <div class="container">
         <div class="col-sm-4 footer-copy"><i class="fa fa-copyright"></i> Copyright 2015 Integrative Medicine</div>
         <div class="col-sm-4 footer-center"><img src="img/logo_foot.png" class="foot-img"/></div>
-        <div class="col-sm-2 footer-mail"><i class="fa fa-envelope"></i> hello@drchirslink.com</div>
-        <div class="col-sm-2 footer-phone"><i class="fa fa-phone"></i> (573) 632-5585</div>
+        <div class="col-sm-2 footer-mail"><i class="fa fa-envelope"></i><a href="mailto:hello@drchrislink.com">hello@drchrislink.com</a></div>
+        <div class="col-sm-2 footer-phone"><i class="fa fa-phone"></i><a href="tel:+5736325585">(573) 632-5585</a></div>
       </div>
     </div>
     <script src="lib/jquery-2.1.1/jquery-2.1.1.min.js"></script>

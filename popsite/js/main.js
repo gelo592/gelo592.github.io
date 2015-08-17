@@ -7,28 +7,38 @@ $(function() {
   function attachListeners() {
     $(window).on("scroll resize", scrollyWatch);
 
-    $("#playlist").on("click", "tr.clickable", function(e) {
+    $(".playlist").on("click", "tr.clickable", function(e) {
       e = e.currentTarget;
 
       var title = $(e).data("title");
       var src = $(e).data("src");
-      var extra = $(e).data("extra");
-      var date = $(e).data("date");
 
-      $("#show-title").text(title).append('<span id="show-date">' + date + '</span>');
-      //$("#show-date").text(date);
+      $("#show-title").text(title);
 
       $("#audio").attr("src", src);
-
-      $(".extra.active").hide();
-      $(".extra.active").removeClass("active");
-
-      $("#"+extra).addClass("active");
-      $("#"+extra).show();
 
       $("tr.active").removeClass("active");
       $(e).addClass("active");
     });
+    $(".playlist").on("dblclick", "tr.clickable", function(e) {
+      e = e.currentTarget;
+
+      var title = $(e).data("title");
+      var src = $(e).data("src");
+
+      $("#show-title").text(title);
+
+      $("#audio").attr("src", src);
+
+      $("tr.active").removeClass("active");
+      $(e).addClass("active");
+      $("audio")[0].play();
+    });
+
+    $('#tabbes a').click(function (e) {
+      e.preventDefault()
+      $(this).tab('show')
+    })
   }
 
   function scrollyWatch() {
