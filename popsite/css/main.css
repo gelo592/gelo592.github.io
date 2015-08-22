@@ -1,3 +1,6 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url("/fonts/Roboto-Regular.ttf") format("truetype"); }
 .center-head {
   text-align: center;
   background-color: #93ba58; }
@@ -57,6 +60,11 @@
 .colorme {
   background: #efefef; }
 
+.float-pic {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px; }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Source Sans Pro', sans-serif;
   margin-top: 0;
@@ -79,7 +87,7 @@ ul.bare-list {
 .footer {
   line-height: 40px; }
 
-.footer > .container {
+.footer > .container-fluid {
   border-top: 1px solid #ddd;
   padding: 20px; }
 
@@ -92,6 +100,10 @@ ul.bare-list {
 .index .section {
   padding-top: 60px;
   padding-bottom: 60px; }
+.index .push-over {
+  padding-right: 60px; }
+.index .push-over-r {
+  padding-left: 60px; }
 .index .carousel-wrappy {
   height: 36vw; }
   .index .carousel-wrappy img {
@@ -116,7 +128,6 @@ ul.bare-list {
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
     width: 8%;
     background: transparent; }
-    alpha
     .index .carousel-wrappy .carousel-contrl:hover {
       background: transparent;
       color: #000; }
@@ -179,17 +190,6 @@ ul.bare-list {
         color: #ccc; }
       .index .info-blob .blob .blob-glyph:focus:active, .index .info-blob .blob .blob-glyph:focus, .index .info-blob .blob .blob-glyph:active {
         color: #aaa; }
-.index .carousel-info-1 {
-  height: 100%;
-  padding-left: 40px;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.12));
-  color: white;
-  text-align: center;
-  margin-right: 8%; }
-  .index .carousel-info-1 h3 {
-    padding-top: 20px;
-    padding-bottom: 10px;
-    color: white; }
 
 .nutrition .toeatpic {
   width: 100%; }
@@ -229,6 +229,93 @@ ul.bare-list {
     font-size: 34px;
     color: #93ba58;
     margin: 0; }
+.nutrition .food-block {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  position: relative; }
+  .nutrition .food-block:hover {
+    background: #000; }
+    .nutrition .food-block:hover .food-text {
+      display: block;
+      position: absolute;
+      width: 180px;
+      height: 200px;
+      text-align: left;
+      color: #fff;
+      font-size: 20px;
+      background-color: #555;
+      margin-left: 20px;
+      padding: 10px; }
+    .nutrition .food-block:hover .food-text::after {
+      content: "";
+      border-right: 10px solid #555;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      position: absolute;
+      left: -10px;
+      top: 90px; }
+  .nutrition .food-block .food-text {
+    display: none; }
+.nutrition .section-food {
+  text-align: center; }
+  .nutrition .section-food #veggies {
+    background: url("../img/veggies-min.jpg") no-repeat center center/cover; }
+    .nutrition .section-food #veggies:hover {
+      background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../img/veggies-min.jpg") no-repeat center center/cover; }
+  .nutrition .section-food #leafy {
+    background: url("../img/cruciferous-large-min.jpg") no-repeat center center/cover; }
+    .nutrition .section-food #leafy:hover {
+      background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../img/cruciferous-large-min.jpg") no-repeat center center/cover; }
+  .nutrition .section-food #beans {
+    background: url("../img/legumes-min.jpg") no-repeat center center/cover; }
+    .nutrition .section-food #beans:hover {
+      background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../img/legumes-min.jpg") no-repeat center center/cover; }
+  .nutrition .section-food #berries {
+    background: url("../img/berries-min.jpg") no-repeat center center/cover; }
+    .nutrition .section-food #berries:hover {
+      background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../img/berries-min.jpg") no-repeat center center/cover; }
+  .nutrition .section-food #meats {
+    background: url("../img/meat-min.jpg") no-repeat center center/cover; }
+    .nutrition .section-food #meats:hover {
+      background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../img/meat-min.jpg") no-repeat center center/cover; }
+  .nutrition .section-food #seafood {
+    background: url("../img/slamin-min.jpg") no-repeat center center/cover; }
+    .nutrition .section-food #seafood:hover {
+      background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../img/slamin-min.jpg") no-repeat center center/cover; }
+  .nutrition .section-food #dairy {
+    background: url("../img/dairy-min.jpg") no-repeat center center/cover; }
+    .nutrition .section-food #dairy:hover {
+      background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../img/dairy-min.jpg") no-repeat center center/cover; }
+  .nutrition .section-food #grains {
+    background: url("../img/grains-min.jpg") no-repeat center center/cover; }
+    .nutrition .section-food #grains:hover {
+      background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../img/grains-min.jpg") no-repeat center center/cover; }
+  .nutrition .section-food #herbs {
+    background: url("../img/herbs-min.jpg") no-repeat center center/cover; }
+    .nutrition .section-food #herbs:hover {
+      background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../img/herbs-min.jpg") no-repeat center center/cover; }
+  .nutrition .section-food #nuts {
+    background: url("../img/nuts-min.jpg") no-repeat center center/cover; }
+    .nutrition .section-food #nuts:hover {
+      background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../img/nuts-min.jpg") no-repeat center center/cover; }
+  .nutrition .section-food #crucif {
+    background: url("../img/brok-min.jpg") no-repeat center center/cover; }
+    .nutrition .section-food #crucif:hover {
+      background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../img/brok-min.jpg") no-repeat center center/cover; }
+  .nutrition .section-food #tea {
+    background: url("../img/tea-min.jpg") no-repeat center center/cover; }
+    .nutrition .section-food #tea:hover {
+      background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../img/tea-min.jpg") no-repeat center center/cover; }
+  .nutrition .section-food #cocoa {
+    background: url("../img/cocoa-min.jpg") no-repeat center center/cover; }
+    .nutrition .section-food #cocoa:hover {
+      background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../img/cocoa-min.jpg") no-repeat center center/cover; }
+  .nutrition .section-food #evoo {
+    background: url("../img/evoo-min.jpg") no-repeat center center/cover; }
+    .nutrition .section-food #evoo:hover {
+      background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../img/evoo-min.jpg") no-repeat center center/cover; }
 
 .articles .article-frame {
   width: 100%;
@@ -245,8 +332,6 @@ ul.bare-list {
 .articles .dwnld {
   padding-left: 15px;
   font-size: 20px; }
-.articles .centerize {
-  adding-top: 60px; }
 
 .about .bg-img {
   background-size: 100%;
@@ -306,7 +391,7 @@ ul.bare-list {
   border-left: 1px solid #598CBE;
   border-right: 1px solid #598CBE; }
   .radio .nav-tabs > li > a:hover {
-    background-color: rgba(89, 140, 190, 0.8); }
+    background-color: #7AA3CB; }
 .radio .nav-tabs > li.active > a {
   font-size: 18px;
   color: #598CBE;
@@ -339,22 +424,16 @@ ul.bare-list {
   color: #fff; }
 .radio #show-title {
   margin-left: -15px; }
-.radio #show-date {
-  font-size: 16px;
-  margin-left: 10px; }
 .radio #audio {
   width: 100%;
   margin: 20px 0; }
 
 .bio .center-head h1 {
   word-spacing: normal; }
-.bio .bio-pic {
-  border-radius: 12px;
-  float: left;
-  margin-right: 20px;
-  margin-bottom: 20px; }
 .bio .blurb {
   text-align: justify; }
+.bio .float-pic {
+  border-radius: 12px; }
 
 .center-head h1 {
   word-spacing: 10px; }
