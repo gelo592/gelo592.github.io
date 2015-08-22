@@ -267,7 +267,7 @@ ul.bare-list {
   .nutrition .section-food #leafy {
     background: url("../img/cruciferous-min.jpg") no-repeat center center/cover; }
     .nutrition .section-food #leafy:hover {
-      background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../img/cruciferous-large-min.jpg") no-repeat center center/cover; }
+      background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../img/cruciferous-min.jpg") no-repeat center center/cover; }
   .nutrition .section-food #beans {
     background: url("../img/legumes-min.jpg") no-repeat center center/cover; }
     .nutrition .section-food #beans:hover {
