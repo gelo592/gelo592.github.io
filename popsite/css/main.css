@@ -84,8 +84,17 @@ ul.bare-list {
 .center-t {
   text-align: center; }
 
-.footer {
-  line-height: 40px; }
+.footer .footer-phone, .footer .footer-mail {
+  font-size: 24px;
+  padding-top: 8px; }
+.footer .footer-mail {
+  text-align: right; }
+.footer .footer-copy {
+  padding-top: 10px; }
+.footer .small {
+  display: none; }
+.footer .big a {
+  font-size: 16px; }
 
 .footer > .container-fluid {
   border-top: 1px solid #ddd;
@@ -104,92 +113,65 @@ ul.bare-list {
   padding-right: 60px; }
 .index .push-over-r {
   padding-left: 60px; }
-.index .carousel-wrappy {
-  height: 36vw; }
-  .index .carousel-wrappy img {
-    width: 100%; }
-  .index .carousel-wrappy .item {
-    height: 100%; }
-  .index .carousel-wrappy .slide1 {
-    background: url("../img/slide1-large.jpg") no-repeat center -48px/100%; }
-  .index .carousel-wrappy .slide2 {
-    background: url("../img/slide2-large.jpg") no-repeat center center/100%; }
-  .index .carousel-wrappy .slide3 {
-    background: url("../img/slide8-large.jpg") no-repeat center center/100%; }
-  .index .carousel-wrappy .carousel-control {
-    width: 8%; }
-  .index .carousel-wrappy .carousel-contrl {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    font-size: 30px;
-    color: #fff;
+.index .slide {
+  max-height: 460px; }
+.index .carousel-caption {
+  bottom: 0; }
+.index .content {
+  width: 100%;
+  position: absolute;
+  top: 0; }
+.index .content .outer {
+  width: 100%;
+  padding-top: 100%;
+  /* defines aspect ratio */
+  position: relative; }
+.index .content .outer .inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 100%;
+  background: rgba(56, 116, 176, 0.55);
+  border: 6px solid rgba(255, 255, 255, 0.55); }
+  .index .content .outer .inner .blob-title {
+    margin: 0;
+    width: 32vw;
+    position: relative;
+    font-size: 5vw;
     text-align: center;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-    width: 8%;
-    background: transparent; }
-    .index .carousel-wrappy .carousel-contrl:hover {
-      background: transparent;
-      color: #000; }
-    .index .carousel-wrappy .carousel-contrl:active, .index .carousel-wrappy .carousel-contrl:visited, .index .carousel-wrappy .carousel-contrl:focus {
-      background: transparent;
-      color: #fff; }
-    .index .carousel-wrappy .carousel-contrl.right {
-      right: 0; }
-      .index .carousel-wrappy .carousel-contrl.right .glyphicon {
-        right: 50%; }
-    .index .carousel-wrappy .carousel-contrl.left {
-      left: 0; }
-    .index .carousel-wrappy .carousel-contrl .glyphicon {
-      position: absolute;
-      top: 50%; }
-.index .info-title {
-  text-align: center;
-  color: #fff;
-  font-size: 4vw; }
+    color: #fff; }
+  .index .content .outer .inner .blob-info {
+    margin: 0;
+    width: 32vw;
+    position: relative;
+    color: #fff;
+    font-size: 3.6vw;
+    text-align: center; }
+  .index .content .outer .inner .blob-info-sm {
+    margin: 0;
+    width: 32vw;
+    position: relative;
+    color: #fff;
+    font-size: 2vw;
+    text-align: center; }
+  .index .content .outer .inner .blob-glyph {
+    color: #fff; }
+    .index .content .outer .inner .blob-glyph:hover {
+      color: #ccc; }
+    .index .content .outer .inner .blob-glyph:focus:active, .index .content .outer .inner .blob-glyph:focus, .index .content .outer .inner .blob-glyph:active {
+      color: #aaa; }
 .index .info-blob {
   position: relative;
-  width: 32vw;
-  height: 32vw;
+  width: 96vh;
+  height: 96vh;
   border-radius: 100%;
   background: rgba(56, 116, 176, 0.55);
   color: #fff;
   font-size: 4em;
-  margin-top: 7%;
   display: inline-block;
   border: 6px solid rgba(255, 255, 255, 0.55); }
-  .index .info-blob.green {
-    background: rgba(147, 163, 120, 0.51); }
-  .index .info-blob .blob {
-    top: 16%;
-    position: absolute; }
-    .index .info-blob .blob .blob-title {
-      margin: 0;
-      width: 32vw;
-      position: relative;
-      font-size: 5vw;
-      text-align: center;
-      color: #fff; }
-    .index .info-blob .blob .blob-info {
-      margin: 0;
-      width: 32vw;
-      position: relative;
-      color: #fff;
-      font-size: 3.6vw;
-      text-align: center; }
-    .index .info-blob .blob .blob-info-sm {
-      margin: 0;
-      width: 32vw;
-      position: relative;
-      color: #fff;
-      font-size: 2vw;
-      text-align: center; }
-    .index .info-blob .blob .blob-glyph {
-      color: #fff; }
-      .index .info-blob .blob .blob-glyph:hover {
-        color: #ccc; }
-      .index .info-blob .blob .blob-glyph:focus:active, .index .info-blob .blob .blob-glyph:focus, .index .info-blob .blob .blob-glyph:active {
-        color: #aaa; }
 
 .nutrition .toeatpic {
   width: 100%; }
@@ -245,12 +227,12 @@ ul.bare-list {
       text-align: left;
       color: #fff;
       font-size: 20px;
-      background-color: #555;
+      background-color: rgba(85, 85, 85, 0.85);
       margin-left: 20px;
       padding: 10px; }
     .nutrition .food-block:hover .food-text::after {
       content: "";
-      border-right: 10px solid #555;
+      border-right: 10px solid rgba(85, 85, 85, 0.85);
       border-top: 10px solid transparent;
       border-bottom: 10px solid transparent;
       position: absolute;
@@ -262,60 +244,41 @@ ul.bare-list {
   text-align: center; }
   .nutrition .section-food #veggies {
     background: url("../img/veggies-min.jpg") no-repeat center center/cover; }
-    .nutrition .section-food #veggies:hover {
-      background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../img/veggies-min.jpg") no-repeat center center/cover; }
   .nutrition .section-food #leafy {
     background: url("../img/cruciferous-min.jpg") no-repeat center center/cover; }
-    .nutrition .section-food #leafy:hover {
-      background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../img/cruciferous-min.jpg") no-repeat center center/cover; }
   .nutrition .section-food #beans {
     background: url("../img/legumes-min.jpg") no-repeat center center/cover; }
-    .nutrition .section-food #beans:hover {
-      background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../img/legumes-min.jpg") no-repeat center center/cover; }
   .nutrition .section-food #berries {
     background: url("../img/berries-min.jpg") no-repeat center center/cover; }
-    .nutrition .section-food #berries:hover {
-      background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../img/berries-min.jpg") no-repeat center center/cover; }
   .nutrition .section-food #meats {
     background: url("../img/meat-min.jpg") no-repeat center center/cover; }
-    .nutrition .section-food #meats:hover {
-      background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../img/meat-min.jpg") no-repeat center center/cover; }
   .nutrition .section-food #seafood {
     background: url("../img/slamin-min.jpg") no-repeat center center/cover; }
-    .nutrition .section-food #seafood:hover {
-      background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../img/slamin-min.jpg") no-repeat center center/cover; }
   .nutrition .section-food #dairy {
     background: url("../img/dairy-min.jpg") no-repeat center center/cover; }
-    .nutrition .section-food #dairy:hover {
-      background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../img/dairy-min.jpg") no-repeat center center/cover; }
   .nutrition .section-food #grains {
     background: url("../img/grains-min.jpg") no-repeat center center/cover; }
-    .nutrition .section-food #grains:hover {
-      background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../img/grains-min.jpg") no-repeat center center/cover; }
   .nutrition .section-food #herbs {
     background: url("../img/herbs-min.jpg") no-repeat center center/cover; }
-    .nutrition .section-food #herbs:hover {
-      background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../img/herbs-min.jpg") no-repeat center center/cover; }
   .nutrition .section-food #nuts {
     background: url("../img/nuts-min.jpg") no-repeat center center/cover; }
-    .nutrition .section-food #nuts:hover {
-      background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../img/nuts-min.jpg") no-repeat center center/cover; }
   .nutrition .section-food #crucif {
     background: url("../img/brok-min.jpg") no-repeat center center/cover; }
-    .nutrition .section-food #crucif:hover {
-      background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../img/brok-min.jpg") no-repeat center center/cover; }
   .nutrition .section-food #tea {
     background: url("../img/tea-min.jpg") no-repeat center center/cover; }
-    .nutrition .section-food #tea:hover {
-      background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../img/tea-min.jpg") no-repeat center center/cover; }
   .nutrition .section-food #cocoa {
     background: url("../img/cocoa-min.jpg") no-repeat center center/cover; }
-    .nutrition .section-food #cocoa:hover {
-      background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../img/cocoa-min.jpg") no-repeat center center/cover; }
   .nutrition .section-food #evoo {
     background: url("../img/evoo-min.jpg") no-repeat center center/cover; }
-    .nutrition .section-food #evoo:hover {
-      background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../img/evoo-min.jpg") no-repeat center center/cover; }
+
+.acupuncture p {
+  text-align: justify; }
+
+.cupping p {
+  text-align: justify; }
+.cupping img {
+  height: 180px;
+  width: auto; }
 
 .articles .article-frame {
   width: 100%;
@@ -333,10 +296,11 @@ ul.bare-list {
   padding-left: 15px;
   font-size: 20px; }
 
+.about .spacer {
+  padding-top: 0px; }
 .about .bg-img {
-  background-size: 100%;
-  height: 600px;
-  position: relative; }
+  max-width: 100%;
+  height: auto; }
 .about .bg-img#waiting1 {
   background: url("../img/clinic-waiting-1-large.jpg") no-repeat center center/100%; }
 .about .bg-img#waiting2 {
@@ -364,6 +328,8 @@ ul.bare-list {
 .about .section-lil p {
   margin: 0; }
 
+.int-funk p {
+  text-align: justify; }
 .int-funk .side-pic-crop {
   width: 410px;
   height: 350px;
@@ -380,9 +346,17 @@ ul.bare-list {
   margin: 0;
   padding-bottom: 10px; }
 
+.cholesterol {
+  .spacer: 20px; }
+
+.testing {
+  .spacer: 20px; }
+
 .radio .nav-tabs {
   border-bottom: none;
   margin-left: 10px; }
+  .radio .nav-tabs .smallsy {
+    display: none; }
 .radio .nav-tabs > li > a {
   font-size: 18px;
   background-color: #598CBE;
@@ -431,11 +405,84 @@ ul.bare-list {
 .bio .center-head h1 {
   word-spacing: normal; }
 .bio .blurb {
-  text-align: justify; }
+  text-align: center; }
+  .bio .blurb p {
+    text-align: justify; }
 .bio .float-pic {
   border-radius: 12px; }
 
 .center-head h1 {
   word-spacing: 10px; }
+
+@media (max-width: 767px) {
+  .footer .small {
+    display: inline-block; }
+  .footer .big {
+    display: none; }
+
+  .index p {
+    text-align: justify; }
+  .index .push-over, .index .push-over-r {
+    padding-left: 0px;
+    padding-right: 0px; }
+  .index .push-over {
+    padding-bottom: 30px; }
+
+  .about .spacer {
+    padding-top: 30px; }
+
+  .radio .nav-tabs .smallsy {
+    display: inline-block; }
+  .radio .nav-tabs .big {
+    display: none; }
+
+  .center-head h1 {
+    font-size: 50px; }
+
+  .bio .float-pic {
+    float: none; }
+
+  .services p {
+    text-align: justify; }
+
+  .cupping img {
+    float: none;
+    margin-left: -135px;
+    padding-left: 50%; } }
+@media (max-width: 767px) {
+  .navbar-header {
+    float: none; }
+
+  .navbar-toggle {
+    display: block; }
+
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1); }
+
+  .navbar-collapse.collapse {
+    display: none !important; }
+
+  .navbar-nav {
+    float: none !important;
+    margin: 7.5px -15px; }
+
+  .navbar-nav > li {
+    float: none; }
+
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+
+  .navbar-text {
+    float: none;
+    margin: 15px 0; }
+
+  /* since 3.1.0 */
+  .navbar-collapse.collapse.in {
+    display: block !important; }
+
+  .collapsing {
+    overflow: hidden !important; } }
 
 /*# sourceMappingURL=main.css.map */
