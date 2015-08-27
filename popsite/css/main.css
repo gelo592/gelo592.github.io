@@ -26,6 +26,8 @@
   border: none;
   margin-bottom: 0;
   font-size: 16px; }
+  .navbar-default .dropdown-menu .bold {
+    font-weight: 700; }
 
 .navbar-brand img {
   width: 247px;
@@ -180,15 +182,6 @@ ul.bare-list {
 .nutrition .fewd {
   font-size: 22px;
   text-align: center; }
-.nutrition .bg-img {
-  height: 320px;
-  position: relative; }
-.nutrition .bg-img#berries {
-  background: url("../img/berries-med.jpg") no-repeat center center/cover; }
-.nutrition .bg-img#slamin {
-  background: url("../img/slamin-med.jpg") no-repeat center center/cover; }
-.nutrition .bg-img#cruciferous {
-  background: url("../img/cruciferous-med.jpg") no-repeat center center/cover; }
 .nutrition .img-title {
   font-size: 34px;
   color: #fff;
@@ -240,6 +233,26 @@ ul.bare-list {
       top: 90px; }
   .nutrition .food-block .food-text {
     display: none; }
+.nutrition .food-text::after {
+  content: "";
+  border-right: 10px solid rgba(85, 85, 85, 0.85);
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  position: absolute;
+  left: -10px;
+  top: 90px; }
+.nutrition .food-text {
+  text-align: left;
+  color: #fff;
+  font-size: 18px;
+  background-color: rgba(85, 85, 85, 0.85);
+  display: inline-block;
+  width: 110px;
+  height: 200px;
+  vertical-align: top;
+  margin-top: 10px;
+  margin-left: -14px;
+  position: relative; }
 .nutrition .section-food {
   text-align: center; }
   .nutrition .section-food #veggies {
@@ -299,18 +312,8 @@ ul.bare-list {
 .about .spacer {
   padding-top: 0px; }
 .about .bg-img {
-  max-width: 100%;
+  width: 100%;
   height: auto; }
-.about .bg-img#waiting1 {
-  background: url("../img/clinic-waiting-1-large.jpg") no-repeat center center/100%; }
-.about .bg-img#waiting2 {
-  background: url("../img/clinic-waiting-2-large.jpg") no-repeat center center/100%; }
-.about .bg-img#front {
-  background: url("../img/clinic-front-large.jpg") no-repeat center center/100%; }
-.about .bg-img#rooms {
-  background: url("../img/clinic-rooms-large.jpg") no-repeat center center/100%; }
-.about .bg-img#shoppe {
-  background: url("../img/clinic-shoppe-large.jpg") no-repeat center center/100%; }
 .about .section {
   padding-top: 40px;
   padding-bottom: 40px; }
@@ -357,6 +360,8 @@ ul.bare-list {
   margin-left: 10px; }
   .radio .nav-tabs .smallsy {
     display: none; }
+  .radio .nav-tabs p {
+    margin: 0; }
 .radio .nav-tabs > li > a {
   font-size: 18px;
   background-color: #598CBE;
@@ -415,6 +420,10 @@ ul.bare-list {
   word-spacing: 10px; }
 
 @media (max-width: 767px) {
+  .logo-section img {
+    height: 104px;
+    margin-left: -140px; }
+
   .footer .small {
     display: inline-block; }
   .footer .big {
@@ -448,7 +457,10 @@ ul.bare-list {
   .cupping img {
     float: none;
     margin-left: -135px;
-    padding-left: 50%; } }
+    padding-left: 50%; }
+
+  .nutrition .food-block {
+    width: 100px; } }
 @media (max-width: 767px) {
   .navbar-header {
     float: none; }

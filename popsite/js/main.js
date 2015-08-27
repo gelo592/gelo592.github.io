@@ -9,6 +9,7 @@ $(function() {
       $(window).resize(function() {
         var h = $("#myCarousel").height();
         $(".info-blob").height(h*.9);
+        $(".info-blob").width(h*.9);
       });
     }
 
