@@ -174,6 +174,8 @@ ul.bare-list {
   font-size: 4em;
   display: inline-block;
   border: 6px solid rgba(255, 255, 255, 0.55); }
+.index #audio {
+  width: 300px; }
 
 .nutrition .toeatpic {
   width: 100%; }
@@ -436,6 +438,8 @@ ul.bare-list {
     padding-right: 0px; }
   .index .push-over {
     padding-bottom: 30px; }
+  .index #audio {
+    width: 200px; }
 
   .about .spacer {
     padding-top: 30px; }
@@ -461,6 +465,9 @@ ul.bare-list {
 
   .nutrition .food-block {
     width: 100px; } }
+@media (min-width: 768px) {
+  .index #audio {
+    width: 240px; } }
 @media (max-width: 767px) {
   .navbar-header {
     float: none; }
