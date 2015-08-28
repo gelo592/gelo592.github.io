@@ -6,10 +6,20 @@
 $(function() {
   function attachListeners() {
     if($("#myCarousel").length > 0) {
+      var h = $("#myCarousel").height();
+      $(".info-blob").height(h * 0.85);
+      $(".info-blob").width(h * 0.85);
+      $(".blob-title").css("font-size", h * 0.15);
+      $(".blob-info").css("font-size", h * 0.092);
+      $(".blob-info-sm").css("font-size", h * 0.06);
+
       $(window).resize(function() {
         var h = $("#myCarousel").height();
-        $(".info-blob").height(h*.9);
-        $(".info-blob").width(h*.9);
+        $(".info-blob").height(h * 0.85);
+        $(".info-blob").width(h * 0.85);
+        $(".blob-title").css("font-size", h * 0.15);
+        $(".blob-info").css("font-size", h * 0.092);
+        $(".blob-info-sm").css("font-size", h * 0.06);
       });
     }
 

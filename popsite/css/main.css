@@ -119,51 +119,10 @@ ul.bare-list {
   max-height: 460px; }
 .index .carousel-caption {
   bottom: 0; }
-.index .content {
-  width: 100%;
-  position: absolute;
-  top: 0; }
-.index .content .outer {
-  width: 100%;
-  padding-top: 100%;
-  /* defines aspect ratio */
-  position: relative; }
-.index .content .outer .inner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 100%;
-  background: rgba(56, 116, 176, 0.55);
-  border: 6px solid rgba(255, 255, 255, 0.55); }
-  .index .content .outer .inner .blob-title {
-    margin: 0;
-    width: 32vw;
-    position: relative;
-    font-size: 5vw;
-    text-align: center;
-    color: #fff; }
-  .index .content .outer .inner .blob-info {
-    margin: 0;
-    width: 32vw;
-    position: relative;
-    color: #fff;
-    font-size: 3.6vw;
-    text-align: center; }
-  .index .content .outer .inner .blob-info-sm {
-    margin: 0;
-    width: 32vw;
-    position: relative;
-    color: #fff;
-    font-size: 2vw;
-    text-align: center; }
-  .index .content .outer .inner .blob-glyph {
-    color: #fff; }
-    .index .content .outer .inner .blob-glyph:hover {
-      color: #ccc; }
-    .index .content .outer .inner .blob-glyph:focus:active, .index .content .outer .inner .blob-glyph:focus, .index .content .outer .inner .blob-glyph:active {
-      color: #aaa; }
+.index .blob {
+  display: block;
+  margin: auto;
+  margin-top: 10%; }
 .index .info-blob {
   position: relative;
   width: 96vh;
@@ -171,9 +130,38 @@ ul.bare-list {
   border-radius: 100%;
   background: rgba(56, 116, 176, 0.55);
   color: #fff;
-  font-size: 4em;
   display: inline-block;
   border: 6px solid rgba(255, 255, 255, 0.55); }
+  .index .info-blob .blob-title {
+    margin: 0;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  .index .info-blob .blob-info {
+    margin: 0;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  .index .info-blob .blob-info-sm {
+    margin: 0;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  .index .info-blob .blob-glyph {
+    color: #fff; }
+    .index .info-blob .blob-glyph:hover {
+      color: #ccc; }
+    .index .info-blob .blob-glyph:focus:active, .index .info-blob .blob-glyph:focus, .index .info-blob .blob-glyph:active {
+      color: #aaa; }
 .index #audio {
   width: 300px; }
 
