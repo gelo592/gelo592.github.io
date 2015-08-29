@@ -34,19 +34,16 @@
   margin-top: -15px; }
 
 .logo-section img {
-  height: 142px;
-  margin-top: 20px;
-  padding-left: 50%;
-  margin-left: -191px; }
+  width: 360px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
 
 .navbar-nav {
   float: none;
   margin: 0 auto;
   display: table;
   table-layout: fixed; }
-
-.dropdown:hover .dropdown-menu {
-  display: block; }
 
 .spacer {
   padding-top: 20px; }
@@ -116,22 +113,26 @@ ul.bare-list {
 .index .push-over-r {
   padding-left: 60px; }
 .index .slide {
-  max-height: 460px; }
+  max-height: 480px; }
+  .index .slide img {
+    width: 100%; }
 .index .carousel-caption {
   bottom: 0; }
+.index .carousel-control {
+  width: 10%; }
 .index .blob {
   display: block;
   margin: auto;
   margin-top: 10%; }
 .index .info-blob {
   position: relative;
-  width: 96vh;
-  height: 96vh;
-  border-radius: 100%;
+  display: inline-block;
+  width: 33vw;
+  height: 33vw;
   background: rgba(56, 116, 176, 0.55);
   color: #fff;
-  display: inline-block;
-  border: 6px solid rgba(255, 255, 255, 0.55); }
+  border: 6px solid rgba(255, 255, 255, 0.55);
+  border-radius: 100%; }
   .index .info-blob .blob-title {
     margin: 0;
     position: relative;
@@ -411,8 +412,7 @@ ul.bare-list {
 
 @media (max-width: 767px) {
   .logo-section img {
-    height: 104px;
-    margin-left: -140px; }
+    width: 280px; }
 
   .footer .small {
     display: inline-block; }
@@ -455,7 +455,10 @@ ul.bare-list {
     width: 100px; } }
 @media (min-width: 768px) {
   .index #audio {
-    width: 240px; } }
+    width: 240px; }
+
+  .dropdown:hover .dropdown-menu {
+    display: block; } }
 @media (max-width: 767px) {
   .navbar-header {
     float: none; }

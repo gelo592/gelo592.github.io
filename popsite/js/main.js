@@ -5,16 +5,22 @@
 
 $(function() {
   function attachListeners() {
-    if($("#myCarousel").length > 0) {
-      var h = $("#myCarousel").height();
-      $(".info-blob").height(h * 0.85);
-      $(".info-blob").width(h * 0.85);
-      $(".blob-title").css("font-size", h * 0.15);
-      $(".blob-info").css("font-size", h * 0.092);
-      $(".blob-info-sm").css("font-size", h * 0.06);
+    var carousel = $("#myCarousel");
+
+    if(carousel.length > 0) {
+      var ho = carousel.height();
+      var wo = carousel.width();
+
+      $(".info-blob").height(ho * 0.85);
+      $(".info-blob").width(ho * 0.85);
+      $(".blob-title").css("font-size", ho * 0.15);
+      $(".blob-info").css("font-size", ho * 0.092);
+      $(".blob-info-sm").css("font-size", ho * 0.06);
 
       $(window).resize(function() {
-        var h = $("#myCarousel").height();
+        var h = carousel.height();
+        var w = carousel.width();
+        console.log(h, w);
         $(".info-blob").height(h * 0.85);
         $(".info-blob").width(h * 0.85);
         $(".blob-title").css("font-size", h * 0.15);
