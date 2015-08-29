@@ -7,6 +7,9 @@ $(function() {
   function attachListeners() {
     var carousel = $("#myCarousel");
 
+    console.log(carousel);
+    console.log(carousel.height());
+    console.log(carousel.width());
     if(carousel.length > 0) {
       var ho = carousel.height();
       var wo = carousel.width();
