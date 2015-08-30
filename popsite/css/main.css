@@ -197,53 +197,34 @@ ul.bare-list {
     margin: 0; }
 .nutrition .food-block {
   display: inline-block;
-  width: 200px;
-  height: 200px;
-  margin: 10px;
   position: relative; }
-  .nutrition .food-block:hover {
-    background: #000; }
-    .nutrition .food-block:hover .food-text {
-      display: block;
-      position: absolute;
-      width: 180px;
-      height: 200px;
-      text-align: left;
-      color: #fff;
-      font-size: 20px;
-      background-color: rgba(85, 85, 85, 0.85);
-      margin-left: 20px;
-      padding: 10px; }
-    .nutrition .food-block:hover .food-text::after {
-      content: "";
-      border-right: 10px solid rgba(85, 85, 85, 0.85);
-      border-top: 10px solid transparent;
-      border-bottom: 10px solid transparent;
-      position: absolute;
-      left: -10px;
-      top: 90px; }
+  .nutrition .food-block .food-img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    position: relative; }
+  .nutrition .food-block:hover .food-text {
+    display: block;
+    position: absolute;
+    width: 180px;
+    height: 200px;
+    text-align: left;
+    color: #fff;
+    font-size: 20px;
+    background-color: rgba(85, 85, 85, 0.85);
+    padding: 10px;
+    top: 10;
+    right: 10; }
+  .nutrition .food-block:hover .food-text::after {
+    content: "";
+    border-right: 10px solid rgba(85, 85, 85, 0.85);
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    left: -10px;
+    top: 90px; }
   .nutrition .food-block .food-text {
     display: none; }
-.nutrition .food-text::after {
-  content: "";
-  border-right: 10px solid rgba(85, 85, 85, 0.85);
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  position: absolute;
-  left: -10px;
-  top: 90px; }
-.nutrition .food-text {
-  text-align: left;
-  color: #fff;
-  font-size: 18px;
-  background-color: rgba(85, 85, 85, 0.85);
-  display: inline-block;
-  width: 110px;
-  height: 200px;
-  vertical-align: top;
-  margin-top: 10px;
-  margin-left: -14px;
-  position: relative; }
 .nutrition .section-food {
   text-align: center; }
   .nutrition .section-food #veggies {
@@ -449,10 +430,7 @@ ul.bare-list {
   .cupping img {
     float: none;
     margin-left: -135px;
-    padding-left: 50%; }
-
-  .nutrition .food-block {
-    width: 100px; } }
+    padding-left: 50%; } }
 @media (min-width: 768px) {
   .index #audio {
     width: 240px; }
@@ -494,5 +472,194 @@ ul.bare-list {
 
   .collapsing {
     overflow: hidden !important; } }
+/* ----------- iPhone 4 and 4S ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .nutrition .food-block {
+    width: 200px;
+    margin: 5px;
+    display: inline-block;
+    position: relative; }
+    .nutrition .food-block .food-img {
+      width: 200px;
+      height: 200px;
+      position: relative;
+      margin: 0; }
+    .nutrition .food-block .food-text {
+      display: block;
+      position: absolute;
+      width: 100px;
+      height: 200px;
+      text-align: left;
+      color: #fff;
+      font-size: 16px;
+      background-color: rgba(85, 85, 85, 0.85);
+      padding: 10px;
+      top: 0;
+      right: 0; } }
+/* Portrait */
+/* Landscape */
+/* ----------- iPhone 5 and 5S ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .nutrition .food-block {
+    width: 200px;
+    margin: 5px;
+    display: inline-block;
+    position: relative; }
+    .nutrition .food-block .food-img {
+      width: 200px;
+      height: 200px;
+      position: relative;
+      margin: 0; }
+    .nutrition .food-block .food-text {
+      display: block;
+      position: absolute;
+      width: 100px;
+      height: 200px;
+      text-align: left;
+      color: #fff;
+      font-size: 16px;
+      background-color: rgba(85, 85, 85, 0.85);
+      padding: 10px;
+      top: 0;
+      right: 0; } }
+/* Portrait */
+/* Landscape */
+/* ----------- iPhone 6 ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .nutrition .food-block {
+    width: 200px;
+    margin: 5px;
+    display: inline-block;
+    position: relative; }
+    .nutrition .food-block .food-img {
+      width: 200px;
+      height: 200px;
+      position: relative;
+      margin: 0; }
+    .nutrition .food-block .food-text {
+      display: block;
+      position: absolute;
+      width: 100px;
+      height: 200px;
+      text-align: left;
+      color: #fff;
+      font-size: 16px;
+      background-color: rgba(85, 85, 85, 0.85);
+      padding: 10px;
+      top: 0;
+      right: 0; } }
+/* Portrait */
+/* Landscape */
+/* ----------- iPhone 6+ ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  .nutrition .food-block {
+    width: 200px;
+    margin: 5px;
+    display: inline-block;
+    position: relative; }
+    .nutrition .food-block .food-img {
+      width: 200px;
+      height: 200px;
+      position: relative;
+      margin: 0; }
+    .nutrition .food-block .food-text {
+      display: block;
+      position: absolute;
+      width: 100px;
+      height: 200px;
+      text-align: left;
+      color: #fff;
+      font-size: 16px;
+      background-color: rgba(85, 85, 85, 0.85);
+      padding: 10px;
+      top: 0;
+      right: 0; } }
+/* Portrait */
+/* Landscape */
+/* ----------- iPad mini ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .nutrition .food-block {
+    width: 200px;
+    margin: 5px;
+    display: inline-block;
+    position: relative; }
+    .nutrition .food-block .food-img {
+      width: 200px;
+      height: 200px;
+      position: relative;
+      margin: 0; }
+    .nutrition .food-block .food-text {
+      display: block;
+      position: absolute;
+      width: 100px;
+      height: 200px;
+      text-align: left;
+      color: #fff;
+      font-size: 16px;
+      background-color: rgba(85, 85, 85, 0.85);
+      padding: 10px;
+      top: 0;
+      right: 0; } }
+/* Portrait */
+/* Landscape */
+/* ----------- iPad 1 and 2 ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .nutrition .food-block {
+    width: 200px;
+    margin: 5px;
+    display: inline-block;
+    position: relative; }
+    .nutrition .food-block .food-img {
+      width: 200px;
+      height: 200px;
+      position: relative;
+      margin: 0; }
+    .nutrition .food-block .food-text {
+      display: block;
+      position: absolute;
+      width: 100px;
+      height: 200px;
+      text-align: left;
+      color: #fff;
+      font-size: 16px;
+      background-color: rgba(85, 85, 85, 0.85);
+      padding: 10px;
+      top: 0;
+      right: 0; } }
+/* Portrait */
+/* Landscape */
+/* ----------- iPad 3 and 4 ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  .nutrition .food-block {
+    width: 200px;
+    margin: 5px;
+    display: inline-block;
+    position: relative; }
+    .nutrition .food-block .food-img {
+      width: 200px;
+      height: 200px;
+      position: relative;
+      margin: 0; }
+    .nutrition .food-block .food-text {
+      display: block;
+      position: absolute;
+      width: 100px;
+      height: 200px;
+      text-align: left;
+      color: #fff;
+      font-size: 16px;
+      background-color: rgba(85, 85, 85, 0.85);
+      padding: 10px;
+      top: 0;
+      right: 0; } }
+/* Portrait */
+/* Landscape */
 
 /*# sourceMappingURL=main.css.map */
