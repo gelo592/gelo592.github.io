@@ -1,13 +1,19 @@
+#proj-meep, #contact-meep {
+  display: none;
+}
+
 .meep-block {
   border-left: 6px solid #222;
   margin-top: 48px;
   margin-left: 48px;
   padding-left: 24px;
   font-size: 48px;
+  position: absolute;
+  width: 100%;
 }
 
 .meep {
-  position: absolute;
+  position: relative;
   opacity: 0;
 }
 
@@ -16,6 +22,39 @@
   position: relative;
 }
 
+.desc {
+  font-size: 20px;
+  width: 36%;
+}
+
+#contact-meep {
+  a {
+    color: #B8EA64;
+
+    &:hover {
+      color: #F1503C;
+    }
+
+    &:focus {
+
+    }
+  }
+}
+
+#proj-meep{
+
+  a {
+    color: #7CD1E0;
+
+    &:hover {
+      color: #DEA6CB;
+    }
+
+    &:focus {
+
+    }
+  }
+}
 .meep-up {
   opacity: 1;
   -webkit-animation-name: meep-up;
@@ -55,6 +94,12 @@
   position: absolute;
   bottom: 0;
   margin-bottom: 20px;
+  width: 100%;
+}
+
+.nav {
+  margin-right: 120px;
+  float: right;
 }
 
 .nav > li {
@@ -70,6 +115,12 @@
   padding: 4px 0px 4px 0px;
 
   &:hover, &:focus {
+    color: #000;
+    background-color: transparent;
+    border-bottom: 4px solid #000;
+  }
+
+  &.active {
     color: #000;
     background-color: transparent;
     border-bottom: 4px solid #000;

@@ -1,8 +1,10 @@
 $(function () {
+	var meepingMeepersStopMeepin;
+
 	meepUp(0, ["#boop", "#doop", "#foop", "#koop", "#moop"], 0);
 
 	function meepUp(meepIdDex, meepIds, meepDex) {
-	  setTimeout(function() {
+	   setTimeout(function() {
 	    $(meepIds[meepIdDex]).removeClass("meep-down");
 	    $(meepIds[meepIdDex]).addClass("meep-up");
 	    if(meepIdDex < meepIds.length) {
@@ -15,7 +17,7 @@ $(function () {
 	}
 
 	function meepBetween(isInvisible, meepIds, meepDex) {
-	  setTimeout(function() {
+	  meepingMeepersStopMeepin = setTimeout(function() {
 	    var meepers = ["Welcome to Grace dot cat",
 	                "Bienvenue à Grace point chat",
 	                "グレイス ドット 猫 へ ようこそ",
@@ -53,15 +55,60 @@ $(function () {
 	}
 
 	function narvClickResponse(e) {
-		console.log(e);
 		e = e.currentTarget;
-		console.log(e.dataset);
 		togs = e.dataset["toogle"];
+		$(".narvlet").removeClass("active");
+		$(e).addClass("active");
+
+		if(togs == "home") {
+			//stop & remove proj meeps
+			$("#proj-meep").hide();
+
+			//stop & remove contact meeps
+			$("#contact-meep").hide();
+
+			//reset letters to home color restart & display home meeps
+			$(".streak").attr({fill: "#000"});
+			$("#home-meep").show();
+			meepUp(0, ["#boop", "#doop", "#foop", "#koop", "#moop"], 0);
+		}
+		else if(togs == "proj") {
+			//stop & remove home meeps
+			$("#home-meep").hide();
+			$(".meep").removeClass("meep-up");
+			$(".meep").removeClass("meep-down");
+			clearTimeout(meepingMeepersStopMeepin);
+
+			//stop & remove contact meeps
+			$("#contact-meep").hide();
+
+			//reset letters to home color restart & display proj meeps
+			$(".streak").attr({fill: "#64B774"});
+			$("#proj-meep").show();
+		}
+		else if(togs == "contact") {
+			//stop & remove home meeps
+			$("#home-meep").hide();
+			$(".meep").removeClass("meep-up");
+			$(".meep").removeClass("meep-down");
+			clearTimeout(meepingMeepersStopMeepin);
+
+			//stop & remove proj meeps
+			$("#proj-meep").hide();
+
+			//reset letters to home color restart & display contact meeps
+			$(".streak").attr({fill: "#CE78AE"});
+			$("#contact-meep").show();
+		}
+		/*
+		toggles bubbles
+
 		caret = e.dataset["caret"];
 		$(".info-sect").hide();
 		$(togs).show();
-		$(togs + "::after").attr("left", caret);
-		console.log(togs);
+		$(togs + "::after").attr("left", caret);*/
+
+
 	}
 
 	$(".narvlet").click(narvClickResponse);

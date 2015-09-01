@@ -22,18 +22,18 @@ aInner.attr({fill: "#FFFFFF"});
 var a = snap.g(lilsquare, aOuter, aInner);
 a.addClass("streak");
 
-var bUpper = snap.path("M100 104L108 104C118 104, 118 120, 108 120L100 120");
+/*var bUpper = snap.path("M100 104L108 104C118 104, 118 120, 108 120L100 120");
 var bLower = snap.path("M100 116L108 116C122 116, 122 134, 108 134L100 134");
 var bUpperInner = snap.path("M106 110C110 108, 110 116, 106 114");
 var bLowerInner = snap.path("M106 122C112 120, 112 130, 106 128");
 bUpperInner.attr({fill: "#FFFFFF"});
-bLowerInner.attr({fill: "#FFFFFF"});
+bLowerInner.attr({fill: "#FFFFFF"});*/
 
-var b = snap.g(lilsquare, bUpper, bLower, bUpperInner, bLowerInner);
+//var b = snap.g(lilsquare, bUpper, bLower, bUpperInner, bLowerInner);
 //b.addClass("streak");
 
-var c = snap.path("M22 0L22 8C8 8, 8 22, 22 22L22 30C0 22, 0 0, 22 0");
-c = snap.g(lilsquare, c);
+//var c = snap.path("M22 0L22 8C8 8, 8 22, 22 22L22 30C0 22, 0 0, 22 0");
+//c = snap.g(lilsquare, c);
 
 var d = 'd';
 
@@ -108,13 +108,5 @@ var z = snap.polyline(0, 0, 26, 0, 26, 8, 11, 22, 26, 22, 26, 30, 0, 30, 0, 22, 
 z = snap.g(lilsquare, z);
 z.addClass("streak");
 
-
-
-$("#svg").on("click", "g", function(e) {
-  var letterId = e.currentTarget.id;
-  var letter = snap.select("#"+letterId);
-  letter.removeClass("streak");
-  letter.addClass("tile");
-  letter.translate(500,300);
-  console.log("hi");
-});
+var block = snap.rect(0,0,50,50);
+block.attr({fill: "#FFF"});

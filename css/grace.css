@@ -1,17 +1,36 @@
+#proj-meep, #contact-meep {
+  display: none; }
+
 .meep-block {
   border-left: 6px solid #222;
   margin-top: 48px;
   margin-left: 48px;
   padding-left: 24px;
-  font-size: 48px; }
+  font-size: 48px;
+  position: absolute;
+  width: 100%; }
 
 .meep {
-  position: absolute;
+  position: relative;
   opacity: 0; }
 
 .meep-container {
   height: 96px;
   position: relative; }
+
+.desc {
+  font-size: 20px;
+  width: 36%; }
+
+#contact-meep a {
+  color: #B8EA64; }
+  #contact-meep a:hover {
+    color: #F1503C; }
+
+#proj-meep a {
+  color: #7CD1E0; }
+  #proj-meep a:hover {
+    color: #DEA6CB; }
 
 .meep-up {
   opacity: 1;
@@ -41,7 +60,12 @@
   z-index: 100;
   position: absolute;
   bottom: 0;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  width: 100%; }
+
+.nav {
+  margin-right: 120px;
+  float: right; }
 
 .nav > li {
   float: left; }
@@ -54,6 +78,10 @@
   margin-left: 20px;
   padding: 4px 0px 4px 0px; }
   .nav > li > a:hover, .nav > li > a:focus {
+    color: #000;
+    background-color: transparent;
+    border-bottom: 4px solid #000; }
+  .nav > li > a.active {
     color: #000;
     background-color: transparent;
     border-bottom: 4px solid #000; }
