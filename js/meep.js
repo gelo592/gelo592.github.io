@@ -101,6 +101,6 @@ $(function () {
 
   $(".narvlet").click(switchMeeps);
 
-  startHomeMeeps(0,0);
+  startHomeMeeps(0, 0);
 
 });

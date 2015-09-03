@@ -9,7 +9,6 @@
   padding-left: 24px;
   font-size: 48px;
   position: absolute;
-  width: 100%;
 }
 
 .meep {
@@ -59,12 +58,20 @@
   opacity: 1;
   -webkit-animation-name: meep-up;
   -webkit-animation-duration: 1s;
+  -moz-animation-name: meep-up;
+  -moz-animation-duration: 1s;
+  animation-name: meep-up;
+  animation-duration: 1s;
 }
 
 .meep-down {
   opacity: 0;
   -webkit-animation-name: meep-down;
   -webkit-animation-duration: 1s;
+  -moz-animation-name: meep-down;
+  -moz-animation-duration: 1s;
+  animation-name: meep-down;
+  animation-duration: 1s;
 }
 
 @-webkit-keyframes meep-up {
@@ -78,6 +85,26 @@
   }
 }
 
+@-moz-keyframes meep-up {
+  0% {
+    opacity: 0;
+    top: 20px;
+  }
+  100%{
+    opacity: 1;
+    top: 0px;
+  }
+}
+@keyframes meep-up {
+  0% {
+    opacity: 0;
+    top: 20px;
+  }
+  100%{
+    opacity: 1;
+    top: 0px;
+  }
+}
 @-webkit-keyframes meep-down {
   0% {
     opacity: 1;
@@ -89,6 +116,26 @@
   }
 }
 
+@-moz-keyframes meep-down {
+  0% {
+    opacity: 1;
+    top: 0px;
+  }
+  100%{
+    opacity: 0;
+    top: 20px;
+  }
+}
+@keyframes meep-down {
+  0% {
+    opacity: 1;
+    top: 0px;
+  }
+  100%{
+    opacity: 0;
+    top: 20px;
+  }
+}
 .footer {
   z-index: 100;
   position: absolute;

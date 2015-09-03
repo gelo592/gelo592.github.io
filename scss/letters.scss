@@ -40,6 +40,16 @@
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
     -webkit-animation-delay: random(3000) + 1000 + ms;
+    -moz-animation-name: streak#{$i};
+    -moz-animation-duration: random(5) + 10 + s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -moz-animation-delay: random(3000) + 1000 + ms;
+    animation-name: streak#{$i};
+    animation-duration: random(5) + 10 + s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: random(3000) + 1000 + ms;
   }
 
 
@@ -51,9 +61,46 @@
       -webkit-transform: translate(random(400) - 500 + px, random(75) + 800 + px) rotate( random(360) - 180 + deg);
     }
   }
+  @-moz-keyframes streak#{$i} {
+    from {
+      -moz-transform: translate(random(400) + 1000 + px, random(12) - 12 + px) rotate(random(180) - 180 + deg);
+    }
+    to {
+      -moz-transform: translate(random(400) - 500 + px, random(75) + 800 + px) rotate( random(360) - 180 + deg);
+    }
+  }
+  @keyframes streak#{$i} {
+    from {
+      transform: translate(random(400) + 1000 + px, random(12) - 12 + px) rotate(random(180) - 180 + deg);
+    }
+    to {
+      transform: translate(random(400) - 500 + px, random(75) + 800 + px) rotate( random(360) - 180 + deg);
+    }
+  }
 }
 
 @-webkit-keyframes spin {
-  from { -webkit-transform: rotate(0deg); }
-  to { -webkit-transform: rotate(360deg); }
+  from {
+   -webkit-transform: rotate(0deg);
+  }
+  to {
+   -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spin {
+  from {
+   -moz-transform: rotate(0deg);
+  }
+  to {
+   -moz-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+   transform: rotate(0deg);
+  }
+  to {
+   transform: rotate(360deg);
+  }
 }
