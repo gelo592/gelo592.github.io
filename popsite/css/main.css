@@ -4,9 +4,6 @@
 .center-head {
   text-align: center;
   background-color: #93ba58; }
-  .center-head p {
-    color: #fff;
-    font-size: 17px; }
   .center-head h1, .center-head h3 {
     color: #fff;
     margin-bottom: 0px;
@@ -24,7 +21,7 @@
 .navbar-default {
   background-color: #fff;
   border: none;
-  margin-bottom: 0;
+  margin-bottom: 0px;
   font-size: 16px; }
   .navbar-default .dropdown-menu .bold {
     font-weight: 700; }
@@ -41,7 +38,7 @@
 
 .navbar-nav {
   float: none;
-  margin: 0 auto;
+  margin: 0px auto;
   display: table;
   table-layout: fixed; }
 
@@ -66,7 +63,7 @@
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Source Sans Pro', sans-serif;
-  margin-top: 0;
+  margin-top: 0px;
   color: #424242; }
 
 ul.bare-list {
@@ -83,17 +80,18 @@ ul.bare-list {
 .center-t {
   text-align: center; }
 
-.footer .footer-phone, .footer .footer-mail {
-  font-size: 24px;
-  padding-top: 8px; }
+.footer p {
+  margin: 0px; }
 .footer .footer-mail {
-  text-align: right; }
-.footer .footer-copy {
-  padding-top: 10px; }
+  padding-bottom: 16px; }
 .footer .small {
   display: none; }
 .footer .big a {
   font-size: 16px; }
+.footer .cap-region {
+  border-right: 1px solid;
+  float: right;
+  padding-left: 10px; }
 
 .footer > .container-fluid {
   border-top: 1px solid #ddd;
@@ -103,7 +101,8 @@ ul.bare-list {
   text-align: center; }
 
 .foot-img {
-  height: 40px; }
+  height: 40px;
+  margin-top: 20px; }
 
 .index .section {
   padding-top: 60px;
@@ -117,7 +116,7 @@ ul.bare-list {
   .index .slide img {
     width: 100%; }
 .index .carousel-caption {
-  bottom: 0; }
+  bottom: 0px; }
 .index .carousel-control {
   width: 10%; }
 .index .blob {
@@ -134,7 +133,7 @@ ul.bare-list {
   border: 6px solid rgba(255, 255, 255, 0.55);
   border-radius: 100%; }
   .index .info-blob .blob-title {
-    margin: 0;
+    margin: 0px;
     position: relative;
     text-align: center;
     color: #fff;
@@ -142,7 +141,7 @@ ul.bare-list {
     margin-left: auto;
     margin-right: auto; }
   .index .info-blob .blob-info {
-    margin: 0;
+    margin: 0px;
     position: relative;
     color: #fff;
     text-align: center;
@@ -150,7 +149,7 @@ ul.bare-list {
     margin-left: auto;
     margin-right: auto; }
   .index .info-blob .blob-info-sm {
-    margin: 0;
+    margin: 0px;
     position: relative;
     color: #fff;
     text-align: center;
@@ -170,7 +169,7 @@ ul.bare-list {
   text-align: center;
   font-size: 34px;
   color: #93ba58;
-  margin: 0;
+  margin: 0px;
   padding-bottom: 10px; }
 .nutrition .blurb {
   text-align: justify;
@@ -186,20 +185,20 @@ ul.bare-list {
   .nutrition .food-block:hover .food-text {
     display: block;
     position: absolute;
-    width: 180px;
+    width: 200px;
     height: 200px;
     text-align: left;
     color: #fff;
     font-size: 20px;
     background-color: rgba(85, 85, 85, 0.85);
     padding: 10px;
-    top: 10;
-    right: 10; }
+    top: 10px;
+    right: 10px; }
   .nutrition .food-block .food-text {
     display: none; }
 .nutrition .section-food {
   text-align: center;
-  padding-top: 0; }
+  padding-top: 0px; }
   .nutrition .section-food #veggies {
     background: url("../img/veggies-min.jpg") no-repeat center center/cover; }
   .nutrition .section-food #leafy {
@@ -263,11 +262,13 @@ ul.bare-list {
 .articles .dwnld {
   padding-left: 15px;
   font-size: 20px; }
+.articles .art {
+  padding-bottom: 20px; }
 
 #sticky-foot {
   position: absolute;
   width: 100%;
-  bottom: 0; }
+  bottom: 0px; }
 
 .about .spacer {
   padding-top: 0px; }
@@ -289,7 +290,7 @@ ul.bare-list {
 .about .section-lil h3 {
   font-size: 28px; }
 .about .section-lil p {
-  margin: 0; }
+  margin: 0px; }
 
 .int-funk p {
   text-align: justify; }
@@ -306,7 +307,7 @@ ul.bare-list {
 .int-funk .section-head {
   font-size: 34px;
   color: #93ba58;
-  margin: 0;
+  margin: 0px;
   padding-bottom: 10px; }
 
 .cholesterol h3 {
@@ -326,7 +327,10 @@ ul.bare-list {
   color: #93ba58;
   padding-top: 20px; }
 .laser h3:first-child {
-  padding-top: 0; }
+  padding-top: 0px; }
+.laser img {
+  width: 100%;
+  margin-top: 64px; }
 
 .patient h3 {
   color: #93ba58; }
@@ -340,7 +344,7 @@ ul.bare-list {
   .radio .nav-tabs .smallsy {
     display: none; }
   .radio .nav-tabs p {
-    margin: 0; }
+    margin: 0px; }
 .radio .nav-tabs > li > a {
   font-size: 18px;
   background-color: #598CBE;
@@ -365,9 +369,9 @@ ul.bare-list {
   overflow: scroll;
   height: 350px;
   border: 1px solid #ddd;
-  padding: 0; }
+  padding: 0px; }
 .radio .playlist {
-  margin: 0; }
+  margin: 0px; }
   .radio .playlist .thead:hover th, .radio .playlist .thead:active th, .radio .playlist .thead th {
     background-color: #598CBE;
     color: #fff; }
@@ -384,7 +388,7 @@ ul.bare-list {
   margin-left: -15px; }
 .radio #audio {
   width: 100%;
-  margin: 20px 0; }
+  margin: 20px 0px; }
 
 .bio .center-head h1 {
   word-spacing: normal; }
@@ -402,10 +406,26 @@ ul.bare-list {
   .logo-section img {
     width: 280px; }
 
-  .footer .small {
-    display: inline-block; }
-  .footer .big {
-    display: none; }
+  .footer {
+    font-size: 15px;
+    text-align: center; }
+    .footer .small {
+      display: inline-block; }
+    .footer .big {
+      display: none; }
+    .footer .copy, .footer .footer-phone {
+      text-align: left; }
+    .footer .footer-mail {
+      text-align: right; }
+    .footer .fa-phone, .footer .fa-envelope {
+      line-height: 40px;
+      font-size: 24px; }
+    .footer .foot-img {
+      margin: 0px; }
+    .footer .cap-region {
+      float: none;
+      margin-bottom: 20px;
+      padding: 0px; }
 
   .index p {
     text-align: justify; }
@@ -426,7 +446,7 @@ ul.bare-list {
     display: none; }
 
   .center-head h1 {
-    font-size: 50px; }
+    font-size: 46px; }
 
   .bio .float-pic {
     float: none; }
@@ -437,13 +457,22 @@ ul.bare-list {
   .cupping img {
     float: none;
     margin-left: -135px;
-    padding-left: 50%; } }
+    padding-left: 50%; }
+
+  .laser img {
+    margin-top: 20px; }
+
+  .patient p {
+    text-align: justify; } }
 @media (min-width: 768px) {
   .index #audio {
     width: 240px; }
 
   .dropdown:hover .dropdown-menu {
-    display: block; } }
+    display: block; }
+
+  .footer .big a {
+    font-size: 14px; } }
 @media (max-width: 767px) {
   .navbar-header {
     float: none; }
@@ -471,7 +500,7 @@ ul.bare-list {
 
   .navbar-text {
     float: none;
-    margin: 15px 0; }
+    margin: 15px 0px; }
 
   /* since 3.1.0 */
   .navbar-collapse.collapse.in {
@@ -491,19 +520,19 @@ ul.bare-list {
       width: 200px;
       height: 200px;
       position: relative;
-      margin: 0; }
+      margin: 0px; }
     .food-block .food-text {
       display: block;
       position: absolute;
-      width: 100px;
+      width: 120px;
       height: 200px;
       text-align: left;
       color: #fff;
       font-size: 16px;
       background-color: rgba(85, 85, 85, 0.85);
       padding: 10px;
-      top: 0;
-      right: 0; }
+      top: 0px;
+      right: 0px; }
     .food-block:hover .food-text {
       display: block;
       position: absolute;
@@ -514,8 +543,8 @@ ul.bare-list {
       font-size: 16px;
       background-color: rgba(85, 85, 85, 0.85);
       padding: 10px;
-      top: 0;
-      right: 0; } }
+      top: 0px;
+      right: 0px; } }
 /* Portrait */
 /* Landscape */
 /* ----------- iPhone 5 and 5S ----------- */
@@ -530,31 +559,31 @@ ul.bare-list {
       width: 200px;
       height: 200px;
       position: relative;
-      margin: 0; }
+      margin: 0px; }
     .nutrition .food-block .food-text {
       display: block;
       position: absolute;
-      width: 100px;
+      width: 120px;
       height: 200px;
       text-align: left;
       color: #fff;
       font-size: 16px;
       background-color: rgba(85, 85, 85, 0.85);
       padding: 10px;
-      top: 0;
-      right: 0; }
+      top: 0px;
+      right: 0px; }
     .nutrition .food-block:hover .food-text {
       display: block;
       position: absolute;
-      width: 100px;
+      width: 120px;
       height: 200px;
       text-align: left;
       color: #fff;
       font-size: 16px;
       background-color: rgba(85, 85, 85, 0.85);
       padding: 10px;
-      top: 0;
-      right: 0; } }
+      top: 0px;
+      right: 0px; } }
 /* Portrait */
 /* Landscape */
 /* ----------- iPhone 6 ----------- */
@@ -569,31 +598,31 @@ ul.bare-list {
       width: 200px;
       height: 200px;
       position: relative;
-      margin: 0; }
+      margin: 0px; }
     .nutrition .food-block .food-text {
       display: block;
       position: absolute;
-      width: 100px;
+      width: 120px;
       height: 200px;
       text-align: left;
       color: #fff;
       font-size: 16px;
       background-color: rgba(85, 85, 85, 0.85);
       padding: 10px;
-      top: 0;
-      right: 0; }
+      top: 0px;
+      right: 0px; }
     .nutrition .food-block:hover .food-text {
       display: block;
       position: absolute;
-      width: 100px;
+      width: 120px;
       height: 200px;
       text-align: left;
       color: #fff;
       font-size: 16px;
       background-color: rgba(85, 85, 85, 0.85);
       padding: 10px;
-      top: 0;
-      right: 0; } }
+      top: 0px;
+      right: 0px; } }
 /* Portrait */
 /* Landscape */
 /* ----------- iPhone 6+ ----------- */
@@ -608,31 +637,31 @@ ul.bare-list {
       width: 200px;
       height: 200px;
       position: relative;
-      margin: 0; }
+      margin: 0px; }
     .nutrition .food-block .food-text {
       display: block;
       position: absolute;
-      width: 100px;
+      width: 120px;
       height: 200px;
       text-align: left;
       color: #fff;
       font-size: 16px;
       background-color: rgba(85, 85, 85, 0.85);
       padding: 10px;
-      top: 0;
-      right: 0; }
+      top: 0px;
+      right: 0px; }
     .nutrition .food-block:hover .food-text {
       display: block;
       position: absolute;
-      width: 100px;
+      width: 120px;
       height: 200px;
       text-align: left;
       color: #fff;
       font-size: 16px;
       background-color: rgba(85, 85, 85, 0.85);
       padding: 10px;
-      top: 0;
-      right: 0; } }
+      top: 0px;
+      right: 0px; } }
 /* Portrait */
 /* Landscape */
 /* ----------- iPad mini ----------- */
@@ -647,31 +676,31 @@ ul.bare-list {
       width: 200px;
       height: 200px;
       position: relative;
-      margin: 0; }
+      margin: 0px; }
     .nutrition .food-block .food-text {
       display: block;
       position: absolute;
-      width: 100px;
+      width: 120px;
       height: 200px;
       text-align: left;
       color: #fff;
       font-size: 16px;
       background-color: rgba(85, 85, 85, 0.85);
       padding: 10px;
-      top: 0;
-      right: 0; }
+      top: 0px;
+      right: 0px; }
     .nutrition .food-block:hover .food-text {
       display: block;
       position: absolute;
-      width: 100px;
+      width: 120px;
       height: 200px;
       text-align: left;
       color: #fff;
       font-size: 16px;
       background-color: rgba(85, 85, 85, 0.85);
       padding: 10px;
-      top: 0;
-      right: 0; } }
+      top: 0px;
+      right: 0px; } }
 /* Portrait */
 /* Landscape */
 /* ----------- iPad 1 and 2 ----------- */
@@ -686,31 +715,31 @@ ul.bare-list {
       width: 200px;
       height: 200px;
       position: relative;
-      margin: 0; }
+      margin: 0px; }
     .nutrition .food-block .food-text {
       display: block;
       position: absolute;
-      width: 100px;
+      width: 120px;
       height: 200px;
       text-align: left;
       color: #fff;
       font-size: 16px;
       background-color: rgba(85, 85, 85, 0.85);
       padding: 10px;
-      top: 0;
-      right: 0; }
+      top: 0px;
+      right: 0px; }
     .nutrition .food-block:hover .food-text {
       display: block;
       position: absolute;
-      width: 100px;
+      width: 120px;
       height: 200px;
       text-align: left;
       color: #fff;
       font-size: 16px;
       background-color: rgba(85, 85, 85, 0.85);
       padding: 10px;
-      top: 0;
-      right: 0; } }
+      top: 0px;
+      right: 0px; } }
 /* Portrait */
 /* Landscape */
 /* ----------- iPad 3 and 4 ----------- */
@@ -725,31 +754,31 @@ ul.bare-list {
       width: 200px;
       height: 200px;
       position: relative;
-      margin: 0; }
+      margin: 0px; }
     .nutrition .food-block .food-text {
       display: block;
       position: absolute;
-      width: 100px;
+      width: 120px;
       height: 200px;
       text-align: left;
       color: #fff;
       font-size: 16px;
       background-color: rgba(85, 85, 85, 0.85);
       padding: 10px;
-      top: 0;
-      right: 0; }
+      top: 0px;
+      right: 0px; }
     .nutrition .food-block:hover .food-text {
       display: block;
       position: absolute;
-      width: 100px;
+      width: 120px;
       height: 200px;
       text-align: left;
       color: #fff;
       font-size: 16px;
       background-color: rgba(85, 85, 85, 0.85);
       padding: 10px;
-      top: 0;
-      right: 0; } }
+      top: 0px;
+      right: 0px; } }
 /* Portrait */
 /* Landscape */
 
