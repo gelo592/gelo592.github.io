@@ -57,58 +57,39 @@ $(function () {
 	function narvClickResponse(e) {
 		e = e.currentTarget;
 		togs = e.dataset["toogle"];
+		console.log("t", tog);
 		$(".narvlet").removeClass("active");
 		$(e).addClass("active");
 
 		if(togs == "home") {
 			//stop & remove proj meeps
-			$("#proj-meep").hide();
+			$("#perjerkt").hide();
 
 			//stop & remove contact meeps
-			$("#contact-meep").hide();
+			$("#kernterk").hide();
 
 			//reset letters to home color restart & display home meeps
-			$(".streak").attr({fill: "#000"});
-			$("#home-meep").show();
-			meepUp(0, ["#boop", "#doop", "#foop", "#koop", "#moop"], 0);
+			$("#herm").show();
 		}
 		else if(togs == "proj") {
 			//stop & remove home meeps
-			$("#home-meep").hide();
-			$(".meep").removeClass("meep-up");
-			$(".meep").removeClass("meep-down");
-			clearTimeout(meepingMeepersStopMeepin);
-
+			$("#herm").hide();
 			//stop & remove contact meeps
-			$("#contact-meep").hide();
+			$("#kernterk").hide();
 
 			//reset letters to home color restart & display proj meeps
-			$(".streak").attr({fill: "#64B774"});
-			$("#proj-meep").show();
+			$("#perjerkt").show();
 		}
 		else if(togs == "contact") {
 			//stop & remove home meeps
-			$("#home-meep").hide();
-			$(".meep").removeClass("meep-up");
-			$(".meep").removeClass("meep-down");
-			clearTimeout(meepingMeepersStopMeepin);
+			$("#herm").hide();
 
 			//stop & remove proj meeps
-			$("#proj-meep").hide();
+			$("#perjerkt").hide();
 
 			//reset letters to home color restart & display contact meeps
-			$(".streak").attr({fill: "#CE78AE"});
-			$("#contact-meep").show();
+			$("#kernterk").show();
 		}
-		/*
-		toggles bubbles
-
-		caret = e.dataset["caret"];
-		$(".info-sect").hide();
-		$(togs).show();
-		$(togs + "::after").attr("left", caret);*/
-
-
 	}
 
 	$(".narvlet").click(narvClickResponse);

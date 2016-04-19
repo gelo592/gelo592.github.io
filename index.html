@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
     <link href="css/grace.css" rel="stylesheet">
     <link href="css/letters.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link href="images/boo.jpg" type="image/jpg" rel="icon">
-
 
     <meta charset="utf-8">
 
-    <title>Grace Link</title>
+    <title>g e link</title>
     <!--<script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -21,47 +20,119 @@
     ga('send', 'pageview');
     </script>-->
   </head>
-  <body>
-    <svg id="svg"></svg>
-    <div class="allthestuff">
-      <div class="meep-block" id="home-meep">
-        <div class="meep-container">
-          <p id="boop" class="meep">Benvinguda</p>
+  <body class="index">
+    <!-- Poiiiiintssss -->
+    <div class="point-counter-wrap">
+      <span>Points: </span>
+      <span id="point-counter">0</span>
+    </div>
+    <!-- Home section -->
+    <div id="herm" class="container-fluid">
+      <div class="meepers">
+        <div class="meep-word-wrap">
+          <p class="meep-word">Welcome</p>
         </div>
-        <div class="meep-container">
-          <p id="doop" class="meep">a</p>
+        <div class="meep-word-wrap">
+          <p class="meep-word">to</p>
         </div>
-        <div class="meep-container">
-          <p id="foop" class="meep">Grace</p>
+        <div class="meep-word-wrap">
+          <p class="meep-word">grace</p>
         </div>
-        <div class="meep-container">
-          <p id="koop" class="meep">punt</p>
+        <div class="meep-word-wrap">
+          <p class="meep-word">dot</p>
         </div>
-        <div class="meep-container">
-          <p id="moop" class="meep">gat</p>
+        <div class="meep-word-wrap">
+          <p class="meep-word">cat</p>
         </div>
       </div>
-      <div class="meep-block" id="proj-meep">
-        <!--<a class="shuffle"><i class="fa fa-chevron-up"></i></a>-->
-        <p class=""><a href="http://www.collegiatekicks.com">Collegiate Kicks</a></p>
-        <p class="desc"> are hand made leather flats whose profits support Salvadorean artisans and whose spirit support Mizzou!</p>
-        <p class=""><a href="http://www.kermpany.com">Pample (working title)</a></p>
-        <p class="desc">an experiment with online language education and gaming.</p>
-        <p class=""><a href="http://www.kermpany.com/ipa">IPA Learnorator</a></p>
-        <p class="desc"> designed to help learn the ipa transliteration for american english.</p>
-        <!--<a class="shuffle"><i class="fa fa-chevron-down"></i></a>-->
+    </div>
+
+    <!-- Project section -->
+    <div id="perjerkt" class="container-fluid">
+      <div class="meepers">
+        <div class="perjerkt-wrap">
+          <div class="perjerkt-name">
+            <p><a class="points" href="#" data-toggle="brain">Brain Billy</a></p>
+          </div>
+        </div>
+        <div class="perjerkt-wrap">
+          <div class="perjerkt-name">
+            <p><a class="points" href="#" data-toggle="mail">Mail Billy</a></p>
+          </div>
+        </div>
+        <div class="perjerkt-wrap">
+          <div class="perjerkt-name">
+            <p><a class="points" href="#" data-toggle="med">Integrative Med</a></p>
+          </div>
+        </div>
+        <div class="perjerkt-wrap">
+          <div class="perjerkt-name">
+            <p><a class="points" href="#" data-toggle="shoes">Collegiate Kicks</a></p>
+          </div>
+        </div>
+        <div class="perjerkt-wrap">
+          <div class="perjerkt-name">
+            <p><a class="points" href="#" data-toggle="kermp">Kermpany</a></p>
+          </div>
+        </div>
       </div>
-      <div class="meep-block" id="contact-meep">
-        <p><a href="mailto:link@grace.cat">link@grace.cat</a></p>
-        <p class="desc">where you should send inquiries</p>
+      <div class="meepers-desc">
+        <div id="brain" class="perjerkt-desc">
+          <h2>Brain Billy</h2>
+          <p><a href="https://brainbilly.com">site</a></p>
+          <p>A beta version of an online platform for teaching english through cognitive games. Each game is based on a cognitive science idea for helping memory and retention targeting one of the key areas of language learning. The aim was to teach professionals in a dopamine stimulating environment which is essential to retaining knowledge.</p>
+          <p>conceptualized, built and maintained a full tech stack. Postgresql DB, flask server, angular js frontend running through nginx on an AWS ec2 instance.</p>
+        </div>
+        <div id="mail" class="perjerkt-desc">
+          <h2>Mail Billy</h2>
+          <p><a href="https://mailbilly.com">site</a></p>
+          <p>A speed translation service that returns small texts translated, corrected, or enhanced in under an hour. For larger text a time estimate is delivered in an hour. This service goes beyond verbatim translations by adding a native vocabulary and flair that will appeal to the target audience. </p>
+          <p>designed, built, and maintained simple website using stripe and running on heroku</p>
+        </div>
+        <div id="med" class="perjerkt-desc">
+          <h2>Integrative Medicine</h2>
+          <p><a href="http://drchrislink.com">site</a></p>
+          <p>A complimentary and alternative medicine clinic in mid-Missouri.  A primary focus of the clinic is to leverage the power of Food as Medicine as well as participating in educating our patients and community to improve health outcomes.</p>
+          <p>designed, built, and maintained simple website hosted through amazon s3</p>
+        </div>
+        <div id="shoes" class="perjerkt-desc">
+          <h2>Collegiate Kicks</h2>
+          <p><a href="http://collegiatekicks.com">site</a></p>
+          <p>Collegiate themed leather flats produced in partnership with the GARROBO project an NGO in El Salvador that helps empower young mothers through skills training and community resources. </p>
+          <p>designed, built, maintained simple website run through github pages with a square store.</p>
+        </div>
+        <div id="kermp" class="perjerkt-desc">
+          <h2>Kermpany</h2>
+          <p>A front ‘company’ for various projects, experiments, and endeavors.</p>
+          <p>including but not limited to:</p>
+          <ul>
+            <li><a href="http://kermpany.com">Pample Language Learning Laboratory</a></li>
+            <li><a href="http://kermpany.com/moneymoneymoney">kermpany donations</a></li>
+            <li><a href="https://kermpany.com/savethelark">save lucas fund</a></li>
+            <li>educational cakes</li>
+            <li><a href="http://kermpany.com/eye-pee-eh">ipa learnorator</a></li>
+            <li>pergerder designer smells</li>
+            <li><a href="http://kermpany.com/the_gang">css people</a></li>
+            <li>graces faces</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact section -->
+    <div id="kernterk" class="container-fluid">
+      <div class="meepers">
+        <p><a href="mailto:link@grace.cat"><i class="fa fa-envelope-o"></i>  link@grace.cat</a></p>
+        <p><a href="https://github.com/gelo592"><i class="fa fa-github-alt"></i>  github</a></p>
+        <p><a href="https://gitlab.com/u/gelink"><i class="fa fa-gitlab"></i>  gitlab</a></p>
+        <p><a href="https://www.linkedin.com/in/grace-link-512075aa"><i class="fa fa-linkedin-square"></i>  linkedin</a></p>
       </div>
     </div>
     <footer class="footer">
       <ul class="nav">
-        <!--<li><a class="narvlet" href="#" data-toogle="#me" data-caret="42px">not about me</a></li>-->
-        <li><a class="narvlet active" href="#" data-toogle="home" data-care="138px">home</a></li>
-        <li><a class="narvlet" href="#" data-toogle="proj" data-care="138px">projects</a></li>
-        <li><a class="narvlet" href="#" data-toogle="contact" data-caret="216px">contact</a></li>
+        <li><a class="narvlet active" href="#" data-toogle="home">home</a></li>
+        <li><a class="points narvlet" href="#" data-toogle="proj">projects</a></li>
+        <li><a class="points narvlet" href="#" data-toogle="contact">contact</a></li>
       </ul>
     </footer>
     <script src="js/jquery-2.1.1.min.js"></script>

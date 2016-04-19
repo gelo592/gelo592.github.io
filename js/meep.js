@@ -5,12 +5,11 @@ $(function () {
   var contactIntervalID;
 
   function startHomeMeeps(meepDex, actionIndex) {
-    $("#home-meep").show();
+    $("#herm").show();
     $(".streak").attr({fill: "#000"});
 
     var meepers = ["Welcome to Grace dot cat",
       "Bienvenue à Grace point chat",
-      "グレイス ドット 猫 へ ようこそ",
       "Willkommen auf Grace Punkte Katze",
       "Bienvenido a Grace punto gato",
       "Välkommen till Grace Punkt Katt",
@@ -50,27 +49,27 @@ $(function () {
     clearInterval(homeIntervalID);
     $(".meep").removeClass("meep-up");
     $(".meep").removeClass("meep-down");
-    $("#home-meep").hide();
+    $("#herm").hide();
   }
 
   function startProjMeeps() {
-    $("#proj-meep").show();
+    $("#perjerkt").show();
     $(".streak").attr({fill: "#64B774"});
 
   }
 
   function stopProjMeeps() {
-    $("#proj-meep").hide();
+    $("#perjerkt").hide();
   }
 
   function startContactMeeps() {
-    $("#contact-meep").show();
+    $("#kernterk").show();
     $(".streak").attr({fill: "#CE78AE"});
 
   }
 
   function stopContactMeeps() {
-    $("#contact-meep").hide();
+    $("#kernterk").hide();
   }
 
   function switchMeeps(e) {
@@ -99,8 +98,43 @@ $(function () {
     }
   }
 
-  $(".narvlet").click(switchMeeps);
+  function switchPerjekt (e) {
+    e = e.currentTarget;
+    togs = e.dataset["toggle"];
 
+    switch (togs) {
+      case "brain":
+        $(".perjerkt-desc").hide();
+        $("#brain").show();
+        break;
+      case "mail":
+        $(".perjerkt-desc").hide();
+        $("#mail").show();
+        break;
+      case "shoes":
+        $(".perjerkt-desc").hide();
+        $("#shoes").show();
+        break;
+      case "kermp":
+        $(".perjerkt-desc").hide();
+        $("#kermp").show();
+        break;
+      case "med":
+        $(".perjerkt-desc").hide();
+        $("#med").show();
+        break;
+    }
+  }
+
+  function incrementPoints(e) {
+    var points = parseInt($("#point-counter")[0].innerHTML);
+    points += e.data.points;
+    $("#point-counter")[0].innerHTML = points;
+  }
+
+  $(".points").one("click", {points : 10}, incrementPoints);
+  $(".narvlet").click(switchMeeps);
+  $(".perjerkt-name a").click(switchPerjekt);
   startHomeMeeps(0, 0);
 
 });
