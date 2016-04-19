@@ -123,13 +123,11 @@
         font-size: 22px;
         margin-left: 20px;
         font-family: 'Amatic';
-        color: #000;
         position: relative;
 
         &:nth-child(1) a:hover::after,
         &:nth-child(1) a.active::after {
           content: '';
-          background: url("../img/underline-1.svg") center bottom no-repeat;
           height: 8px;
           position: absolute;
           width: 33px;
@@ -137,10 +135,18 @@
           bottom: -5px;
         }
 
+        &:nth-child(1) a.active:hover::after,
+        &:nth-child(1) a:hover::after {
+          background: url("../img/underline-1-g.svg") center bottom no-repeat;
+        }
+
+        &:nth-child(1) a.active::after {
+          background: url("../img/underline-1.svg") center bottom no-repeat;
+        }
+
         &:nth-child(2) a:hover::after,
         &:nth-child(2) a.active::after {
           content: '';
-          background: url("../img/underline-2.svg") center no-repeat;
           height: 8px;
           position: absolute;
           width: 50px;
@@ -148,10 +154,18 @@
           bottom: -5px;
         }
 
+        &:nth-child(2) a.active:hover::after,
+        &:nth-child(2) a:hover::after {
+          background: url("../img/underline-2-g.svg") center bottom no-repeat;
+        }
+
+        &:nth-child(2) a.active::after {
+          background: url("../img/underline-2.svg") center bottom no-repeat;
+        }
+
         &:nth-child(3) a:hover::after,
         &:nth-child(3) a.active::after {
           content: '';
-          background: url("../img/underline-3.svg") center bottom no-repeat;
           height: 8px;
           position: absolute;
           width: 49px;
@@ -159,8 +173,18 @@
           bottom: -5px;
         }
 
+        &:nth-child(3) a.active:hover::after,
+        &:nth-child(3) a:hover::after {
+          background: url("../img/underline-3-g.svg") center bottom no-repeat;
+        }
+
+        &:nth-child(3) a.active::after {
+          background: url("../img/underline-3.svg") center bottom no-repeat;
+        }
+
         a {
           text-decoration: none;
+          color: #000;
 
           &:hover {
             color: #239f32;
