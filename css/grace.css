@@ -12,7 +12,10 @@
   src: url("../fonts/OpenSans-CondLight-webfont.eot?iefix") format("eot"), url("../fonts/OpenSans-CondLight-webfont.woff") format("woff"), url("../fonts/OpenSans-CondLight-webfont.ttf") format("truetype"), url("../fonts/OpenSans-CondLight-webfont.svg#webfont") format("svg"); }
 .index .point-counter-wrap {
   position: absolute;
-  right: 42px; }
+  right: 42px;
+  font-family: 'Amatic';
+  font-size: 18px;
+  text-transform: uppercase; }
 .index #herm .meepers {
   font-family: 'Bar'; }
 .index #perjerkt,
@@ -26,10 +29,14 @@
   .index #kernterk .meepers-desc {
     width: 60%;
     float: left; }
+.index #kernterk .meepers::before {
+  background: url("../img/sideline-p.svg") no-repeat; }
 .index #kernterk a {
   color: #B8EA64; }
   .index #kernterk a:hover {
     color: #F1503C; }
+.index #perjerkt .meepers::before {
+  background: url("../img/sideline-g.svg") no-repeat; }
 .index #perjerkt a {
   color: #7CD1E0; }
   .index #perjerkt a:hover {

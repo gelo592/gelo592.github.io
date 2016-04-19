@@ -29,6 +29,9 @@
   .point-counter-wrap {
     position: absolute;
     right: 42px;
+    font-family: 'Amatic';
+    font-size: 18px;
+    text-transform: uppercase;
   }
   #herm {
     .meepers {
@@ -51,6 +54,10 @@
   }
 
   #kernterk {
+    .meepers::before {
+      background: url("../img/sideline-p.svg") no-repeat;
+    }
+
     a {
       color: #B8EA64;
 
@@ -65,7 +72,9 @@
   }
 
   #perjerkt {
-
+    .meepers::before {
+      background: url("../img/sideline-g.svg") no-repeat;
+    }
     a {
       color: #7CD1E0;
 
