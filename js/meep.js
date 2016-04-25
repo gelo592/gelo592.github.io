@@ -106,22 +106,27 @@ $(function () {
       case "brain":
         $(".perjerkt-desc").hide();
         $("#brain").show();
+        $("#brain-xs").show();
         break;
       case "mail":
         $(".perjerkt-desc").hide();
         $("#mail").show();
+        $("#mail-xs").show();
         break;
       case "shoes":
         $(".perjerkt-desc").hide();
         $("#shoes").show();
+        $("#shoes-xs").show();
         break;
       case "kermp":
         $(".perjerkt-desc").hide();
         $("#kermp").show();
+        $("#kermp-xs").show();
         break;
       case "med":
         $(".perjerkt-desc").hide();
         $("#med").show();
+        $("#med-xs").show();
         break;
     }
   }
@@ -132,6 +137,63 @@ $(function () {
     $("#point-counter")[0].innerHTML = points;
   }
 
+  function handleTyping(e) {
+    var key = e.keyCode;
+    console.log(key);
+
+    switch (key) {
+      case 65://A
+        typeLetter();
+        break;
+      case 69://E
+        typeLetter();
+        break;
+      case 70://F
+        typeLetter();
+        break;
+      case 72://H
+        typeLetter();
+        break;
+      case 73://I
+        typeLetter();
+        break;
+      case 75://K
+        typeLetter();
+        break;
+      case 76://L
+        typeLetter();
+        break;
+      case 77://M
+        typeLetter();
+        break;
+      case 78://N
+        typeLetter();
+        break;
+      case 84://T
+        typeLetter();
+        break;
+      case 86://V
+        typeLetter();
+        break;
+      case 87://W
+        typeLetter();
+        break;
+      case 88://X
+        typeLetter();
+        break;
+      case 89://Y
+        typeLetter();
+        break;
+      case 90://Z
+        typeLetter();
+        break;
+      default:
+        console.log(key);
+        break;
+    }
+  }
+
+  $(window).keydown(handleTyping);
   $(".points").one("click", {points : 10}, incrementPoints);
   $(".narvlet").click(switchMeeps);
   $(".perjerkt-name a").click(switchPerjekt);

@@ -106,11 +106,15 @@
       }
     }
 
-    .meepers-desc {
+    .meepers-desc, .meepers {
       font-family: 'Open';
       .perjerkt-desc {
         display: none;
         font-size: 22px;
+
+        &#brain {
+          display: block;
+        }
       }
 
       ul {
@@ -216,4 +220,38 @@
 .nav>li>a:hover,
 .nav>li>a:focus {
   background-color: transparent;
+}
+
+
+
+@media(max-width: 768px) {
+  .index {
+    #perjerkt,
+    #kernterk {
+      display: none;
+      .meepers {
+        width: 90%;
+        font-size: 32px;
+        .perjerkt-desc {
+          font-size: 16px;
+        }
+      }
+    }
+
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px) {
+.index {
+    #perjerkt,
+    #kernterk {
+      display: none;
+      .meepers {
+        width: 46%;
+      }
+      .meepers-desc {
+        width: 50%;
+      }
+    }
+  }
 }

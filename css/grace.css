@@ -56,12 +56,14 @@
       width: 14px;
       left: 60px;
       top: 42px; }
-  .index .container-fluid .meepers-desc {
+  .index .container-fluid .meepers-desc, .index .container-fluid .meepers {
     font-family: 'Open'; }
-    .index .container-fluid .meepers-desc .perjerkt-desc {
+    .index .container-fluid .meepers-desc .perjerkt-desc, .index .container-fluid .meepers .perjerkt-desc {
       display: none;
       font-size: 22px; }
-    .index .container-fluid .meepers-desc ul {
+      .index .container-fluid .meepers-desc .perjerkt-desc#brain, .index .container-fluid .meepers .perjerkt-desc#brain {
+        display: block; }
+    .index .container-fluid .meepers-desc ul, .index .container-fluid .meepers ul {
       list-style-image: url("../img/dot.svg"); }
 .index .footer {
   width: 100%; }
@@ -123,5 +125,27 @@
 .nav > li > a:hover,
 .nav > li > a:focus {
   background-color: transparent; }
+
+@media (max-width: 768px) {
+  .index #perjerkt,
+  .index #kernterk {
+    display: none; }
+    .index #perjerkt .meepers,
+    .index #kernterk .meepers {
+      width: 90%;
+      font-size: 32px; }
+      .index #perjerkt .meepers .perjerkt-desc,
+      .index #kernterk .meepers .perjerkt-desc {
+        font-size: 16px; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  .index #perjerkt,
+  .index #kernterk {
+    display: none; }
+    .index #perjerkt .meepers,
+    .index #kernterk .meepers {
+      width: 46%; }
+    .index #perjerkt .meepers-desc,
+    .index #kernterk .meepers-desc {
+      width: 50%; } }
 
 /*# sourceMappingURL=grace.css.map */
