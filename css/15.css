@@ -1,0 +1,52 @@
+.puzzle-box, .puzzle-hint {
+  position: relative;
+  display: none;
+  width: 45vw;
+  height: 45vw;
+  margin-left: 3vw;
+}
+
+.puzzle-img {
+  background-image: url("../img/pup.png");
+  background-size: 45vw;
+}
+
+.puzzle-tile-wrap {
+  position: absolute;
+  border: 1px solid rgb(216, 216, 216);
+  margin: 1px;
+}
+
+.puzzle-tile-wrap .puzzle-tile {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #F76161;
+  padding: 2px;
+  display: none;
+}
+
+.button-box {
+  margin-bottom: .8em;
+}
+
+.button-box .btn {
+  border: 1px solid rgb(216, 216, 216);
+  padding: .25em .5em;
+}
+
+.button-box .btn:hover {
+  cursor: pointer;
+  background-color: rgb(216, 216, 216);
+}
+
+
+@media (max-width: 35em) {
+  .puzzle-box, .puzzle-hint {
+    width: 80vw;
+    height: 80vw;
+    margin-left: 10vw;
+  }
+  .puzzle-img {
+    background-size: 80vw;
+  }
+}
