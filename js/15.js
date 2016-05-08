@@ -95,6 +95,7 @@ puzzle.main = {
   buildPuzzleHTML: function () {
     //reset board
     var $puzzle_tile_wrap = $(".puzzle-tile-wrap");
+
     $puzzle_tile_wrap.remove();
     this.puzzle_board = []
     $("#move-counter")[0].innerHTML = 0;
@@ -108,8 +109,8 @@ puzzle.main = {
       this.puzzle_board.push(i);
 
       //calculare tile image offsets
-      bgOffsetX = (100/(this.n - 1)) * (i % this.n);
-      bgOffsetY = (100/(this.n - 1)) * (Math.floor(i / this.n));
+      bgOffsetX = (100 / (this.n - 1)) * (i % this.n);
+      bgOffsetY = (100 / (this.n - 1)) * (Math.floor(i / this.n));
 
       //add div to puzzle box
       var divHTML = '<div style="background-position:' + bgOffsetX + '% ' + bgOffsetY + '%;" class="puzzle-tile-wrap puzzle-img" data-index=' + i + '>' +
@@ -146,6 +147,7 @@ puzzle.main = {
     }, this));
 
     $(".puzzle-box").css("display", "inline-block");
+    $(".puzzle-img").css("background-size", boardWidth);
   },
 
   checkSorted: function () {
