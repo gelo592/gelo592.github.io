@@ -170,7 +170,7 @@ puzzle.main = {
   },
 
   toggleInline: function(e){
-    var $toggle_target = $(e.currentTarget.dataset['toggle']);
+    var $toggle_target = $(e.currentTarget.getAttribute('data-toggle'));
     if($toggle_target.hasClass("visible")) {
       $toggle_target.removeClass("visible");
     }
@@ -180,7 +180,7 @@ puzzle.main = {
   },
 
   clickHandler: function (e) {
-    var domIndex = parseInt(e.currentTarget.dataset['index']),
+    var domIndex = parseInt(e.currentTarget.getAttribute("data-index")),
       tileIndex = this.puzzle_board.indexOf(domIndex),
       tileX = tileIndex % this.n,
       tileY = Math.floor(tileIndex / this.n);
