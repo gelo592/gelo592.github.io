@@ -165,7 +165,7 @@ puzzle.main = {
   },
 
   attachHandlers: function () {
-    $("#newGameBtn").click(function(e){puzzle.main.playPuzzle(4);});
+    $("#newGameBtn").click(function(e){ var gameSize = $('#gameSize').find(":selected").text(); puzzle.main.playPuzzle(gameSize);});
     $("#showImgBtn").click(this.toggleInline);
     $("#showNumberBtn").click(this.toggleInline);
     $(window).resize($.proxy(this.drawPuzzleBoard, this));

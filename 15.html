@@ -9,12 +9,18 @@
       <a id="showImgBtn" class="btn" data-toggle=".puzzle-hint">toggle image</a>
       <a id="showNumberBtn" class="btn" data-toggle=".puzzle-tile">toggle tile numbers</a>
       <a id="newGameBtn" class="btn">start new game</a>
-    </div>
-    <div class="move-counter-box">
-      <span>moves:</span><span id="move-counter">0</span>
+      <select id="gameSize">
+        <option value="3">3</option>
+        <option value="4" selected="selected">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+      </select>
     </div>
     <div class="puzzle-box"></div>
     <div class="puzzle-hint puzzle-img"></div>
+    <div class="move-counter-box">
+      <span>moves:</span><span id="move-counter">0</span>
+    </div>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <!--<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>-->
     <script type="text/javascript" src="js/15.js"></script>
