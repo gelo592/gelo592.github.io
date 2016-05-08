@@ -67,8 +67,6 @@ puzzle.main = {
 
   shufflePuzzleBoard: function () {
     var counter = 1000, //some arbitrary high number to give greater mixing potential
-      cryptoArr = new Uint8Array(1),
-      cryptoObj = window.crypto || window.msCrypto,
       swapIndex,
       neighborIndex,
       emptyValue,
@@ -78,7 +76,7 @@ puzzle.main = {
       swappables = this.getSwappables(this.emptyIndex);
 
       //of the valid neighbor tiles randomly choose one
-      swapIndex = Math.floor(cryptoObj.getRandomValues(cryptoArr)[0] / 256 * swappables.length);
+      swapIndex = Math.floor(Math.random() * swappables.length);
       neighborIndex = swappables[swapIndex];
 
       //swap random neighbor tile and empty tile in puzzle array
@@ -124,6 +122,8 @@ puzzle.main = {
 
     $(".puzzle-img").css("background-image", this.imageArr[this.imgIndex % 3]);
     this.imgIndex++;
+
+    $(".puzzle-tile-wrap").click($.proxy(this.clickHandler, this));
   },
 
   drawPuzzleBoard: function () {
@@ -163,25 +163,30 @@ puzzle.main = {
   },
 
   attachHandlers: function () {
-    $(".puzzle-tile-wrap").click($.proxy(this.clickHandler, this));
-    $("#showImgBtn").mousedown(function(e){$(".puzzle-hint").css("display", "inline-block");});
-    $("#showImgBtn").mouseup(function(e){$(".puzzle-hint").css("display", "none");});
-    $("#showNumberBtn").mousedown(function(e){$(".puzzle-tile").css("display", "inline-block");});
-    $("#showNumberBtn").mouseup(function(e){$(".puzzle-tile").css("display", "none");});
+    $("#newGameBtn").click(function(e){puzzle.main.playPuzzle(4);});
+    $("#showImgBtn").click(this.toggleInline);
+    $("#showNumberBtn").click(this.toggleInline);
     $(window).resize($.proxy(this.drawPuzzleBoard, this));
   },
 
+  toggleInline: function(e){
+    var $toggle_target = $(e.currentTarget.dataset['toggle']);
+    if($toggle_target.hasClass("visible")) {
+      $toggle_target.removeClass("visible");
+    }
+    else {
+      $toggle_target.addClass("visible");
+    }
+  },
+
   clickHandler: function (e) {
-    console.log("hi");
     var domIndex = parseInt(e.currentTarget.dataset['index']),
       tileIndex = this.puzzle_board.indexOf(domIndex),
       tileX = tileIndex % this.n,
       tileY = Math.floor(tileIndex / this.n);
 
-    console.log( "hi hi", tileX, tileY );
     //check that tile is andjacent then move
     if(this.canMove(tileX, tileY)) {
-      console.log( "move me!", tileX, tileY );
       this.moveTile(tileIndex, tileX, tileY);
     }
   },
@@ -193,11 +198,8 @@ puzzle.main = {
     this.buildPuzzleHTML();
     this.shufflePuzzleBoard();
     this.drawPuzzleBoard();
-    this.attachHandlers();
   }
 };
 
-
-//bug when using this button (emptyX and emptyY are incorrect :/)
-$("#newGameBtn").click(function(e){puzzle.main.playPuzzle(4);});
+puzzle.main.attachHandlers();
 puzzle.main.playPuzzle(4);

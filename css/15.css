@@ -7,7 +7,6 @@
 }
 
 .puzzle-img {
-  background-image: url("../img/pup.png");
   background-size: 45vw;
 }
 
@@ -17,7 +16,7 @@
   margin: 1px;
 }
 
-.puzzle-tile-wrap .puzzle-tile {
+.puzzle-tile {
   font-size: 1.4em;
   font-weight: bold;
   color: #F76161;
@@ -39,6 +38,9 @@
   background-color: rgb(216, 216, 216);
 }
 
+.visible {
+  display: inline-block;
+}
 
 @media (max-width: 35em) {
   .puzzle-box, .puzzle-hint {
