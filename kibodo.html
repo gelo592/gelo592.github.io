@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Hergs fer everywern</title>
+    <link rel="stylesheet" href="css/hergs.css" />
+    <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div class="connection-warning"></div>
+    <h1>feel the feels</h1>
+    <div class="hug-box">
+      <div class="prehug-warning">Hold you hug horses! Nobody's here yet!</div>
+      <div class="orb-box">
+        <div class="hug-orb"></div>
+      </div>
+      <div id="key-hints"></div>
+      <div id="space-hints"></div>
+      <div id="p1" class="hug-man">
+        <div class="hug-body"></div>
+        <div class="hug-arm"></div>
+        <div class="heart"></div>
+      </div>
+      <div id="p2-ghost" class="hug-man">
+        <div class="hug-body"></div>
+      </div>
+      <div id="p2" class="hug-man">
+        <div class="hug-body"></div>
+        <div class="hug-arm"></div>
+        <div class="heart"></div>
+      </div>
+      <div id="space-hints"></div>
+      <p id="error">you got hugged out.</p>
+      <p id="hater">YOU TRYING TO GET IN ON SOMEONE ELSE'S HUG? FOR REAL?</p>
+    </div>
+    <div id="linkity">
+      <div id="linkity_container">
+        <div>Send this link to a huggable frand:</div>
+        <input id="linkity_link" value="asdf">
+        <button class="btn" data-clipboard-target="#linkity_link">
+          <img src="img/clippy.svg" alt="Copy to clipboard">
+        </button>
+        <div style="font-size: smaller; padding-top: 2px; padding-bottom: 2px;">(or an unhuggable non-frand you cruella deville you)</div>
+      </div>
+    </div>
+
+    <div class="fin">
+      <h1 class="fin-title">fin</h1>
+      <div class="replay-box"><div class="replay"></div></div>
+    </div>
+    <div class="button-box">
+      <button class="move-button move-left" data-keycode="37"></button>
+      <button class="move-button move-right" data-keycode="39"></button>
+    </div>
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/clipboard.min.js"></script>
+    <script src="js/peer.min.js"></script>
+    <script src="js/hergs.js"></script>
+  </body>
+</html>
