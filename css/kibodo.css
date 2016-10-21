@@ -9,7 +9,7 @@
 }
 
 .key {
-  background-image: url('img/keys.png');
+  background-image: url('../img/keys.png');
   background-size: 120px;
   background-repeat: no-repeat;
   display: inline-block;
