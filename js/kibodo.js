@@ -104,7 +104,7 @@ var kibodo = {
   setClip: function(clip) {
     //if(clip != this.currentClip) {
       this.currentClip = clip;
-      $("#vid")[0].src = "file:///Users/gelink/Projets/kibodo/clips/" + clip + ".mp4";
+      $("#vid")[0].src = "clips/" + clip + ".mp4";
     /*}
     else {
       //seek to beginning
