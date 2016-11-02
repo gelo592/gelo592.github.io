@@ -45,9 +45,12 @@ var kibodo = {
   },
 
   changePlaybackSpeed: function(rate) {
+    console.log("here");
     var newRate = this.currentPlaybackRate + parseFloat(rate);
     this.currentPlaybackRate = newRate < .25 ? .25 : newRate > 3 ? 3 : newRate;
-    $("#vid").playbackRate = this.currentPlaybackRate;
+    console.log("boop");
+    console.log(this.currentPlaybackRate);
+    document.getElementById("vid").playbackRate = this.currentPlaybackRate;
   },
 
   clearFilters: function() {
@@ -136,6 +139,8 @@ $(window).keydown(function(e){
     var key = $(e).data('key');
     var action = $(e).data('function');
     var data = $(e).data('keystuffs');
+
+    console.log(action);
 
     if(key == keyVal) {
       kibodo[action](data);
