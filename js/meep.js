@@ -138,6 +138,11 @@ $(function () {
         $("#e-mail").show();
         $("#e-mail-xs").show();
         break;
+      case "frands":
+        $(".perjerkt-desc").hide();
+        $("#frands").show();
+        $("#frands").show();
+        break;
     }
   }
 
@@ -147,55 +152,59 @@ $(function () {
     $("#point-counter")[0].innerHTML = points;
   }
 
+  function typeLetter(letter) {
+    console.log(letter);
+  }
+
   function handleTyping(e) {
     var key = e.keyCode;
     console.log(key);
 
     switch (key) {
       case 65://A
-        typeLetter();
+        typeLetter('a');
         break;
       case 69://E
-        typeLetter();
+        typeLetter('e');
         break;
       case 70://F
-        typeLetter();
+        typeLetter('f');
         break;
       case 72://H
-        typeLetter();
+        typeLetter('h');
         break;
       case 73://I
-        typeLetter();
+        typeLetter('i');
         break;
       case 75://K
-        typeLetter();
+        typeLetter('k');
         break;
       case 76://L
-        typeLetter();
+        typeLetter('l');
         break;
       case 77://M
-        typeLetter();
+        typeLetter('m');
         break;
       case 78://N
-        typeLetter();
+        typeLetter('n');
         break;
       case 84://T
-        typeLetter();
+        typeLetter('t');
         break;
       case 86://V
-        typeLetter();
+        typeLetter('v');
         break;
       case 87://W
-        typeLetter();
+        typeLetter('w');
         break;
       case 88://X
-        typeLetter();
+        typeLetter('x');
         break;
       case 89://Y
-        typeLetter();
+        typeLetter('y');
         break;
       case 90://Z
-        typeLetter();
+        typeLetter('z');
         break;
       default:
         console.log(key);
