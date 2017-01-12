@@ -128,6 +128,16 @@ $(function () {
         $("#med").show();
         $("#med-xs").show();
         break;
+      case "alienboy":
+        $(".perjerkt-desc").hide();
+        $("#alienboy").show();
+        $("#alienboy-xs").show();
+        break;
+      case "e-mail":
+        $(".perjerkt-desc").hide();
+        $("#e-mail").show();
+        $("#e-mail-xs").show();
+        break;
     }
   }
 
