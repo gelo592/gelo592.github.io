@@ -88,23 +88,23 @@
 }
 
 .dot-key-1 {
-  filter: hue-rotate(60deg);
+  filter: hue-rotate(71deg) saturate(15.4);
 }
 
 .dot-key-2 {
-  filter: hue-rotate(120deg);
+  filter: hue-rotate(160deg);
 }
 
 .dot-key-3 {
-  filter: hue-rotate(180deg);
+  filter: hue-rotate(220deg);
 }
 
 .dot-key-4 {
-  filter: hue-rotate(240deg);
+  filter: hue-rotate(280deg);
 }
 
 .dot-key-5 {
-  filter: hue-rotate(300deg);
+  filter: hue-rotate(320deg);
 }
 
 .key-row {
@@ -116,11 +116,11 @@
 }
 
 #kr1 .key {
-  border-color: #ff5722;
+  border-color: #dedede;
 }
 
 #kr1 .key.key-pressed {
-  border-color: #a54426;
+  border-color: #6b6868;
 }
 
 #kr2 {

@@ -9,6 +9,7 @@ var kibodo = {
   currentPlaybackRate: 1,
   currentPresetFunction: 'setHue',
   reverse: false,
+  reversing: false,
   paused: false,
   global: false,
 
@@ -141,6 +142,7 @@ var kibodo = {
     var tempReverse = !this.reverse;
     if(!this.stackEffects){this.clearFilters()};
     this.reverse = tempReverse;
+    this.reversing = true;
 
     if(this.reverse) {
       $(".reverse-key").addClass("key-pressed-hold");
@@ -158,7 +160,9 @@ var kibodo = {
 
   setClip: function(clip) {
     var clipTag = this.reverse ? clip + 'r' : clip;
-    if(clip != this.currentClip) {
+    console.log(clipTag);
+    if(clip != this.currentClip || this.reversing) {
+      this.reversing = false;
       this.currentClip = clip;
       $(".video").addClass('video-hid');
       $("#vid"+clipTag).removeClass('video-hid');
