@@ -72,6 +72,16 @@ $(function () {
     $("#kernterk").hide();
   }
 
+  function startResumeMeeps() {
+    $("#svg").hide();
+    $("#resume").show();
+  }
+
+  function stopResumeMeeps() {
+    $("#resume").hide();
+    $("#svg").show();
+  }
+
   function switchMeeps(e) {
     e = e.currentTarget;
     togs = e.dataset["toogle"];
@@ -83,17 +93,26 @@ $(function () {
       case "home":
         stopProjMeeps();
         stopContactMeeps();
+        stopResumeMeeps();
         startHomeMeeps(0, 0);
         break;
       case "proj":
         stopContactMeeps();
         stopHomeMeeps();
+        stopResumeMeeps();
         startProjMeeps();
         break;
       case "contact":
         stopHomeMeeps();
         stopProjMeeps();
+        stopResumeMeeps();
         startContactMeeps();
+        break;
+      case "resume":
+        stopHomeMeeps();
+        stopProjMeeps();
+        stopContactMeeps();
+        startResumeMeeps();
         break;
     }
   }

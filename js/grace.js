@@ -60,7 +60,7 @@ $(function () {
 		console.log("t", tog);
 		$(".narvlet").removeClass("active");
 		$(e).addClass("active");
-
+		console.log(togs);
 		if(togs == "home") {
 			//stop & remove proj meeps
 			$("#perjerkt").hide();
@@ -70,6 +70,8 @@ $(function () {
 
 			//reset letters to home color restart & display home meeps
 			$("#herm").show();
+
+			$("#resume").hide();
 		}
 		else if(togs == "proj") {
 			//stop & remove home meeps
@@ -79,6 +81,8 @@ $(function () {
 
 			//reset letters to home color restart & display proj meeps
 			$("#perjerkt").show();
+
+			$("#resume").hide();
 		}
 		else if(togs == "contact") {
 			//stop & remove home meeps
@@ -89,6 +93,20 @@ $(function () {
 
 			//reset letters to home color restart & display contact meeps
 			$("#kernterk").show();
+
+			$("#resume").hide();
+		}
+		else if(togs == "resume") {
+			//stop & remove home meeps
+			$("#herm").hide();
+
+			//stop & remove proj meeps
+			$("#perjerkt").hide();
+
+			//reset letters to home color restart & display contact meeps
+			$("#kernterk").hide();
+
+			$("#resume").show();
 		}
 	}
 
