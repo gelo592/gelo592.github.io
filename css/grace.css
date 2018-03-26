@@ -61,7 +61,7 @@
     .index .container-fluid .meepers-desc .perjerkt-desc, .index .container-fluid .meepers .perjerkt-desc {
       display: none;
       font-size: 22px; }
-      .index .container-fluid .meepers-desc .perjerkt-desc#kermp, .index .container-fluid .meepers .perjerkt-desc#kermp {
+      .index .container-fluid .meepers-desc .perjerkt-desc#brain, .index .container-fluid .meepers .perjerkt-desc#brain {
         display: block; }
     .index .container-fluid .meepers-desc ul, .index .container-fluid .meepers ul {
       list-style-image: url("../img/dot.svg"); }

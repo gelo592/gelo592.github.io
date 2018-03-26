@@ -7,7 +7,7 @@
 
 .spin {
   -webkit-animation-name: spin;
-  -webkit-animation-duration: 3702ms;
+  -webkit-animation-duration: 3155ms;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
   -webkit-transform-origin: 50% 50%; }
@@ -26,708 +26,708 @@
 
 .streak:nth-child(1) {
   -webkit-animation-name: streak1;
-  -webkit-animation-duration: 12s;
+  -webkit-animation-duration: 11s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-  -webkit-animation-delay: 2706ms;
+  -webkit-animation-delay: 3401ms;
   -moz-animation-name: streak1;
-  -moz-animation-duration: 14s;
+  -moz-animation-duration: 11s;
   -moz-animation-iteration-count: infinite;
   -moz-animation-timing-function: linear;
-  -moz-animation-delay: 1399ms;
+  -moz-animation-delay: 1440ms;
   animation-name: streak1;
-  animation-duration: 12s;
+  animation-duration: 15s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  animation-delay: 1205ms; }
+  animation-delay: 3950ms; }
 
 @-webkit-keyframes streak1 {
   from {
-    -webkit-transform: translate(1002px, -7px) rotate(-173deg); }
+    -webkit-transform: translate(1159px, -9px) rotate(-119deg); }
   to {
-    -webkit-transform: translate(-353px, 861px) rotate(97deg); } }
+    -webkit-transform: translate(-360px, 842px) rotate(-17deg); } }
 @-moz-keyframes streak1 {
   from {
-    -moz-transform: translate(1134px, -7px) rotate(-142deg); }
+    -moz-transform: translate(1133px, -8px) rotate(-158deg); }
   to {
-    -moz-transform: translate(-499px, 875px) rotate(-140deg); } }
+    -moz-transform: translate(-234px, 810px) rotate(-63deg); } }
 @keyframes streak1 {
   from {
-    transform: translate(1076px, -1px) rotate(-15deg); }
+    transform: translate(1128px, -3px) rotate(-14deg); }
   to {
-    transform: translate(-122px, 811px) rotate(52deg); } }
+    transform: translate(-363px, 821px) rotate(160deg); } }
 .streak:nth-child(2) {
   -webkit-animation-name: streak2;
-  -webkit-animation-duration: 11s;
+  -webkit-animation-duration: 14s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-  -webkit-animation-delay: 2183ms;
+  -webkit-animation-delay: 1007ms;
   -moz-animation-name: streak2;
-  -moz-animation-duration: 12s;
+  -moz-animation-duration: 11s;
   -moz-animation-iteration-count: infinite;
   -moz-animation-timing-function: linear;
-  -moz-animation-delay: 1997ms;
+  -moz-animation-delay: 1737ms;
   animation-name: streak2;
-  animation-duration: 13s;
+  animation-duration: 12s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  animation-delay: 1947ms; }
+  animation-delay: 1829ms; }
 
 @-webkit-keyframes streak2 {
   from {
-    -webkit-transform: translate(1164px, -5px) rotate(-143deg); }
+    -webkit-transform: translate(1012px, -6px) rotate(-59deg); }
   to {
-    -webkit-transform: translate(-442px, 825px) rotate(10deg); } }
+    -webkit-transform: translate(-428px, 814px) rotate(-69deg); } }
 @-moz-keyframes streak2 {
   from {
-    -moz-transform: translate(1207px, -4px) rotate(-48deg); }
+    -moz-transform: translate(1387px, 0px) rotate(-65deg); }
   to {
-    -moz-transform: translate(-150px, 809px) rotate(-30deg); } }
+    -moz-transform: translate(-220px, 875px) rotate(11deg); } }
 @keyframes streak2 {
   from {
-    transform: translate(1234px, 0px) rotate(-57deg); }
+    transform: translate(1180px, -5px) rotate(-177deg); }
   to {
-    transform: translate(-171px, 840px) rotate(-154deg); } }
+    transform: translate(-257px, 832px) rotate(-5deg); } }
 .streak:nth-child(3) {
   -webkit-animation-name: streak3;
-  -webkit-animation-duration: 11s;
+  -webkit-animation-duration: 14s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-  -webkit-animation-delay: 1369ms;
+  -webkit-animation-delay: 2675ms;
   -moz-animation-name: streak3;
-  -moz-animation-duration: 12s;
+  -moz-animation-duration: 15s;
   -moz-animation-iteration-count: infinite;
   -moz-animation-timing-function: linear;
-  -moz-animation-delay: 1100ms;
+  -moz-animation-delay: 2231ms;
   animation-name: streak3;
-  animation-duration: 11s;
+  animation-duration: 13s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  animation-delay: 3600ms; }
+  animation-delay: 3591ms; }
 
 @-webkit-keyframes streak3 {
   from {
-    -webkit-transform: translate(1350px, -4px) rotate(-36deg); }
+    -webkit-transform: translate(1357px, -2px) rotate(-10deg); }
   to {
-    -webkit-transform: translate(-430px, 830px) rotate(35deg); } }
+    -webkit-transform: translate(-179px, 822px) rotate(129deg); } }
 @-moz-keyframes streak3 {
   from {
-    -moz-transform: translate(1374px, -9px) rotate(-97deg); }
+    -moz-transform: translate(1235px, -8px) rotate(-12deg); }
   to {
-    -moz-transform: translate(-358px, 830px) rotate(-179deg); } }
+    -moz-transform: translate(-108px, 840px) rotate(44deg); } }
 @keyframes streak3 {
   from {
-    transform: translate(1200px, -2px) rotate(-112deg); }
+    transform: translate(1002px, -10px) rotate(-175deg); }
   to {
-    transform: translate(-194px, 858px) rotate(173deg); } }
+    transform: translate(-487px, 816px) rotate(16deg); } }
 .streak:nth-child(4) {
   -webkit-animation-name: streak4;
-  -webkit-animation-duration: 15s;
+  -webkit-animation-duration: 13s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-  -webkit-animation-delay: 2746ms;
+  -webkit-animation-delay: 2518ms;
   -moz-animation-name: streak4;
   -moz-animation-duration: 14s;
   -moz-animation-iteration-count: infinite;
   -moz-animation-timing-function: linear;
-  -moz-animation-delay: 1714ms;
+  -moz-animation-delay: 1459ms;
   animation-name: streak4;
-  animation-duration: 13s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-delay: 1999ms; }
-
-@-webkit-keyframes streak4 {
-  from {
-    -webkit-transform: translate(1369px, -3px) rotate(-48deg); }
-  to {
-    -webkit-transform: translate(-258px, 821px) rotate(-61deg); } }
-@-moz-keyframes streak4 {
-  from {
-    -moz-transform: translate(1167px, -3px) rotate(-108deg); }
-  to {
-    -moz-transform: translate(-303px, 802px) rotate(-171deg); } }
-@keyframes streak4 {
-  from {
-    transform: translate(1323px, -8px) rotate(-129deg); }
-  to {
-    transform: translate(-466px, 874px) rotate(66deg); } }
-.streak:nth-child(5) {
-  -webkit-animation-name: streak5;
-  -webkit-animation-duration: 15s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-delay: 2279ms;
-  -moz-animation-name: streak5;
-  -moz-animation-duration: 11s;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-timing-function: linear;
-  -moz-animation-delay: 1617ms;
-  animation-name: streak5;
-  animation-duration: 15s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-delay: 2316ms; }
-
-@-webkit-keyframes streak5 {
-  from {
-    -webkit-transform: translate(1020px, -9px) rotate(-68deg); }
-  to {
-    -webkit-transform: translate(-120px, 820px) rotate(112deg); } }
-@-moz-keyframes streak5 {
-  from {
-    -moz-transform: translate(1186px, -5px) rotate(-161deg); }
-  to {
-    -moz-transform: translate(-299px, 872px) rotate(109deg); } }
-@keyframes streak5 {
-  from {
-    transform: translate(1314px, -2px) rotate(-106deg); }
-  to {
-    transform: translate(-170px, 827px) rotate(-131deg); } }
-.streak:nth-child(6) {
-  -webkit-animation-name: streak6;
-  -webkit-animation-duration: 15s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-delay: 3412ms;
-  -moz-animation-name: streak6;
-  -moz-animation-duration: 14s;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-timing-function: linear;
-  -moz-animation-delay: 3204ms;
-  animation-name: streak6;
   animation-duration: 11s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  animation-delay: 2802ms; }
+  animation-delay: 2562ms; }
 
-@-webkit-keyframes streak6 {
+@-webkit-keyframes streak4 {
   from {
-    -webkit-transform: translate(1273px, -11px) rotate(0deg); }
+    -webkit-transform: translate(1283px, -9px) rotate(-40deg); }
   to {
-    -webkit-transform: translate(-356px, 840px) rotate(-90deg); } }
-@-moz-keyframes streak6 {
+    -webkit-transform: translate(-107px, 875px) rotate(74deg); } }
+@-moz-keyframes streak4 {
   from {
-    -moz-transform: translate(1010px, -10px) rotate(-36deg); }
+    -moz-transform: translate(1267px, -5px) rotate(-53deg); }
   to {
-    -moz-transform: translate(-285px, 856px) rotate(48deg); } }
-@keyframes streak6 {
+    -moz-transform: translate(-457px, 837px) rotate(-40deg); } }
+@keyframes streak4 {
   from {
-    transform: translate(1336px, -10px) rotate(-119deg); }
+    transform: translate(1111px, -1px) rotate(-22deg); }
   to {
-    transform: translate(-228px, 848px) rotate(53deg); } }
-.streak:nth-child(7) {
-  -webkit-animation-name: streak7;
-  -webkit-animation-duration: 15s;
+    transform: translate(-372px, 813px) rotate(139deg); } }
+.streak:nth-child(5) {
+  -webkit-animation-name: streak5;
+  -webkit-animation-duration: 12s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-  -webkit-animation-delay: 3917ms;
-  -moz-animation-name: streak7;
-  -moz-animation-duration: 11s;
+  -webkit-animation-delay: 2979ms;
+  -moz-animation-name: streak5;
+  -moz-animation-duration: 12s;
   -moz-animation-iteration-count: infinite;
   -moz-animation-timing-function: linear;
-  -moz-animation-delay: 2134ms;
-  animation-name: streak7;
-  animation-duration: 14s;
+  -moz-animation-delay: 3543ms;
+  animation-name: streak5;
+  animation-duration: 11s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  animation-delay: 1336ms; }
+  animation-delay: 1001ms; }
 
-@-webkit-keyframes streak7 {
+@-webkit-keyframes streak5 {
   from {
-    -webkit-transform: translate(1105px, -7px) rotate(-3deg); }
+    -webkit-transform: translate(1239px, -1px) rotate(-113deg); }
   to {
-    -webkit-transform: translate(-323px, 856px) rotate(-4deg); } }
-@-moz-keyframes streak7 {
+    -webkit-transform: translate(-283px, 839px) rotate(84deg); } }
+@-moz-keyframes streak5 {
   from {
-    -moz-transform: translate(1159px, -4px) rotate(-118deg); }
+    -moz-transform: translate(1296px, 0px) rotate(-179deg); }
   to {
-    -moz-transform: translate(-381px, 841px) rotate(-5deg); } }
-@keyframes streak7 {
+    -moz-transform: translate(-380px, 849px) rotate(55deg); } }
+@keyframes streak5 {
   from {
-    transform: translate(1337px, -11px) rotate(-167deg); }
+    transform: translate(1152px, -9px) rotate(-110deg); }
   to {
-    transform: translate(-179px, 804px) rotate(142deg); } }
-.streak:nth-child(8) {
-  -webkit-animation-name: streak8;
+    transform: translate(-130px, 847px) rotate(72deg); } }
+.streak:nth-child(6) {
+  -webkit-animation-name: streak6;
   -webkit-animation-duration: 14s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
   -webkit-animation-delay: 1775ms;
-  -moz-animation-name: streak8;
-  -moz-animation-duration: 14s;
+  -moz-animation-name: streak6;
+  -moz-animation-duration: 11s;
   -moz-animation-iteration-count: infinite;
   -moz-animation-timing-function: linear;
-  -moz-animation-delay: 3259ms;
-  animation-name: streak8;
+  -moz-animation-delay: 1401ms;
+  animation-name: streak6;
   animation-duration: 15s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  animation-delay: 2461ms; }
+  animation-delay: 3873ms; }
+
+@-webkit-keyframes streak6 {
+  from {
+    -webkit-transform: translate(1218px, -9px) rotate(-148deg); }
+  to {
+    -webkit-transform: translate(-450px, 823px) rotate(174deg); } }
+@-moz-keyframes streak6 {
+  from {
+    -moz-transform: translate(1288px, -4px) rotate(-19deg); }
+  to {
+    -moz-transform: translate(-465px, 835px) rotate(113deg); } }
+@keyframes streak6 {
+  from {
+    transform: translate(1009px, -4px) rotate(-112deg); }
+  to {
+    transform: translate(-427px, 808px) rotate(108deg); } }
+.streak:nth-child(7) {
+  -webkit-animation-name: streak7;
+  -webkit-animation-duration: 14s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 3322ms;
+  -moz-animation-name: streak7;
+  -moz-animation-duration: 11s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -moz-animation-delay: 3064ms;
+  animation-name: streak7;
+  animation-duration: 11s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 1228ms; }
+
+@-webkit-keyframes streak7 {
+  from {
+    -webkit-transform: translate(1231px, -5px) rotate(-77deg); }
+  to {
+    -webkit-transform: translate(-400px, 815px) rotate(51deg); } }
+@-moz-keyframes streak7 {
+  from {
+    -moz-transform: translate(1091px, -4px) rotate(-2deg); }
+  to {
+    -moz-transform: translate(-166px, 804px) rotate(-157deg); } }
+@keyframes streak7 {
+  from {
+    transform: translate(1123px, -3px) rotate(-135deg); }
+  to {
+    transform: translate(-163px, 839px) rotate(166deg); } }
+.streak:nth-child(8) {
+  -webkit-animation-name: streak8;
+  -webkit-animation-duration: 12s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 3509ms;
+  -moz-animation-name: streak8;
+  -moz-animation-duration: 12s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -moz-animation-delay: 1322ms;
+  animation-name: streak8;
+  animation-duration: 13s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 3852ms; }
 
 @-webkit-keyframes streak8 {
   from {
-    -webkit-transform: translate(1350px, -11px) rotate(-42deg); }
+    -webkit-transform: translate(1270px, -6px) rotate(-147deg); }
   to {
-    -webkit-transform: translate(-359px, 804px) rotate(-80deg); } }
+    -webkit-transform: translate(-257px, 808px) rotate(55deg); } }
 @-moz-keyframes streak8 {
   from {
-    -moz-transform: translate(1020px, -3px) rotate(-80deg); }
+    -moz-transform: translate(1279px, -11px) rotate(-95deg); }
   to {
-    -moz-transform: translate(-201px, 845px) rotate(79deg); } }
+    -moz-transform: translate(-205px, 841px) rotate(44deg); } }
 @keyframes streak8 {
   from {
-    transform: translate(1035px, -10px) rotate(-141deg); }
+    transform: translate(1031px, -4px) rotate(-38deg); }
   to {
-    transform: translate(-164px, 802px) rotate(-71deg); } }
+    transform: translate(-111px, 811px) rotate(103deg); } }
 .streak:nth-child(9) {
   -webkit-animation-name: streak9;
   -webkit-animation-duration: 13s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-  -webkit-animation-delay: 1642ms;
+  -webkit-animation-delay: 3360ms;
   -moz-animation-name: streak9;
-  -moz-animation-duration: 15s;
+  -moz-animation-duration: 11s;
   -moz-animation-iteration-count: infinite;
   -moz-animation-timing-function: linear;
-  -moz-animation-delay: 2678ms;
+  -moz-animation-delay: 2450ms;
   animation-name: streak9;
-  animation-duration: 11s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-delay: 3389ms; }
-
-@-webkit-keyframes streak9 {
-  from {
-    -webkit-transform: translate(1254px, 0px) rotate(-92deg); }
-  to {
-    -webkit-transform: translate(-181px, 835px) rotate(58deg); } }
-@-moz-keyframes streak9 {
-  from {
-    -moz-transform: translate(1078px, -4px) rotate(-74deg); }
-  to {
-    -moz-transform: translate(-372px, 819px) rotate(-10deg); } }
-@keyframes streak9 {
-  from {
-    transform: translate(1301px, -2px) rotate(-107deg); }
-  to {
-    transform: translate(-428px, 850px) rotate(80deg); } }
-.streak:nth-child(10) {
-  -webkit-animation-name: streak10;
-  -webkit-animation-duration: 15s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-delay: 3763ms;
-  -moz-animation-name: streak10;
-  -moz-animation-duration: 15s;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-timing-function: linear;
-  -moz-animation-delay: 2317ms;
-  animation-name: streak10;
   animation-duration: 13s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  animation-delay: 3203ms; }
+  animation-delay: 2586ms; }
 
-@-webkit-keyframes streak10 {
+@-webkit-keyframes streak9 {
   from {
-    -webkit-transform: translate(1002px, -4px) rotate(-160deg); }
+    -webkit-transform: translate(1180px, -3px) rotate(-163deg); }
   to {
-    -webkit-transform: translate(-303px, 873px) rotate(-59deg); } }
-@-moz-keyframes streak10 {
+    -webkit-transform: translate(-398px, 874px) rotate(-45deg); } }
+@-moz-keyframes streak9 {
   from {
-    -moz-transform: translate(1018px, -9px) rotate(-118deg); }
+    -moz-transform: translate(1387px, -8px) rotate(-104deg); }
   to {
-    -moz-transform: translate(-367px, 873px) rotate(33deg); } }
-@keyframes streak10 {
+    -moz-transform: translate(-192px, 845px) rotate(39deg); } }
+@keyframes streak9 {
   from {
-    transform: translate(1251px, -5px) rotate(-117deg); }
+    transform: translate(1124px, 0px) rotate(-145deg); }
   to {
-    transform: translate(-185px, 826px) rotate(24deg); } }
-.streak:nth-child(11) {
-  -webkit-animation-name: streak11;
-  -webkit-animation-duration: 12s;
+    transform: translate(-199px, 844px) rotate(121deg); } }
+.streak:nth-child(10) {
+  -webkit-animation-name: streak10;
+  -webkit-animation-duration: 14s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-  -webkit-animation-delay: 3340ms;
-  -moz-animation-name: streak11;
+  -webkit-animation-delay: 1023ms;
+  -moz-animation-name: streak10;
   -moz-animation-duration: 13s;
   -moz-animation-iteration-count: infinite;
   -moz-animation-timing-function: linear;
-  -moz-animation-delay: 1516ms;
+  -moz-animation-delay: 1520ms;
+  animation-name: streak10;
+  animation-duration: 14s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 3081ms; }
+
+@-webkit-keyframes streak10 {
+  from {
+    -webkit-transform: translate(1075px, -10px) rotate(-34deg); }
+  to {
+    -webkit-transform: translate(-433px, 809px) rotate(-17deg); } }
+@-moz-keyframes streak10 {
+  from {
+    -moz-transform: translate(1039px, -9px) rotate(-169deg); }
+  to {
+    -moz-transform: translate(-381px, 861px) rotate(172deg); } }
+@keyframes streak10 {
+  from {
+    transform: translate(1187px, -4px) rotate(-141deg); }
+  to {
+    transform: translate(-109px, 803px) rotate(162deg); } }
+.streak:nth-child(11) {
+  -webkit-animation-name: streak11;
+  -webkit-animation-duration: 13s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 2097ms;
+  -moz-animation-name: streak11;
+  -moz-animation-duration: 15s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -moz-animation-delay: 1419ms;
   animation-name: streak11;
   animation-duration: 11s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  animation-delay: 1754ms; }
+  animation-delay: 1824ms; }
 
 @-webkit-keyframes streak11 {
   from {
-    -webkit-transform: translate(1356px, -1px) rotate(-45deg); }
+    -webkit-transform: translate(1384px, -7px) rotate(-84deg); }
   to {
-    -webkit-transform: translate(-265px, 816px) rotate(-98deg); } }
+    -webkit-transform: translate(-365px, 853px) rotate(22deg); } }
 @-moz-keyframes streak11 {
   from {
-    -moz-transform: translate(1382px, -9px) rotate(-128deg); }
+    -moz-transform: translate(1169px, -3px) rotate(-166deg); }
   to {
-    -moz-transform: translate(-438px, 847px) rotate(69deg); } }
+    -moz-transform: translate(-306px, 805px) rotate(37deg); } }
 @keyframes streak11 {
   from {
-    transform: translate(1133px, -1px) rotate(-37deg); }
+    transform: translate(1172px, -11px) rotate(-92deg); }
   to {
-    transform: translate(-377px, 860px) rotate(-139deg); } }
+    transform: translate(-395px, 835px) rotate(-70deg); } }
 .streak:nth-child(12) {
   -webkit-animation-name: streak12;
-  -webkit-animation-duration: 15s;
+  -webkit-animation-duration: 12s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-  -webkit-animation-delay: 3227ms;
+  -webkit-animation-delay: 2710ms;
   -moz-animation-name: streak12;
-  -moz-animation-duration: 14s;
+  -moz-animation-duration: 12s;
   -moz-animation-iteration-count: infinite;
   -moz-animation-timing-function: linear;
-  -moz-animation-delay: 2356ms;
+  -moz-animation-delay: 1214ms;
   animation-name: streak12;
-  animation-duration: 12s;
+  animation-duration: 15s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  animation-delay: 1345ms; }
+  animation-delay: 2064ms; }
 
 @-webkit-keyframes streak12 {
   from {
-    -webkit-transform: translate(1157px, 0px) rotate(-74deg); }
+    -webkit-transform: translate(1140px, -9px) rotate(-175deg); }
   to {
-    -webkit-transform: translate(-135px, 856px) rotate(-179deg); } }
+    -webkit-transform: translate(-240px, 834px) rotate(116deg); } }
 @-moz-keyframes streak12 {
   from {
-    -moz-transform: translate(1316px, -8px) rotate(-17deg); }
+    -moz-transform: translate(1016px, 0px) rotate(-86deg); }
   to {
-    -moz-transform: translate(-129px, 861px) rotate(-8deg); } }
+    -moz-transform: translate(-278px, 860px) rotate(44deg); } }
 @keyframes streak12 {
   from {
-    transform: translate(1075px, 0px) rotate(-9deg); }
+    transform: translate(1160px, -11px) rotate(-49deg); }
   to {
-    transform: translate(-468px, 875px) rotate(-129deg); } }
+    transform: translate(-415px, 860px) rotate(144deg); } }
 .streak:nth-child(13) {
   -webkit-animation-name: streak13;
-  -webkit-animation-duration: 13s;
+  -webkit-animation-duration: 14s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-  -webkit-animation-delay: 2969ms;
+  -webkit-animation-delay: 2631ms;
   -moz-animation-name: streak13;
   -moz-animation-duration: 13s;
   -moz-animation-iteration-count: infinite;
   -moz-animation-timing-function: linear;
-  -moz-animation-delay: 3703ms;
+  -moz-animation-delay: 3110ms;
   animation-name: streak13;
-  animation-duration: 11s;
+  animation-duration: 15s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  animation-delay: 1466ms; }
+  animation-delay: 1914ms; }
 
 @-webkit-keyframes streak13 {
   from {
-    -webkit-transform: translate(1218px, 0px) rotate(-64deg); }
+    -webkit-transform: translate(1079px, -9px) rotate(-13deg); }
   to {
-    -webkit-transform: translate(-428px, 844px) rotate(120deg); } }
+    -webkit-transform: translate(-308px, 827px) rotate(91deg); } }
 @-moz-keyframes streak13 {
   from {
-    -moz-transform: translate(1041px, -2px) rotate(-106deg); }
+    -moz-transform: translate(1169px, -4px) rotate(-23deg); }
   to {
-    -moz-transform: translate(-204px, 842px) rotate(173deg); } }
+    -moz-transform: translate(-319px, 857px) rotate(5deg); } }
 @keyframes streak13 {
   from {
-    transform: translate(1370px, -10px) rotate(-153deg); }
+    transform: translate(1230px, -5px) rotate(-99deg); }
   to {
-    transform: translate(-438px, 862px) rotate(164deg); } }
+    transform: translate(-266px, 851px) rotate(49deg); } }
 .streak:nth-child(14) {
   -webkit-animation-name: streak14;
-  -webkit-animation-duration: 13s;
+  -webkit-animation-duration: 15s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-  -webkit-animation-delay: 2406ms;
+  -webkit-animation-delay: 3666ms;
   -moz-animation-name: streak14;
-  -moz-animation-duration: 14s;
+  -moz-animation-duration: 12s;
   -moz-animation-iteration-count: infinite;
   -moz-animation-timing-function: linear;
-  -moz-animation-delay: 3584ms;
+  -moz-animation-delay: 3556ms;
   animation-name: streak14;
-  animation-duration: 11s;
+  animation-duration: 14s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  animation-delay: 1803ms; }
+  animation-delay: 3750ms; }
 
 @-webkit-keyframes streak14 {
   from {
-    -webkit-transform: translate(1018px, -8px) rotate(-69deg); }
+    -webkit-transform: translate(1075px, -1px) rotate(-134deg); }
   to {
-    -webkit-transform: translate(-351px, 808px) rotate(-7deg); } }
+    -webkit-transform: translate(-460px, 816px) rotate(18deg); } }
 @-moz-keyframes streak14 {
   from {
-    -moz-transform: translate(1056px, -8px) rotate(-94deg); }
+    -moz-transform: translate(1238px, -7px) rotate(-159deg); }
   to {
-    -moz-transform: translate(-353px, 809px) rotate(127deg); } }
+    -moz-transform: translate(-253px, 830px) rotate(-168deg); } }
 @keyframes streak14 {
   from {
-    transform: translate(1396px, -5px) rotate(-66deg); }
+    transform: translate(1068px, -10px) rotate(-114deg); }
   to {
-    transform: translate(-222px, 871px) rotate(-4deg); } }
+    transform: translate(-243px, 835px) rotate(-155deg); } }
 .streak:nth-child(15) {
   -webkit-animation-name: streak15;
   -webkit-animation-duration: 12s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-  -webkit-animation-delay: 3410ms;
+  -webkit-animation-delay: 3067ms;
   -moz-animation-name: streak15;
-  -moz-animation-duration: 12s;
+  -moz-animation-duration: 15s;
   -moz-animation-iteration-count: infinite;
   -moz-animation-timing-function: linear;
-  -moz-animation-delay: 1932ms;
+  -moz-animation-delay: 3978ms;
   animation-name: streak15;
   animation-duration: 12s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  animation-delay: 2103ms; }
+  animation-delay: 3255ms; }
 
 @-webkit-keyframes streak15 {
   from {
-    -webkit-transform: translate(1209px, -3px) rotate(-65deg); }
+    -webkit-transform: translate(1265px, -5px) rotate(-136deg); }
   to {
-    -webkit-transform: translate(-210px, 873px) rotate(-6deg); } }
+    -webkit-transform: translate(-357px, 851px) rotate(180deg); } }
 @-moz-keyframes streak15 {
   from {
-    -moz-transform: translate(1001px, -6px) rotate(-130deg); }
+    -moz-transform: translate(1282px, 0px) rotate(-77deg); }
   to {
-    -moz-transform: translate(-462px, 825px) rotate(-62deg); } }
+    -moz-transform: translate(-422px, 861px) rotate(-162deg); } }
 @keyframes streak15 {
   from {
-    transform: translate(1264px, -1px) rotate(-136deg); }
+    transform: translate(1227px, -5px) rotate(-98deg); }
   to {
-    transform: translate(-382px, 824px) rotate(-162deg); } }
+    transform: translate(-466px, 810px) rotate(8deg); } }
 .streak:nth-child(16) {
   -webkit-animation-name: streak16;
   -webkit-animation-duration: 12s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-  -webkit-animation-delay: 3233ms;
+  -webkit-animation-delay: 3695ms;
   -moz-animation-name: streak16;
   -moz-animation-duration: 15s;
   -moz-animation-iteration-count: infinite;
   -moz-animation-timing-function: linear;
-  -moz-animation-delay: 1691ms;
+  -moz-animation-delay: 3495ms;
   animation-name: streak16;
-  animation-duration: 14s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-delay: 1833ms; }
-
-@-webkit-keyframes streak16 {
-  from {
-    -webkit-transform: translate(1209px, -6px) rotate(0deg); }
-  to {
-    -webkit-transform: translate(-114px, 801px) rotate(-120deg); } }
-@-moz-keyframes streak16 {
-  from {
-    -moz-transform: translate(1064px, -3px) rotate(-154deg); }
-  to {
-    -moz-transform: translate(-144px, 874px) rotate(-152deg); } }
-@keyframes streak16 {
-  from {
-    transform: translate(1389px, -7px) rotate(-81deg); }
-  to {
-    transform: translate(-245px, 852px) rotate(-125deg); } }
-.streak:nth-child(17) {
-  -webkit-animation-name: streak17;
-  -webkit-animation-duration: 13s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-delay: 1310ms;
-  -moz-animation-name: streak17;
-  -moz-animation-duration: 13s;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-timing-function: linear;
-  -moz-animation-delay: 1679ms;
-  animation-name: streak17;
   animation-duration: 11s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  animation-delay: 3452ms; }
+  animation-delay: 1453ms; }
+
+@-webkit-keyframes streak16 {
+  from {
+    -webkit-transform: translate(1372px, -3px) rotate(-126deg); }
+  to {
+    -webkit-transform: translate(-456px, 828px) rotate(-94deg); } }
+@-moz-keyframes streak16 {
+  from {
+    -moz-transform: translate(1198px, -10px) rotate(-154deg); }
+  to {
+    -moz-transform: translate(-207px, 812px) rotate(-89deg); } }
+@keyframes streak16 {
+  from {
+    transform: translate(1036px, -3px) rotate(-17deg); }
+  to {
+    transform: translate(-431px, 829px) rotate(49deg); } }
+.streak:nth-child(17) {
+  -webkit-animation-name: streak17;
+  -webkit-animation-duration: 15s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 1236ms;
+  -moz-animation-name: streak17;
+  -moz-animation-duration: 15s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -moz-animation-delay: 1902ms;
+  animation-name: streak17;
+  animation-duration: 14s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 1190ms; }
 
 @-webkit-keyframes streak17 {
   from {
-    -webkit-transform: translate(1126px, -2px) rotate(-89deg); }
+    -webkit-transform: translate(1013px, -7px) rotate(-48deg); }
   to {
-    -webkit-transform: translate(-283px, 808px) rotate(105deg); } }
+    -webkit-transform: translate(-466px, 809px) rotate(-90deg); } }
 @-moz-keyframes streak17 {
   from {
-    -moz-transform: translate(1089px, -4px) rotate(-93deg); }
+    -moz-transform: translate(1351px, -9px) rotate(-69deg); }
   to {
-    -moz-transform: translate(-462px, 857px) rotate(154deg); } }
+    -moz-transform: translate(-364px, 872px) rotate(-124deg); } }
 @keyframes streak17 {
   from {
-    transform: translate(1182px, -11px) rotate(-126deg); }
+    transform: translate(1091px, -1px) rotate(-82deg); }
   to {
-    transform: translate(-480px, 817px) rotate(55deg); } }
+    transform: translate(-271px, 836px) rotate(22deg); } }
 .streak:nth-child(18) {
   -webkit-animation-name: streak18;
-  -webkit-animation-duration: 12s;
+  -webkit-animation-duration: 13s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-  -webkit-animation-delay: 3693ms;
+  -webkit-animation-delay: 3556ms;
   -moz-animation-name: streak18;
-  -moz-animation-duration: 14s;
+  -moz-animation-duration: 12s;
   -moz-animation-iteration-count: infinite;
   -moz-animation-timing-function: linear;
-  -moz-animation-delay: 1223ms;
+  -moz-animation-delay: 2074ms;
   animation-name: streak18;
   animation-duration: 13s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  animation-delay: 3685ms; }
+  animation-delay: 2481ms; }
 
 @-webkit-keyframes streak18 {
   from {
-    -webkit-transform: translate(1071px, -10px) rotate(-110deg); }
+    -webkit-transform: translate(1146px, -3px) rotate(-109deg); }
   to {
-    -webkit-transform: translate(-181px, 844px) rotate(155deg); } }
+    -webkit-transform: translate(-411px, 801px) rotate(-19deg); } }
 @-moz-keyframes streak18 {
   from {
-    -moz-transform: translate(1176px, -11px) rotate(-42deg); }
+    -moz-transform: translate(1181px, -7px) rotate(-4deg); }
   to {
-    -moz-transform: translate(-332px, 817px) rotate(-24deg); } }
+    -moz-transform: translate(-224px, 843px) rotate(-87deg); } }
 @keyframes streak18 {
   from {
-    transform: translate(1069px, -11px) rotate(-136deg); }
+    transform: translate(1036px, -6px) rotate(-17deg); }
   to {
-    transform: translate(-444px, 840px) rotate(-120deg); } }
+    transform: translate(-408px, 857px) rotate(73deg); } }
 .streak:nth-child(19) {
   -webkit-animation-name: streak19;
-  -webkit-animation-duration: 11s;
+  -webkit-animation-duration: 13s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-  -webkit-animation-delay: 3639ms;
+  -webkit-animation-delay: 2952ms;
   -moz-animation-name: streak19;
-  -moz-animation-duration: 13s;
+  -moz-animation-duration: 11s;
   -moz-animation-iteration-count: infinite;
   -moz-animation-timing-function: linear;
-  -moz-animation-delay: 3379ms;
+  -moz-animation-delay: 3230ms;
   animation-name: streak19;
-  animation-duration: 12s;
+  animation-duration: 11s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  animation-delay: 2446ms; }
+  animation-delay: 3980ms; }
 
 @-webkit-keyframes streak19 {
   from {
-    -webkit-transform: translate(1219px, -6px) rotate(-166deg); }
+    -webkit-transform: translate(1117px, -1px) rotate(-98deg); }
   to {
-    -webkit-transform: translate(-397px, 851px) rotate(-77deg); } }
+    -webkit-transform: translate(-168px, 862px) rotate(149deg); } }
 @-moz-keyframes streak19 {
   from {
-    -moz-transform: translate(1184px, -2px) rotate(-57deg); }
+    -moz-transform: translate(1363px, -11px) rotate(-38deg); }
   to {
-    -moz-transform: translate(-331px, 806px) rotate(47deg); } }
+    -moz-transform: translate(-408px, 869px) rotate(76deg); } }
 @keyframes streak19 {
   from {
-    transform: translate(1392px, -4px) rotate(-60deg); }
+    transform: translate(1302px, -7px) rotate(-32deg); }
   to {
-    transform: translate(-105px, 863px) rotate(-12deg); } }
+    transform: translate(-139px, 812px) rotate(13deg); } }
 .streak:nth-child(20) {
   -webkit-animation-name: streak20;
   -webkit-animation-duration: 11s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-  -webkit-animation-delay: 2236ms;
+  -webkit-animation-delay: 2014ms;
   -moz-animation-name: streak20;
   -moz-animation-duration: 14s;
   -moz-animation-iteration-count: infinite;
   -moz-animation-timing-function: linear;
-  -moz-animation-delay: 2362ms;
+  -moz-animation-delay: 2824ms;
   animation-name: streak20;
-  animation-duration: 14s;
+  animation-duration: 12s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  animation-delay: 1862ms; }
+  animation-delay: 2357ms; }
 
 @-webkit-keyframes streak20 {
   from {
-    -webkit-transform: translate(1220px, -4px) rotate(-31deg); }
+    -webkit-transform: translate(1258px, -6px) rotate(-48deg); }
   to {
-    -webkit-transform: translate(-288px, 854px) rotate(154deg); } }
+    -webkit-transform: translate(-300px, 808px) rotate(-99deg); } }
 @-moz-keyframes streak20 {
   from {
-    -moz-transform: translate(1174px, -7px) rotate(-59deg); }
+    -moz-transform: translate(1108px, -11px) rotate(-15deg); }
   to {
-    -moz-transform: translate(-145px, 805px) rotate(17deg); } }
+    -moz-transform: translate(-351px, 840px) rotate(-129deg); } }
 @keyframes streak20 {
   from {
-    transform: translate(1134px, 0px) rotate(-138deg); }
+    transform: translate(1167px, -4px) rotate(-50deg); }
   to {
-    transform: translate(-370px, 846px) rotate(-34deg); } }
+    transform: translate(-285px, 815px) rotate(38deg); } }
 .streak:nth-child(21) {
   -webkit-animation-name: streak21;
-  -webkit-animation-duration: 14s;
+  -webkit-animation-duration: 12s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-  -webkit-animation-delay: 2277ms;
+  -webkit-animation-delay: 1418ms;
   -moz-animation-name: streak21;
-  -moz-animation-duration: 13s;
+  -moz-animation-duration: 11s;
   -moz-animation-iteration-count: infinite;
   -moz-animation-timing-function: linear;
-  -moz-animation-delay: 2990ms;
+  -moz-animation-delay: 3477ms;
   animation-name: streak21;
-  animation-duration: 14s;
+  animation-duration: 12s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  animation-delay: 2984ms; }
+  animation-delay: 3505ms; }
 
 @-webkit-keyframes streak21 {
   from {
-    -webkit-transform: translate(1399px, -5px) rotate(-113deg); }
+    -webkit-transform: translate(1093px, -7px) rotate(-139deg); }
   to {
-    -webkit-transform: translate(-332px, 801px) rotate(-163deg); } }
+    -webkit-transform: translate(-364px, 806px) rotate(-92deg); } }
 @-moz-keyframes streak21 {
   from {
-    -moz-transform: translate(1304px, -1px) rotate(-18deg); }
+    -moz-transform: translate(1342px, -1px) rotate(-90deg); }
   to {
-    -moz-transform: translate(-239px, 816px) rotate(52deg); } }
+    -moz-transform: translate(-330px, 852px) rotate(53deg); } }
 @keyframes streak21 {
   from {
-    transform: translate(1121px, -10px) rotate(-152deg); }
+    transform: translate(1135px, -1px) rotate(-121deg); }
   to {
-    transform: translate(-382px, 816px) rotate(-20deg); } }
+    transform: translate(-481px, 811px) rotate(-47deg); } }
 .streak:nth-child(22) {
   -webkit-animation-name: streak22;
-  -webkit-animation-duration: 11s;
+  -webkit-animation-duration: 13s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-  -webkit-animation-delay: 3761ms;
+  -webkit-animation-delay: 1543ms;
   -moz-animation-name: streak22;
-  -moz-animation-duration: 13s;
+  -moz-animation-duration: 15s;
   -moz-animation-iteration-count: infinite;
   -moz-animation-timing-function: linear;
-  -moz-animation-delay: 2991ms;
+  -moz-animation-delay: 3463ms;
   animation-name: streak22;
-  animation-duration: 14s;
+  animation-duration: 12s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  animation-delay: 1201ms; }
+  animation-delay: 2393ms; }
 
 @-webkit-keyframes streak22 {
   from {
-    -webkit-transform: translate(1198px, -3px) rotate(-159deg); }
+    -webkit-transform: translate(1255px, -3px) rotate(-153deg); }
   to {
-    -webkit-transform: translate(-431px, 870px) rotate(-80deg); } }
+    -webkit-transform: translate(-200px, 868px) rotate(-121deg); } }
 @-moz-keyframes streak22 {
   from {
-    -moz-transform: translate(1131px, -6px) rotate(-24deg); }
+    -moz-transform: translate(1285px, -1px) rotate(-86deg); }
   to {
-    -moz-transform: translate(-456px, 810px) rotate(159deg); } }
+    -moz-transform: translate(-418px, 850px) rotate(-146deg); } }
 @keyframes streak22 {
   from {
-    transform: translate(1134px, -9px) rotate(-171deg); }
+    transform: translate(1345px, -1px) rotate(-65deg); }
   to {
-    transform: translate(-104px, 811px) rotate(169deg); } }
+    transform: translate(-265px, 819px) rotate(-157deg); } }
 @-webkit-keyframes spin {
   from {
     -webkit-transform: rotate(0deg); }
